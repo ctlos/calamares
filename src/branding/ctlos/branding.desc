@@ -1,0 +1,26 @@
+---
+componentName:  ctlos
+
+strings:
+    productName:         Ctlos Linux
+    shortProductName:    Ctlos
+    version:             0.1
+    shortVersion:        0.1
+    versionedName:       Ctlos Linux 0.1
+    shortVersionedName:  Ctlos Linux 0.1
+    bootloaderEntryName: Ctlos
+    productUrl:          https://ctlos.github.io
+    supportUrl:          https://github.com/ctlos/ctlosiso/issues
+    
+
+images:
+    productLogo:         "logo.png"
+    productIcon:         "logo.png"
+    productWelcome:      "languages.png"
+
+slideshow:               "show.qml"
+
+style:
+   sidebarBackground:    "#353945"
+   sidebarText:          "#FFFFFF"
+   sidebarTextSelect:    "#353945"
