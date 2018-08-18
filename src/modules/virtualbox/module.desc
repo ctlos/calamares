@@ -1,5 +1,5 @@
 ---
 type:       "job"
-name:       "mrpacman"
+name:       "virtualbox"
 interface:  "python"
 script:     "main.py"
