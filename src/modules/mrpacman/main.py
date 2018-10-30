@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-#
+
 import libcalamares
 import subprocess
 from libcalamares.utils import check_target_env_call, target_env_call
@@ -8,10 +8,20 @@ from libcalamares.utils import check_target_env_call, target_env_call
 
 class PackageManager:
 
+    """ Package manager class.
+
+    :param backend:
+    """
+
     def __init__(self, backend):
         self.backend = backend
 
     def install(self, pkgs, from_local=False):
+        """ Installs packages.
+
+        :param pkgs:
+        :param from_local:
+        """
 
         if self.backend == "pacman":
             if from_local:
@@ -83,6 +93,11 @@ def packagelist_filter(pkgs, pkg_remove_filter, first_index, last_index):
 
 
 def run_operations(pkgman, entry):
+    """ Call package manager with given parameters.
+
+    :param pkgman:
+    :param entry:
+    """
 
     for key in entry.keys():
         if key == "install":
@@ -97,6 +112,11 @@ def run_operations(pkgman, entry):
 
 
 def run():
+    """ Calls routine with detected package manager to install locale packages
+    or remove drivers not needed on the installed system.
+
+    :return:
+    """
 
     virtualbox_check()
 
