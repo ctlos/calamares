@@ -56,5 +56,14 @@ Presentation
             anchors.fill: parent
         }
     }
+
+    Slide {
+        anchors.fill: parent
+        Image {
+            id: background4
+            source: "slide3.png"
+            anchors.fill: parent
+        }
+    }
 }
 

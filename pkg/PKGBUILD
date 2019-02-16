@@ -1,6 +1,6 @@
 # Ctlos Calamares
 pkgname=calamares
-pkgver=3.2.3
+pkgver=3.2.4
 pkgrel=1.1
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
@@ -34,7 +34,7 @@ makedepends=('extra-cmake-modules'
 source+=("https://github.com/calamares/calamares/releases/download/v${pkgver}/calamares-${pkgver}.tar.gz"
          git+https://github.com/ctlos/ctlos-calamares#branch=master)
 
-sha256sums=('SKIP'
+sha256sums=('cb19a8a0f6f1a4d5d2b021eac5b10ceb600dbb59badc8b99e8b69559b90a5973'
             'SKIP')
 
 prepare() {
