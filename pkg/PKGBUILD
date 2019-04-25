@@ -57,7 +57,7 @@ build() {
               -DSKIP_MODULES="webview interactiveterminal initramfs \
                               initramfscfg dracut dracutlukscfg \
                               dummyprocess dummypython dummycpp \
-                              dummypythonqt services-openrc"
+                              dummypythonqt services-openrc services-systemd"
         make
 }
 
