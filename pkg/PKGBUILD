@@ -1,7 +1,7 @@
 # Ctlos Calamares
 pkgname=calamares
 pkgver=3.2.8
-pkgrel=1.4
+pkgrel=1.5
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 license=(GPL)
@@ -57,7 +57,7 @@ build() {
               -DSKIP_MODULES="webview interactiveterminal initramfs \
                               initramfscfg dracut dracutlukscfg \
                               dummyprocess dummypython dummycpp \
-                              dummypythonqt services-openrc services-systemd"
+                              dummypythonqt services-openrc"
         make
 }
 
