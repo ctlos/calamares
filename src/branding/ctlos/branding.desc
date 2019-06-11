@@ -18,4 +18,4 @@ slideshow:               "show.qml"
 style:
    sidebarBackground:    "#353945"
    sidebarText:          "#FFFFFF"
-   sidebarTextSelect:    "#353945"
+   sidebarTextSelect:    "#999999"
