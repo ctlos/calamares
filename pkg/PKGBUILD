@@ -14,7 +14,7 @@ depends=('kconfig'
          'kio'
          'solid'
          'yaml-cpp'
-         'kpmcore>=3.3.0'
+         'kpmcore>=4.0.0'
          'squashfs-tools'
          'mkinitcpio-openswap'
          'boost-libs'
@@ -23,7 +23,9 @@ depends=('kconfig'
          'qt5-svg'
          'polkit-qt5'
          'gtk-update-icon-cache'
-         'plasma-framework')
+         'pythonqt>=3.2'
+         'plasma-framework'
+         'qt5-xmlpatterns')
 
 makedepends=('extra-cmake-modules'
              'qt5-tools'
@@ -54,6 +56,7 @@ build() {
               -DCMAKE_INSTALL_PREFIX=/usr \
               -DCMAKE_INSTALL_LIBDIR=lib \
               -DWITH_PYTHONQT:BOOL=OFF \
+              -DBoost_NO_BOOST_CMAKE=ON \
               -DSKIP_MODULES="webview interactiveterminal initramfs \
                               initramfscfg dracut dracutlukscfg \
                               dummyprocess dummypython dummycpp \
