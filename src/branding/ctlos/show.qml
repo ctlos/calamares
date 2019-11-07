@@ -29,7 +29,7 @@ Presentation
         repeat: true
         onTriggered: presentation.goToNextSlide()
     }
-    
+
     Slide {
         anchors.fill: parent
         Image {
@@ -53,15 +53,6 @@ Presentation
         Image {
             id: background3
             source: "slide2.png"
-            anchors.fill: parent
-        }
-    }
-
-    Slide {
-        anchors.fill: parent
-        Image {
-            id: background4
-            source: "slide3.png"
             anchors.fill: parent
         }
     }
