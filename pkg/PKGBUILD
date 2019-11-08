@@ -7,31 +7,14 @@ arch=('i686' 'x86_64')
 license=(GPL)
 url="https://github.com/ctlos/calamares"
 license=('LGPL')
-depends=('kconfig'
-         'kcoreaddons'
-         'kiconthemes'
-         'ki18n'
-         'kio'
-         'solid'
-         'yaml-cpp'
-         'kpmcore>=4.0.0'
-         'squashfs-tools'
-         'mkinitcpio-openswap'
-         'boost-libs'
-         'ckbcomp'
-         'hwinfo'
-         'qt5-svg'
-         'polkit-qt5'
-         'gtk-update-icon-cache'
-         'pythonqt>=3.2'
-         'plasma-framework'
-         'qt5-xmlpatterns')
-
-makedepends=('extra-cmake-modules'
-             'qt5-tools'
-             'qt5-translations'
-             'git'
-             'boost')
+depends=('kconfig' 'kcoreaddons' 'kiconthemes' 'ki18n' 'kio' 'solid' 'yaml-cpp' 'kpmcore>=3.3.0' 'mkinitcpio-openswap'
+         'boost-libs' 'ckbcomp' 'hwinfo' 'qt5-svg' 'polkit-qt5' 'gtk-update-icon-cache' 'plasma-framework'
+         'qt5-xmlpatterns' 'squashfs-tools') # 'pythonqt>=3.2')
+makedepends=('extra-cmake-modules' 'qt5-tools' 'qt5-translations' 'git' 'boost')
+backup=('usr/share/calamares/modules/bootloader.conf'
+        'usr/share/calamares/modules/displaymanager.conf'
+        'usr/share/calamares/modules/initcpio.conf'
+        'usr/share/calamares/modules/unpackfs.conf')
 
 source+=("https://github.com/calamares/calamares/releases/download/v${pkgver}/calamares-${pkgver}.tar.gz"
          git+https://github.com/ctlos/calamares#branch=master)
@@ -44,6 +27,10 @@ prepare() {
     rm -rf ${srcdir}/calamares
     cd ${srcdir}/calamares-${pkgver}
     sed -i -e 's/"Install configuration files" OFF/"Install configuration files" ON/' CMakeLists.txt
+
+    # change branding
+    sed -i -e "s/default/ctlos/g" src/branding/CMakeLists.txt
+
 }
 
 build() {
@@ -67,7 +54,7 @@ build() {
 package() {
     cd ${srcdir}/calamares-${pkgver}/build
     make DESTDIR="$pkgdir" install
-    install -Dm644 "../calamares.desktop" "$pkgdir/usr/share/applications/calamares.desktop"
+    install -Dm644 "../data/calamares.desktop" "$pkgdir/usr/share/applications/calamares.desktop"
     install -Dm755 "../data/calamares_polkit" "$pkgdir/usr/bin/calamares_polkit"
     install -Dm644 "../data/49-nopasswd-calamares.rules" "$pkgdir/etc/polkit-1/rules.d/49-nopasswd-calamares.rules"
     chmod 750 "$pkgdir"/etc/polkit-1/rules.d
