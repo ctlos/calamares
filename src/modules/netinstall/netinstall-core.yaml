@@ -1,8 +1,9 @@
 - name: "Default"
   description: "Default group"
-  hidden: true
-  selected: true
   critical: false
+  hidden: false
+  selected: true
+  expanded: true
   packages:
     - accountsservice
     - archlinux-appstream-data
