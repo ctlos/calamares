@@ -142,7 +142,6 @@
     - xf86-video-vesa
     - xf86-video-vmware
     - xf86-video-voodoo
-    - go
     - ttf-dejavu
     - bash-completion
     - zsh
