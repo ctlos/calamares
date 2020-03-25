@@ -1,7 +1,7 @@
 # Ctlos Calamares
 pkgname=calamares
 pkgver=3.2.20
-pkgrel=7
+pkgrel=8
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 license=(GPL)
@@ -59,7 +59,8 @@ package() {
     install -Dm644 "../data/49-nopasswd-calamares.rules" "$pkgdir/etc/polkit-1/rules.d/49-nopasswd-calamares.rules"
     chmod 750 "$pkgdir"/etc/polkit-1/rules.d
 
-    cp -r "../src/modules/netinstall/netinstall-base.yaml" "$pkgdir/usr/share/calamares/modules/netinstall-base.yaml"
-    cp -r "../src/modules/netinstall/netinstall-kernel.yaml" "$pkgdir/usr/share/calamares/modules/netinstall-kernel.yaml"
-    cp -r "../src/modules/netinstall/netinstall-internet.yaml" "$pkgdir/usr/share/calamares/modules/netinstall-internet.yaml"
+    cp -r "../src/modules/netinstall/netinstall.yaml" "$pkgdir/usr/share/calamares/modules/netinstall.yaml"
+    # cp -r "../src/modules/netinstall/netinstall-base.yaml" "$pkgdir/usr/share/calamares/modules/netinstall-base.yaml"
+    # cp -r "../src/modules/netinstall/netinstall-kernel.yaml" "$pkgdir/usr/share/calamares/modules/netinstall-kernel.yaml"
+    # cp -r "../src/modules/netinstall/netinstall-internet.yaml" "$pkgdir/usr/share/calamares/modules/netinstall-internet.yaml"
 }
