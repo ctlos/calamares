@@ -1,7 +1,7 @@
-- name: "Default"
-  description: "Default group"
+- name: "Base"
+  description: "Base Ctlos"
   critical: false
-  hidden: false
+  hidden: true
   selected: true
   expanded: true
   packages:
