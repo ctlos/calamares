@@ -1,7 +1,7 @@
 # Ctlos Calamares
 pkgname=calamares
 pkgver=3.2.20
-pkgrel=15
+pkgrel=16
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 license=(GPL)
@@ -60,7 +60,7 @@ package() {
     chmod 750 "$pkgdir"/etc/polkit-1/rules.d
 
     # cp -r "../src/modules/netinstall/netinstall.yaml" "$pkgdir/usr/share/calamares/modules/netinstall.yaml"
-    cp -r "../src/modules/netinstall/netinstall-base.yaml" "$pkgdir/usr/share/calamares/modules/netinstall-base.yaml"
     cp -r "../src/modules/netinstall/netinstall-kernel.yaml" "$pkgdir/usr/share/calamares/modules/netinstall-kernel.yaml"
-    cp -r "../src/modules/netinstall/netinstall-internet.yaml" "$pkgdir/usr/share/calamares/modules/netinstall-internet.yaml"
+    cp -r "../src/modules/netinstall/netinstall-desktop.yaml" "$pkgdir/usr/share/calamares/modules/netinstall-desktop.yaml"
+    cp -r "../src/modules/netinstall/netinstall-applications.yaml" "$pkgdir/usr/share/calamares/modules/netinstall-applications.yaml"
 }
