@@ -5,7 +5,6 @@
   selected: false
   expanded: true
   packages:
-  packages:
     - xfce4
     - galculator
     - mousepad
