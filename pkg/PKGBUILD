@@ -1,5 +1,5 @@
 # Ctlos Calamares
-pkgname=calamares
+pkgname=calamares-net
 pkgver=3.2.20
 pkgrel=20
 pkgdesc='Distribution-independent installer framework'
