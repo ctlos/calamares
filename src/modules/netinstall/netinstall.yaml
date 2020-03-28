@@ -74,7 +74,6 @@
     packages:
       - mate
       - mate-extra
-      - celluloid
       - network-manager-applet
   - name: "KDE Plasma"
     description: "Desktop environment"
@@ -120,7 +119,6 @@
       - gnome-terminal
       - gnome-system-monitor
       - gpicview-gtk3
-      - celluloid
       - x-apps
       - nemo-fileroller
       - nemo-image-converter
@@ -201,7 +199,7 @@
     selected: false
     expanded: true
     packages:
-      - firefox-i18n-$LOCALE
+      - firefox-i18n-${LOCALE}
       - chromium
       - brave
       - opera
@@ -290,14 +288,13 @@
       - digikam
       - krita
       - pinta
-  - name: "Usb"
+  - name: "Usb iso"
     description: "Usb"
     critical: false
     hidden: false
     selected: false
     packages:
       - etcher-bin
-      - imagewriter
       - woeusb
   - name: "Virtualbox"
     description: "Install virtualbox"
@@ -313,7 +310,11 @@
     hidden: false
     selected: false
     packages:
-    - cheese
-    - liferea
-    - mediainfo
-    - mcomix
+      - celluloid
+      - cheese
+      - liferea
+      - smplayer
+      - smplayer-skins
+      - smplayer-themes
+      - mcomix
+      - grub-customizer
