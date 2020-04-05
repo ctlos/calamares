@@ -29,6 +29,7 @@
       - nvidia
       - nvidia-settings
       - nvidia-utils
+      - lib32-nvidia-utils
   - name: "Nvidia-lts"
     description: "Install nvidia-lts"
     critical: false
@@ -38,6 +39,27 @@
       - nvidia-lts
       - nvidia-settings
       - nvidia-utils
+  - name: "Printing"
+    description: "Support for printing (Cups)"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+      - cups
+      - cups-filters
+      - cups-pdf
+      - ghostscript
+      - gsfonts
+      - foomatic-db
+      - foomatic-db-engine
+      - foomatic-db-ppds
+      - foomatic-db-nonfree
+      - foomatic-db-nonfree-ppds
+      - gutenprint
+      - foomatic-db-gutenprint-ppds
+      - system-config-printer
+      - hplip
+      - splix
 
 - name: "Desktop environment"
   description: "Install Desktop environment"
@@ -92,6 +114,8 @@
     packages:
       - budgie-desktop
       - gnome
+      - gnome-multi-writer
+      - gnome-usage
       - network-manager-applet
       - fwupd
   - name: "GNOME"
@@ -122,7 +146,6 @@
       - libpulse
       - libstatgrab
       - libsysstat
-      - lm_sensors
       - network-manager-applet
       - oxygen-icons
       - breeze
@@ -145,6 +168,7 @@
       - nemo-preview
       - nemo-seahorse
       - nemo-share
+      - blueberry
   - name: "Mate"
     description: "Desktop environment"
     hidden: false
@@ -162,6 +186,7 @@
     packages:
       - deepin
       - deepin-extra
+      - file-roller
   - name: "KDE Plasma"
     description: "Desktop environment"
     hidden: false
@@ -194,19 +219,19 @@
     packages:
       - firefox-i18n-${LOCALE}
       - chromium
-      - brave
+      - ungoogled-chromium-bin
       - opera
+      - brave-bin
       - qutebrowser
-      - tor-browser
       - hexchat
       - telegram-desktop
       - pidgin
       - falkon
       - filezilla
       - geary
+      - thunderbird
       - deluge
       - qbittorrent
-      - thunderbird
       - transmission-gtk
       - ktorrent
       - insync
@@ -233,12 +258,14 @@
     hidden: false
     selected: false
     packages:
+      - thunar
       - caja
       - dolphin
       - nautilus
       - nemo
       - nemo-fileroller
       - pcmanfm
+      - krusader
   - name: "Password Manager"
     description: "Password manager"
     critical: false
@@ -247,7 +274,6 @@
     packages:
       - bitwarden-bin
       - enpass-bin
-      - keepassxc
       - lastpass
   - name: "Fonts"
     description: "Fonts"
@@ -266,9 +292,7 @@
       - code
       - neovim
       - emacs
-      - gitahead-bin
       - gitg
-      - gitfiend
       - gitkraken
   - name: "Graphics"
     description: "Graphics"
@@ -281,29 +305,12 @@
       - digikam
       - krita
       - pinta
-  - name: "Usb iso"
-    description: "Usb"
-    critical: false
-    hidden: false
-    selected: false
-    packages:
-      - etcher-bin
-      - woeusb
-  - name: "Virtualbox"
-    description: "Install virtualbox"
-    critical: false
-    hidden: false
-    selected: false
-    packages:
-      - virtualbox
-      - virtualbox-host-dkms
   - name: "Accessories"
     description: "Accessories"
     critical: false
     hidden: false
     selected: false
     packages:
-      - celluloid
       - cheese
       - liferea
       - smplayer
@@ -312,3 +319,21 @@
       - mcomix
       - grub-customizer
       - gnome-disk-utility
+  - name: "Virtualbox"
+    description: "Install virtualbox"
+    critical: false
+    hidden: false
+    selected: false
+    packages:
+      - virtualbox
+      - virtualbox-host-dkms
+  - name: "Usb iso"
+    description: "Usb"
+    critical: false
+    hidden: false
+    selected: false
+    packages:
+      - gnome-multi-writer
+      - etcher-bin
+      - imagewriter
+      - woeusb
