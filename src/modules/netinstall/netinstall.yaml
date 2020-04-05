@@ -66,15 +66,14 @@
       - lxrandr
   - name: "Bspwm"
     description: "Tiling window manager"
-    hidden: true
+    hidden: false
     selected: false
     critical: false
     packages:
-      - bspwm
       - ctlos-bspwm-skel
   - name: "I3 wm"
     description: "Tiling window manager"
-    hidden: true
+    hidden: false
     selected: false
     critical: false
     packages:
