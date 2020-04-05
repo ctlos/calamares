@@ -52,45 +52,28 @@
     selected: false
     expanded: true
     packages:
-      - xfce4
-      - galculator
-      - mousepad
-      - xfce4-battery-plugin
-      - xfce4-mount-plugin
-      - xfce4-netload-plugin
-      - xfce4-notifyd
-      - xfce4-pulseaudio-plugin
-      - xfce4-screensaver
-      - xfce4-taskmanager
-      - xfce4-weather-plugin
-      - xfce4-whiskermenu-plugin
-      - xfce4-xkb-plugin
-      - network-manager-applet
-  - name: "Mate"
+      - ctlos-xfce-skel
+  - name: "Openbox"
+    description: "Window manager"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+      - openbox
+      - obconf
+      - lxappearance-obconf
+      - lxinput
+      - lxrandr
+  - name: "Budgie"
     description: "Desktop environment"
     hidden: false
     selected: false
     critical: false
     packages:
-      - mate
-      - mate-extra
+      - budgie-desktop
+      - gnome
       - network-manager-applet
-  - name: "KDE Plasma"
-    description: "Desktop environment"
-    hidden: false
-    selected: false
-    critical: false
-    packages:
-      - plasma
-      - packagekit-qt5
-      - kdeconnect
       - fwupd
-      - python-dbus
-      - kdebase-meta
-      - python-dbus
-      - gwenview
-      - ark
-      - okular
   - name: "GNOME"
     description: "Desktop environment"
     hidden: false
@@ -108,53 +91,6 @@
       - gnome-software-packagekit-plugin
       - gnome-packagekit
       - fwupd
-  - name: "Cinnamon"
-    description: "Desktop environment"
-    hidden: false
-    selected: false
-    critical: false
-    packages:
-      - cinnamon
-      - cinnamon-translations
-      - gnome-terminal
-      - gnome-system-monitor
-      - gpicview-gtk3
-      - x-apps
-      - nemo-fileroller
-      - nemo-image-converter
-      - nemo-preview
-      - nemo-seahorse
-      - nemo-share
-  - name: "Budgie"
-    description: "Desktop environment"
-    hidden: false
-    selected: false
-    critical: false
-    packages:
-      - budgie-desktop
-      - gnome
-      - network-manager-applet
-      - fwupd
-  - name: "Deepin"
-    description: "Desktop environment"
-    hidden: false
-    selected: false
-    critical: false
-    packages:
-      - deepin
-      - deepin-extra
-  - name: "Openbox"
-    description: "Window manager"
-    hidden: false
-    selected: false
-    critical: false
-    packages:
-      - openbox
-      - obconf
-      - lxappearance-obconf
-      - lxinput
-      - lxrandr
-      - arandr
   - name: "Lxqt"
     description: "Desktop environment"
     hidden: false
@@ -172,6 +108,63 @@
       - breeze
       - breeze-gtk
       - pavucontrol-qt
+  - name: "Cinnamon"
+    description: "Desktop environment"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+      - cinnamon
+      - cinnamon-translations
+      - gnome-terminal
+      - gnome-system-monitor
+      - gpicview-gtk3
+      - x-apps
+      - nemo-fileroller
+      - nemo-image-converter
+      - nemo-preview
+      - nemo-seahorse
+      - nemo-share
+  - name: "Mate"
+    description: "Desktop environment"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+      - mate
+      - mate-extra
+      - network-manager-applet
+  - name: "Deepin"
+    description: "Desktop environment"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+      - deepin
+      - deepin-extra
+  - name: "KDE Plasma"
+    description: "Desktop environment"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+      - plasma
+      - packagekit-qt5
+      - kdeconnect
+      - fwupd
+      - python-dbus
+      - kdebase-meta
+      - python-dbus
+      - gwenview
+      - ark
+      - okular
+  - name: "bspwm"
+    description: "Tiling window manager"
+    hidden: true
+    selected: false
+    critical: false
+    packages:
+      - ctlos-bspwm-skel
   - name: "i3"
     description: "Tiling window manager"
     hidden: true
@@ -180,7 +173,7 @@
     packages:
       - i3-wm
       - network-manager-applet
-      - arandr
+      - lxrandr
       - archlinux-xdg-menu
       - lxappearance-gtk3
       - polkit-gnome
@@ -318,3 +311,4 @@
       - smplayer-themes
       - mcomix
       - grub-customizer
+      - gnome-disk-utility
