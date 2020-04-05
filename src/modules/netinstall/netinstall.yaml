@@ -64,6 +64,27 @@
       - lxappearance-obconf
       - lxinput
       - lxrandr
+  - name: "Bspwm"
+    description: "Tiling window manager"
+    hidden: true
+    selected: false
+    critical: false
+    packages:
+      - bspwm
+      - ctlos-bspwm-skel
+  - name: "I3 wm"
+    description: "Tiling window manager"
+    hidden: true
+    selected: false
+    critical: false
+    packages:
+      - i3-wm
+      - network-manager-applet
+      - lxrandr
+      - archlinux-xdg-menu
+      - lxappearance-gtk3
+      - polkit-gnome
+      - pcmanfm
   - name: "Budgie"
     description: "Desktop environment"
     hidden: false
@@ -158,26 +179,6 @@
       - gwenview
       - ark
       - okular
-  - name: "bspwm"
-    description: "Tiling window manager"
-    hidden: true
-    selected: false
-    critical: false
-    packages:
-      - ctlos-bspwm-skel
-  - name: "i3"
-    description: "Tiling window manager"
-    hidden: true
-    selected: false
-    critical: false
-    packages:
-      - i3-wm
-      - network-manager-applet
-      - lxrandr
-      - archlinux-xdg-menu
-      - lxappearance-gtk3
-      - polkit-gnome
-      - pcmanfm
 
 - name: "Applications"
   description: "Install Applications"
