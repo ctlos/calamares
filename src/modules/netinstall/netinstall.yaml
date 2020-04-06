@@ -81,11 +81,7 @@
     selected: false
     critical: false
     packages:
-      - openbox
-      - obconf
-      - lxappearance-obconf
-      - lxinput
-      - lxrandr
+      - ctlos-openbox-skel
   - name: "Bspwm"
     description: "Tiling window manager"
     hidden: false
@@ -215,7 +211,6 @@
     selected: false
     expanded: true
     packages:
-      - firefox-i18n-${LOCALE}
       - chromium
       - ungoogled-chromium-bin
       - opera
@@ -233,7 +228,6 @@
       - qbittorrent
       - transmission-gtk
       - ktorrent
-      - insync
       - wireshark-qt
   - name: "Terminals"
     description: "Terminals"
@@ -387,7 +381,7 @@
     selected: false
     packages:
       - libreoffice-fresh
-      - libreoffice-fresh-${LOCALE}
+      - libreoffice-fresh-ru
   - name: "Libre Office Still"
     description: "Install libre office still"
     critical: false
@@ -395,4 +389,4 @@
     selected: false
     packages:
       - libreoffice-still
-      - libreoffice-still-${LOCALE}
+      - libreoffice-still-ru
