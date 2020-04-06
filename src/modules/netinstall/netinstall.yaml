@@ -95,11 +95,7 @@
     selected: false
     critical: false
     packages:
-      - i3-wm
-      - network-manager-applet
-      - lxrandr
-      - archlinux-xdg-menu
-      - lxappearance-gtk3
+      - ctlos-i3-skel
   - name: "Budgie"
     description: "Desktop environment"
     hidden: false
