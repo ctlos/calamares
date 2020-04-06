@@ -307,6 +307,9 @@
       - krita
       - gimp
       - pinta
+      - audacity
+      - kdenlive
+      - obs-studio
       - smplayer
       - smplayer-skins
       - smplayer-themes
@@ -353,7 +356,6 @@
       - gnome-chess
       - gnuchess
       - lutris
-      - minecraft-launcher
       - playonlinux
       - teeworlds
 
@@ -393,18 +395,3 @@
     packages:
       - libreoffice-still
       - libreoffice-still-${LOCALE}
-  - name: "WPS Office"
-    description: "Install WPS Office"
-    critical: false
-    hidden: false
-    selected: false
-    packages:
-      - wps-office
-      - ttf-wps-fonts
-  - name: "Onlyoffice"
-    description: "Install Onlyoffice"
-    hidden: false
-    selected: false
-    critical: false
-    packages:
-      - onlyoffice-bin
