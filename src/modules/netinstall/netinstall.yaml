@@ -234,6 +234,7 @@
       - transmission-gtk
       - ktorrent
       - insync
+      - wireshark-qt
   - name: "Terminals"
     description: "Terminals"
     critical: false
