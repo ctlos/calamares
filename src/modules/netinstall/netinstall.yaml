@@ -104,8 +104,6 @@
       - lxrandr
       - archlinux-xdg-menu
       - lxappearance-gtk3
-      - polkit-gnome
-      - pcmanfm
   - name: "Budgie"
     description: "Desktop environment"
     hidden: false
@@ -225,6 +223,7 @@
       - qutebrowser
       - hexchat
       - telegram-desktop
+      - discord
       - pidgin
       - falkon
       - filezilla
@@ -266,6 +265,8 @@
       - nemo-fileroller
       - pcmanfm
       - krusader
+      - catfish
+      - file-roller
   - name: "Password Manager"
     description: "Password manager"
     critical: false
@@ -294,8 +295,8 @@
       - emacs
       - gitg
       - gitkraken
-  - name: "Graphics"
-    description: "Graphics"
+  - name: "Graphics & Media"
+    description: "Graphics & Media"
     critical: false
     hidden: false
     selected: false
@@ -304,21 +305,25 @@
       - darktable
       - digikam
       - krita
+      - gimp
       - pinta
-  - name: "Accessories"
-    description: "Accessories"
+      - smplayer
+      - smplayer-skins
+      - smplayer-themes
+      - deadbeef
+      - lollypop
+  - name: "Other"
+    description: "Other"
     critical: false
     hidden: false
     selected: false
     packages:
-      - cheese
-      - liferea
-      - smplayer
-      - smplayer-skins
-      - smplayer-themes
-      - mcomix
       - grub-customizer
       - gnome-disk-utility
+      - sddm-config-editor-git
+      - cheese
+      - liferea
+      - mcomix
   - name: "Virtualbox"
     description: "Install virtualbox"
     critical: false
@@ -337,3 +342,69 @@
       - etcher-bin
       - imagewriter
       - woeusb
+  - name: "Games"
+    description: "Install Games pkg"
+    critical: false
+    hidden: false
+    selected: false
+    expanded: true
+    packages:
+      - extremetuxracer
+      - gnome-chess
+      - gnuchess
+      - lutris
+      - minecraft-launcher
+      - playonlinux
+      - teeworlds
+
+- name: "Office"
+  description: "Install Office pkg"
+  critical: false
+  hidden: false
+  selected: false
+  subgroups:
+  - name: "Abiword"
+    description: "Install abiword"
+    critical: false
+    hidden: false
+    selected: false
+    packages:
+      - abiword
+  - name: "Gnumeric"
+    description: "Install gnumeric"
+    critical: false
+    hidden: false
+    selected: false
+    packages:
+      - gnumeric
+  - name: "Libre Office Fresh"
+    description: "Install libre office fresh"
+    critical: false
+    hidden: false
+    selected: false
+    packages:
+      - libreoffice-fresh
+      - libreoffice-fresh-${LOCALE}
+  - name: "Libre Office Still"
+    description: "Install libre office still"
+    critical: false
+    hidden: false
+    selected: false
+    packages:
+      - libreoffice-still
+      - libreoffice-still-${LOCALE}
+  - name: "WPS Office"
+    description: "Install WPS Office"
+    critical: false
+    hidden: false
+    selected: false
+    packages:
+      - wps-office
+      - ttf-wps-fonts
+  - name: "Onlyoffice"
+    description: "Install Onlyoffice"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+      - onlyoffice-bin
