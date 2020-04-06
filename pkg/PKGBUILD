@@ -1,7 +1,7 @@
 # Ctlos Calamares
 pkgname=calamares-net
 pkgver=3.2.20
-pkgrel=27
+pkgrel=28
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 license=(GPL)
