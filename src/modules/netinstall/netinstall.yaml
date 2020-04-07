@@ -377,7 +377,7 @@
     selected: false
     packages:
       - libreoffice-fresh
-      - libreoffice-fresh-ru
+      - libreoffice-fresh-$LOCALE
   - name: "Libre Office Still"
     description: "Install libre office still"
     critical: false
@@ -385,4 +385,4 @@
     selected: false
     packages:
       - libreoffice-still
-      - libreoffice-still-ru
+      - libreoffice-still-${LOCALE}
