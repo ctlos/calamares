@@ -1,8 +1,44 @@
 #!/bin/bash
-if [ $(which pkexec) ]; then
-	# pkexec --disable-internal-agent "/usr/bin/calamares" "$@"
-	bash -c "sudo -E /usr/bin/calamares"
-else
-	/usr/bin/calamares "$@"
-fi
 
+online_method(){
+sudo cp -praf /usr/share/calamares/settings-online.conf /usr/share/calamares/settings.conf
+sudo cp -praf /usr/share/calamares/modules/packages-online.conf /usr/share/calamares/modules/packages.conf
+sudo cp -praf /usr/share/calamares/modules/welcome-online.conf /usr/share/calamares/modules/welcome.conf
+}
+
+offline_method(){
+sudo cp -praf /usr/share/calamares/settings-offline.conf /usr/share/calamares/settings.conf
+sudo cp -praf /usr/share/calamares/modules/packages-offline.conf /usr/share/calamares/modules/packages.conf
+sudo cp -praf /usr/share/calamares/modules/welcome-offline.conf /usr/share/calamares/modules/welcome.conf
+}
+
+run_calamares(){
+  if [ $(which pkexec) ]; then
+    # pkexec --disable-internal-agent "/usr/bin/calamares" "$@"
+    bash -c "sudo -E /usr/bin/calamares"
+  else
+    sudo -E /usr/bin/calamares
+  fi
+}
+
+install_method(){
+  yad --center --borders=20 \
+  --image=gtk-dialog-question \
+  --title="Installation metod" \
+  --text="<span font=\"12\">Выберите метод установки\n(Choose installation method)\n</span>" \
+  --button="Online":1 \
+  --button="Offline":2
+
+ANSWER=$?
+
+  if [[ $ANSWER == "1" ]]; then
+    online_method
+    run_calamares
+  fi
+  if [[ $ANSWER == "2" ]]; then
+    offline_method
+    run_calamares
+  fi
+}
+
+install_method

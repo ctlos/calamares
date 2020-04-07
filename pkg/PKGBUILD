@@ -1,7 +1,7 @@
 # Ctlos Calamares
 pkgname=calamares-net
 pkgver=3.2.20
-pkgrel=28
+pkgrel=29
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 license=(GPL)
@@ -9,7 +9,7 @@ url="https://github.com/ctlos/calamares"
 license=('LGPL')
 depends=('kconfig' 'kcoreaddons' 'kiconthemes' 'ki18n' 'kio' 'solid' 'yaml-cpp' 'kpmcore>=3.3.0' 'mkinitcpio-openswap'
          'boost-libs' 'ckbcomp' 'hwinfo' 'qt5-svg' 'polkit-qt5' 'gtk-update-icon-cache' 'plasma-framework'
-         'qt5-xmlpatterns' 'squashfs-tools') # 'pythonqt>=3.2')
+         'qt5-xmlpatterns' 'squashfs-tools' 'yad') # 'pythonqt>=3.2')
 makedepends=('extra-cmake-modules' 'qt5-tools' 'qt5-translations' 'git' 'boost')
 backup=('usr/share/calamares/modules/bootloader.conf'
         'usr/share/calamares/modules/displaymanager.conf'
