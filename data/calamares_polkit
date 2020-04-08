@@ -24,7 +24,7 @@ run_calamares(){
 install_method(){
   yad --center --borders=20 \
   --image=gtk-dialog-question \
-  --title="Installation metod" \
+  --title="Installation method" \
   --text="<span font=\"12\">Выберите метод установки\n(Choose installation method)\n</span>" \
   --button="Online":1 \
   --button="Offline":2

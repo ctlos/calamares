@@ -1,7 +1,7 @@
 # Ctlos Calamares
 pkgname=calamares-net
 pkgver=3.2.20
-pkgrel=31
+pkgrel=32
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 license=(GPL)
@@ -70,7 +70,7 @@ package() {
 
 
     cp -r ../src/modules/netinstall/netinstall.yaml $pkgdir/usr/share/calamares/modules/netinstall.yaml
-    # cp -r "../src/modules/netinstall/netinstall-kernel.yaml" "$pkgdir/usr/share/calamares/modules/netinstall-kernel.yaml"
-    # cp -r "../src/modules/netinstall/netinstall-desktop.yaml" "$pkgdir/usr/share/calamares/modules/netinstall-desktop.yaml"
-    # cp -r "../src/modules/netinstall/netinstall-applications.yaml" "$pkgdir/usr/share/calamares/modules/netinstall-applications.yaml"
+    # cp -r ../src/modules/netinstall/netinstall-kernel.yaml $pkgdir/usr/share/calamares/modules/netinstall-kernel.yaml
+    # cp -r ../src/modules/netinstall/netinstall-desktop.yaml $pkgdir/usr/share/calamares/modules/netinstall-desktop.yaml
+    # cp -r ../src/modules/netinstall/netinstall-applications.yaml $pkgdir/usr/share/calamares/modules/netinstall-applications.yaml
 }
