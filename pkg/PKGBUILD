@@ -1,7 +1,7 @@
 # Ctlos Calamares
 pkgname=calamares-net
 pkgver=3.2.20
-pkgrel=29
+pkgrel=30
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 license=(GPL)
@@ -11,6 +11,7 @@ depends=('kconfig' 'kcoreaddons' 'kiconthemes' 'ki18n' 'kio' 'solid' 'yaml-cpp' 
          'boost-libs' 'ckbcomp' 'hwinfo' 'qt5-svg' 'polkit-qt5' 'gtk-update-icon-cache' 'plasma-framework'
          'qt5-xmlpatterns' 'squashfs-tools' 'yad') # 'pythonqt>=3.2')
 makedepends=('extra-cmake-modules' 'qt5-tools' 'qt5-translations' 'git' 'boost')
+conflicts=('calamares')
 backup=('usr/share/calamares/modules/bootloader.conf'
         'usr/share/calamares/modules/displaymanager.conf'
         'usr/share/calamares/modules/initcpio.conf'
@@ -24,6 +25,10 @@ sha256sums=('SKIP'
 
 prepare() {
     cp -a ${srcdir}/calamares/* ${srcdir}/calamares-${pkgver}
+    cp -r ${srcdir}/calamares/settings-offline.conf ${srcdir}/calamares-${pkgver}/settings.conf
+    cp -r ${srcdir}/calamares/src/modules/packages/packages-offline.conf ${srcdir}/calamares-${pkgver}/src/modules/packages/packages.conf
+    cp -r ${srcdir}/calamares/src/modules/welcome/welcome-offline.conf ${srcdir}/calamares-${pkgver}/src/modules/welcome/welcome.conf
+
     rm -rf ${srcdir}/calamares
     cd ${srcdir}/calamares-${pkgver}
     sed -i -e 's/"Install configuration files" OFF/"Install configuration files" ON/' CMakeLists.txt
@@ -58,6 +63,11 @@ package() {
     install -Dm755 "../data/calamares_polkit" "$pkgdir/usr/bin/calamares_polkit"
     install -Dm644 "../data/49-nopasswd-calamares.rules" "$pkgdir/etc/polkit-1/rules.d/49-nopasswd-calamares.rules"
     chmod 750 "$pkgdir"/etc/polkit-1/rules.d
+
+    cp -r "../settings-{on,off}line.conf" "$pkgdir/usr/share/calamares/"
+    cp -r "../src/modules/packages/packages-{on,off}line.conf" "$pkgdir/usr/share/calamares/modules/"
+    cp -r "../src/modules/welcome/welcome-{on,off}line.conf" "$pkgdir/usr/share/calamares/modules/"
+
 
     cp -r "../src/modules/netinstall/netinstall.yaml" "$pkgdir/usr/share/calamares/modules/netinstall.yaml"
     # cp -r "../src/modules/netinstall/netinstall-kernel.yaml" "$pkgdir/usr/share/calamares/modules/netinstall-kernel.yaml"
