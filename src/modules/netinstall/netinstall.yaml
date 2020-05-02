@@ -257,15 +257,6 @@
       - krusader
       - catfish
       - file-roller
-  - name: "Password Manager"
-    description: "Password manager"
-    critical: false
-    hidden: false
-    selected: false
-    packages:
-      - bitwarden-bin
-      - enpass-bin
-      - lastpass
   - name: "Fonts"
     description: "Fonts"
     critical: false
@@ -273,7 +264,6 @@
     selected: false
     packages:
       - terminus-font
-      - noto-fonts-emoji
   - name: "Dev Tools"
     description: "Development"
     critical: false
@@ -299,9 +289,6 @@
       - audacity
       - kdenlive
       - obs-studio
-      - smplayer
-      - smplayer-skins
-      - smplayer-themes
       - deadbeef
       - lollypop
   - name: "Other"
@@ -375,7 +362,7 @@
     selected: false
     packages:
       - libreoffice-fresh
-      - libreoffice-fresh-$LOCALE
+      # - libreoffice-fresh-$LOCALE
   - name: "Libre Office Still"
     description: "Install libre office still"
     critical: false
@@ -383,4 +370,4 @@
     selected: false
     packages:
       - libreoffice-still
-      - libreoffice-still-${LOCALE}
+      # - libreoffice-still-${LOCALE}
