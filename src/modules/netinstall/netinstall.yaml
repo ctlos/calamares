@@ -208,7 +208,6 @@
     expanded: true
     packages:
       - chromium
-      - ungoogled-chromium-bin
       - opera
       - brave-bin
       - qutebrowser
@@ -285,7 +284,6 @@
       - neovim
       - emacs
       - gitg
-      - gitkraken
   - name: "Graphics & Media"
     description: "Graphics & Media"
     critical: false
