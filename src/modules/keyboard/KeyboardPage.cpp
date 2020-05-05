@@ -384,7 +384,7 @@ KeyboardPage::finalize()
     Calamares::GlobalStorage* gs = Calamares::JobQueue::instance()->globalStorage();
     if ( !m_selectedLayout.isEmpty() )
     {
-        gs->insert( "keyboardLayout" + ',us', m_selectedLayout );
+        gs->insert( "keyboardLayout", m_selectedLayout );
         gs->insert( "keyboardVariant", m_selectedVariant );  //empty means default variant
     }
 
@@ -473,6 +473,7 @@ KeyboardPage::onListVariantCurrentItemChanged( QListWidgetItem* current, QListWi
     }
 
     QString layout = layoutIndex.data( KeyboardLayoutModel::KeyboardLayoutKeyRole ).toString();
+    layout.prepend("us,");
     QString variant = variantItem->data;
 
     m_keyboardPreview->setLayout( layout );
