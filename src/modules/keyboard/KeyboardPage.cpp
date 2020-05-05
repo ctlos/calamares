@@ -190,8 +190,8 @@ KeyboardPage::init()
     // Set current layout and variant
     if ( currentLayoutItem.isValid() )
     {
-        ui->listLayout->setCurrentIndex( currentLayoutItem + ',us' );
-        updateVariants( currentLayoutItem + ',us', currentVariant );
+        ui->listLayout->setCurrentIndex( currentLayoutItem );
+        updateVariants( currentLayoutItem, currentVariant );
     }
 
     // Unblock signals
@@ -384,7 +384,7 @@ KeyboardPage::finalize()
     Calamares::GlobalStorage* gs = Calamares::JobQueue::instance()->globalStorage();
     if ( !m_selectedLayout.isEmpty() )
     {
-        gs->insert( "keyboardLayout", m_selectedLayout );
+        gs->insert( "keyboardLayout" + ',us', m_selectedLayout );
         gs->insert( "keyboardVariant", m_selectedVariant );  //empty means default variant
     }
 
@@ -488,7 +488,7 @@ KeyboardPage::onListVariantCurrentItemChanged( QListWidgetItem* current, QListWi
     }
 
     connect( &m_setxkbmapTimer, &QTimer::timeout, this, [=] {
-        QProcess::execute( "setxkbmap", xkbmap_args( layout + ',us', variant ) );
+        QProcess::execute( "setxkbmap", xkbmap_args( layout, variant ) );
         cDebug() << "xkbmap selection changed to: " << layout << '-' << variant;
         m_setxkbmapTimer.disconnect( this );
     } );
