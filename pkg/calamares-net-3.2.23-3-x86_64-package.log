@@ -1,0 +1,435 @@
+[  1%] Built target txload
+[  1%] Automatic MOC for target calamares
+[  1%] Built target calamares_autogen
+[ 10%] Built target calamares
+[ 10%] Automatic MOC for target test_geoip
+[ 10%] Built target test_geoip_autogen
+[ 11%] Built target test_geoip
+[ 12%] Automatic MOC for target geoiptest
+[ 12%] Built target geoiptest_autogen
+[ 12%] Built target geoiptest
+[ 13%] Automatic MOC for target libcalamaresnetworktest
+[ 13%] Built target libcalamaresnetworktest_autogen
+[ 13%] Built target libcalamaresnetworktest
+[ 13%] Automatic MOC for target libcalamarestestpaths
+[ 13%] Built target libcalamarestestpaths_autogen
+[ 14%] Built target libcalamarestestpaths
+[ 14%] Automatic MOC for target libcalamarespartitiontest
+[ 14%] Built target libcalamarespartitiontest_autogen
+[ 14%] Built target libcalamarespartitiontest
+[ 14%] Automatic MOC for target libcalamarestest
+[ 14%] Built target libcalamarestest_autogen
+[ 15%] Built target libcalamarestest
+[ 15%] Automatic MOC for target libcalamareslocaletest
+[ 15%] Built target libcalamareslocaletest_autogen
+[ 16%] Built target libcalamareslocaletest
+[ 16%] Automatic MOC for target libcalamaresmodulesystemtest
+[ 16%] Built target libcalamaresmodulesystemtest_autogen
+[ 17%] Built target libcalamaresmodulesystemtest
+[ 17%] Automatic MOC for target calamaresui
+[ 17%] Built target calamaresui_autogen
+[ 22%] Built target calamaresui
+[ 22%] Built target loadmodule
+[ 22%] Automatic MOC and UIC for target calamares_bin
+[ 32%] Built target calamares_bin_autogen
+[ 45%] Built target calamares_bin
+[ 45%] Built target test_conf
+[ 45%] Automatic MOC for target contextualprocesstest
+[ 45%] Built target contextualprocesstest_autogen
+[ 46%] Built target contextualprocesstest
+[ 46%] Automatic MOC for target calamares_job_contextualprocess
+[ 46%] Built target calamares_job_contextualprocess_autogen
+[ 47%] Built target calamares_job_contextualprocess
+[ 47%] Automatic MOC and UIC for target calamares_viewmodule_finished
+[ 47%] Built target calamares_viewmodule_finished_autogen
+[ 47%] Built target calamares_viewmodule_finished
+[ 47%] Automatic MOC for target calamares_job_fsresizer
+[ 47%] Built target calamares_job_fsresizer_autogen
+[ 48%] Built target calamares_job_fsresizer
+[ 48%] Automatic MOC for target fsresizertest
+[ 48%] Built target fsresizertest_autogen
+[ 49%] Built target fsresizertest
+[ 50%] Automatic MOC for target calamares_job_hostinfo
+[ 50%] Built target calamares_job_hostinfo_autogen
+[ 50%] Built target calamares_job_hostinfo
+[ 51%] Automatic MOC for target hostinfotest
+[ 51%] Built target hostinfotest_autogen
+[ 51%] Built target hostinfotest
+[ 51%] Automatic MOC for target calamares_job_initcpio
+[ 51%] Built target calamares_job_initcpio_autogen
+[ 51%] Built target calamares_job_initcpio
+[ 51%] Automatic MOC for target initcpiotest
+[ 51%] Built target initcpiotest_autogen
+[ 51%] Built target initcpiotest
+[ 52%] Automatic MOC and UIC for target calamares_viewmodule_keyboard
+[ 52%] Built target calamares_viewmodule_keyboard_autogen
+[ 54%] Built target calamares_viewmodule_keyboard
+[ 54%] Automatic MOC for target calamares_viewmodule_keyboardq
+[ 54%] Built target calamares_viewmodule_keyboardq_autogen
+[ 55%] Built target calamares_viewmodule_keyboardq
+[ 56%] Automatic MOC and UIC for target calamares_viewmodule_license
+[ 56%] Built target calamares_viewmodule_license_autogen
+[ 57%] Built target calamares_viewmodule_license
+[ 57%] Automatic MOC for target calamares_viewmodule_locale
+[ 57%] Built target calamares_viewmodule_locale_autogen
+[ 59%] Built target calamares_viewmodule_locale
+[ 59%] Automatic MOC for target localetest
+[ 59%] Built target localetest_autogen
+[ 60%] Built target localetest
+[ 60%] Automatic MOC for target calamares_viewmodule_localeq
+[ 60%] Built target calamares_viewmodule_localeq_autogen
+[ 62%] Built target calamares_viewmodule_localeq
+[ 62%] Automatic MOC for target calamares_job_luksbootkeyfile
+[ 62%] Built target calamares_job_luksbootkeyfile_autogen
+[ 63%] Built target calamares_job_luksbootkeyfile
+[ 63%] Automatic MOC for target machineidtest
+[ 63%] Built target machineidtest_autogen
+[ 64%] Built target machineidtest
+[ 64%] Automatic MOC for target calamares_job_machineid
+[ 64%] Built target calamares_job_machineid_autogen
+[ 65%] Built target calamares_job_machineid
+[ 65%] Automatic MOC and UIC for target calamares_viewmodule_netinstall
+[ 65%] Built target calamares_viewmodule_netinstall_autogen
+[ 66%] Built target calamares_viewmodule_netinstall
+[ 67%] Automatic MOC for target netinstalltest
+[ 67%] Built target netinstalltest_autogen
+[ 68%] Built target netinstalltest
+[ 68%] Automatic MOC for target calamares_viewmodule_notesqml
+[ 68%] Built target calamares_viewmodule_notesqml_autogen
+[ 69%] Built target calamares_viewmodule_notesqml
+[ 69%] Automatic MOC and UIC for target calamares_viewmodule_oemid
+[ 69%] Built target calamares_viewmodule_oemid_autogen
+[ 70%] Built target calamares_viewmodule_oemid
+[ 70%] Automatic MOC and UIC for target calamares_viewmodule_packagechooser
+[ 70%] Built target calamares_viewmodule_packagechooser_autogen
+[ 72%] Built target calamares_viewmodule_packagechooser
+[ 72%] Automatic MOC for target packagechoosertest
+[ 72%] Built target packagechoosertest_autogen
+[ 72%] Built target packagechoosertest
+[ 72%] Automatic MOC and UIC for target calamares_viewmodule_partition
+[ 72%] Built target calamares_viewmodule_partition_autogen
+[ 81%] Built target calamares_viewmodule_partition
+[ 81%] Automatic MOC for target clearmountsjobtests
+[ 81%] Built target clearmountsjobtests_autogen
+[ 82%] Built target clearmountsjobtests
+[ 82%] Automatic MOC for target partitionjobtests
+[ 82%] Built target partitionjobtests_autogen
+[ 84%] Built target partitionjobtests
+[ 85%] Automatic MOC and UIC for target calamares_viewmodule_plasmalnf
+[ 85%] Built target calamares_viewmodule_plasmalnf_autogen
+[ 86%] Built target calamares_viewmodule_plasmalnf
+[ 86%] Automatic MOC for target calamares_job_preservefiles
+[ 86%] Built target calamares_job_preservefiles_autogen
+[ 87%] Built target calamares_job_preservefiles
+[ 87%] Automatic MOC for target calamares_job_removeuser
+[ 87%] Built target calamares_job_removeuser_autogen
+[ 88%] Built target calamares_job_removeuser
+[ 88%] Automatic MOC for target shellprocesstest
+[ 88%] Built target shellprocesstest_autogen
+[ 89%] Built target shellprocesstest
+[ 90%] Automatic MOC for target calamares_job_shellprocess
+[ 90%] Built target calamares_job_shellprocess_autogen
+[ 90%] Built target calamares_job_shellprocess
+[ 91%] Automatic MOC for target calamares_viewmodule_summary
+[ 91%] Built target calamares_viewmodule_summary_autogen
+[ 91%] Built target calamares_viewmodule_summary
+[ 91%] Automatic MOC and UIC for target calamares_viewmodule_tracking
+[ 91%] Built target calamares_viewmodule_tracking_autogen
+[ 92%] Built target calamares_viewmodule_tracking
+[ 92%] Automatic MOC and UIC for target calamares_viewmodule_users
+[ 92%] Built target calamares_viewmodule_users_autogen
+[ 94%] Built target calamares_viewmodule_users
+[ 95%] Automatic MOC for target userspasswordtest
+[ 95%] Built target userspasswordtest_autogen
+[ 95%] Built target userspasswordtest
+[ 96%] Automatic MOC for target userstest
+[ 96%] Built target userstest_autogen
+[ 96%] Built target userstest
+[ 97%] Automatic MOC and UIC for target calamares_viewmodule_welcome
+[ 97%] Built target calamares_viewmodule_welcome_autogen
+[ 99%] Built target calamares_viewmodule_welcome
+[ 99%] Automatic MOC for target calamares_viewmodule_welcomeq
+[ 99%] Built target calamares_viewmodule_welcomeq_autogen
+[100%] Built target calamares_viewmodule_welcomeq
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/cmake/Calamares/CalamaresConfig.cmake
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/cmake/Calamares/CalamaresConfigVersion.cmake
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/cmake/Calamares/CalamaresUse.cmake
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/cmake/Calamares/CalamaresAddBrandingSubdirectory.cmake
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/cmake/Calamares/CalamaresAddLibrary.cmake
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/cmake/Calamares/CalamaresAddModuleSubdirectory.cmake
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/cmake/Calamares/CalamaresAddPlugin.cmake
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/cmake/Calamares/CalamaresAddTest.cmake
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/cmake/Calamares/CalamaresAddTranslations.cmake
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/cmake/Calamares/CalamaresAutomoc.cmake
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/cmake/Calamares/CMakeColors.cmake
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/cmake/Calamares/CalamaresLibraryDepends.cmake
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/cmake/Calamares/CalamaresLibraryDepends-release.cmake
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/settings.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/polkit-1/actions/com.github.calamares.calamares.policy
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/applications/calamares.desktop
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/man/man8/calamares.8
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/libcalamares.so.3.2.23
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/libcalamares.so.3.2.23" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/libcalamares.so
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/CalamaresConfig.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/CppJob.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/DllMacro.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/GlobalStorage.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/Job.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/JobExample.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/JobQueue.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/ProcessJob.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/PythonHelper.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/PythonJob.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/PythonJobApi.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/Settings.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/utils/BoostPython.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/utils/CalamaresUtilsSystem.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/utils/CommandList.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/utils/Dirs.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/utils/Entropy.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/utils/Logger.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/utils/NamedEnum.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/utils/NamedSuffix.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/utils/PluginFactory.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/utils/RAII.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/utils/Retranslator.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/utils/String.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/utils/Tests.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/utils/UMask.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/utils/Units.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/utils/Variant.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/utils/Yaml.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/include/libcalamares/utils/moc-warnings.h
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/libcalamaresui.so.3.2.23
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/libcalamaresui.so.3.2.23" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/libcalamaresui.so
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/qml/calamares/slideshow/BackButton.qml
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/qml/calamares/slideshow/ForwardButton.qml
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/qml/calamares/slideshow/NavButton.qml
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/qml/calamares/slideshow/Presentation.qml
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/qml/calamares/slideshow/Slide.qml
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/qml/calamares/slideshow/SlideCounter.qml
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/qml/calamares/slideshow/qmldir
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/bin/calamares
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/bin/calamares" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/icons/hicolor/scalable/apps/calamares.svg
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/bootloader.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/bootloader/main.py
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/bootloader/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/bootloader/test.yaml
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/displaymanager.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/displaymanager/main.py
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/displaymanager/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/fstab.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/fstab/main.py
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/fstab/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/fstab/test.yaml
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/grubcfg.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/grubcfg/main.py
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/grubcfg/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/hwclock/main.py
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/hwclock/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/initcpiocfg/main.py
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/initcpiocfg/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/localecfg/main.py
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/localecfg/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/luksopenswaphookcfg.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/luksopenswaphookcfg/main.py
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/luksopenswaphookcfg/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/mount/main.py
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/mount/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/mount.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/mount/test.yaml
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/networkcfg/main.py
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/networkcfg/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/openrcdmcryptcfg/main.py
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/openrcdmcryptcfg/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/openrcdmcryptcfg.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/packages/main.py
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/packages/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/packages-offline.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/packages-online.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/packages.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/packages/test.yaml
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/plymouthcfg/main.py
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/plymouthcfg/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/plymouthcfg.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/rawfs/main.py
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/rawfs/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/rawfs.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/umount/main.py
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/umount/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/umount.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/unpackfs/main.py
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/unpackfs/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/unpackfs/runtests.sh
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/unpackfs.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/ar/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/as/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/ast/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/be/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/bg/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/ca/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/cs_CZ/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/da/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/de/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/el/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/en_GB/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/eo/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/es/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/es_MX/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/es_PR/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/et/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/eu/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/fi_FI/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/fr/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/gl/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/he/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/hi/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/hr/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/hu/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/id/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/is/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/it_IT/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/ja/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/ko/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/lt/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/ml/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/mr/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/nb/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/nl/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/pl/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/pt_BR/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/pt_PT/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/ro/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/ru/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/sk/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/sl/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/sq/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/sr/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/sr@latin/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/sv/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/th/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/tr_TR/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/uk/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/zh_CN/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/locale/zh_TW/LC_MESSAGES/calamares-python.mo
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/contextualprocess/libcalamares_job_contextualprocess.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/contextualprocess/libcalamares_job_contextualprocess.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/contextualprocess/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/contextualprocess.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/finished/libcalamares_viewmodule_finished.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/finished/libcalamares_viewmodule_finished.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/finished/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/finished.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/fsresizer/libcalamares_job_fsresizer.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/fsresizer/libcalamares_job_fsresizer.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/fsresizer/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/fsresizer.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/hostinfo/libcalamares_job_hostinfo.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/hostinfo/libcalamares_job_hostinfo.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/hostinfo/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/initcpio/libcalamares_job_initcpio.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/initcpio/libcalamares_job_initcpio.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/initcpio/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/initcpio.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/keyboard/libcalamares_viewmodule_keyboard.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/keyboard/libcalamares_viewmodule_keyboard.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/keyboard/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/keyboard.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/keyboardq/libcalamares_viewmodule_keyboardq.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/keyboardq/libcalamares_viewmodule_keyboardq.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/keyboardq/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/keyboardq.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/license/libcalamares_viewmodule_license.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/license/libcalamares_viewmodule_license.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/license/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/license.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/locale/libcalamares_viewmodule_locale.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/locale/libcalamares_viewmodule_locale.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/locale/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/locale.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/localeq/libcalamares_viewmodule_localeq.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/localeq/libcalamares_viewmodule_localeq.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/localeq/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/localeq.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/luksbootkeyfile/libcalamares_job_luksbootkeyfile.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/luksbootkeyfile/libcalamares_job_luksbootkeyfile.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/luksbootkeyfile/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/machineid/libcalamares_job_machineid.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/machineid/libcalamares_job_machineid.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/machineid/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/machineid.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/netinstall/libcalamares_viewmodule_netinstall.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/netinstall/libcalamares_viewmodule_netinstall.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/netinstall/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/netinstall-applications.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/netinstall-desktop.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/netinstall-kernel.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/netinstall.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/notesqml/libcalamares_viewmodule_notesqml.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/notesqml/libcalamares_viewmodule_notesqml.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/notesqml/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/notesqml.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/oemid/libcalamares_viewmodule_oemid.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/oemid/libcalamares_viewmodule_oemid.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/oemid/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/oemid.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/packagechooser/libcalamares_viewmodule_packagechooser.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/packagechooser/libcalamares_viewmodule_packagechooser.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/packagechooser/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/packagechooser.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/partition/libcalamares_viewmodule_partition.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/partition/libcalamares_viewmodule_partition.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/partition/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/partition.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/plasmalnf/libcalamares_viewmodule_plasmalnf.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/plasmalnf/libcalamares_viewmodule_plasmalnf.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/plasmalnf/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/plasmalnf.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/preservefiles/libcalamares_job_preservefiles.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/preservefiles/libcalamares_job_preservefiles.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/preservefiles/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/preservefiles.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/removeuser/libcalamares_job_removeuser.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/removeuser/libcalamares_job_removeuser.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/removeuser/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/removeuser.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/shellprocess/libcalamares_job_shellprocess.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/shellprocess/libcalamares_job_shellprocess.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/shellprocess/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/shellprocess.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/shellprocess_default.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/shellprocess_keyboard.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/summary/libcalamares_viewmodule_summary.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/summary/libcalamares_viewmodule_summary.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/summary/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/tracking/libcalamares_viewmodule_tracking.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/tracking/libcalamares_viewmodule_tracking.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/tracking/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/tracking.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/users/libcalamares_viewmodule_users.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/users/libcalamares_viewmodule_users.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/users/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/users.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/welcome/libcalamares_viewmodule_welcome.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/welcome/libcalamares_viewmodule_welcome.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/welcome/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/welcome-offline.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/welcome-online.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/welcome.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/welcomeq/libcalamares_viewmodule_welcomeq.so
+-- Set runtime path of "/build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/welcomeq/libcalamares_viewmodule_welcomeq.so" to ""
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/lib/calamares/modules/welcomeq/module.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/modules/welcomeq.conf
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/branding/ctlos/branding.desc
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/branding/ctlos/languages.png
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/branding/ctlos/logo.png
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/branding/ctlos/show.qml
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/branding/ctlos/slide.png
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/branding/ctlos/slide.png.xmp
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/branding/ctlos/slide1.png
+-- Installing: /build/calamares-net/pkg/calamares-net/usr/share/calamares/branding/ctlos/slide2.png

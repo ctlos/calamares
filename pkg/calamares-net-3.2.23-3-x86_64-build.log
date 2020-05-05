@@ -1,0 +1,1369 @@
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GNU g++ 9.3.0, enabling colorized error messages.
+-- Esperanto support since Qt 5.12.2, enabling Esperanto locale
+-- Found YAMLCPP: /usr/include (Required is at least version "0.5.1") 
+-- Installing in the same prefix as Qt, adopting their path scheme.
+CMake Warning (dev) at /usr/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (KF5CoreAddons) does not match the name of the calling package (KF5).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/ECM/find-modules/FindKF5.cmake:78 (find_package_handle_standard_args)
+  CMakeLists.txt:292 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found KF5CoreAddons: /usr/lib64/cmake/KF5CoreAddons/KF5CoreAddonsConfig.cmake (found version "5.69.0") 
+CMake Warning (dev) at /usr/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (KF5Crash)
+  does not match the name of the calling package (KF5).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/ECM/find-modules/FindKF5.cmake:78 (find_package_handle_standard_args)
+  CMakeLists.txt:292 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found KF5Crash: /usr/lib64/cmake/KF5Crash/KF5CrashConfig.cmake (found version "5.69.0") 
+-- Found PythonLibs: /usr/lib/libpython3.8.so (found suitable version "3.8.2", minimum required is "3.3") 
+CMake Warning at /usr/share/cmake-3.17/Modules/FindBoost.cmake:2003 (message):
+  No header defined for PYTHON3; skipping header check (note: header-only
+  libraries have no designated component)
+Call Stack (most recent call first):
+  CMakeModules/BoostPython3.cmake:74 (find_package)
+  CMakeLists.txt:322 (find_boost_python3)
+
+
+-- Found Boost: /usr/include (found suitable version "1.72.0", minimum required is "1.55.0") found components: PYTHON3 
+-- Found PythonLibs: /usr/lib/libpython3.8.so (found version "3.8.2") 
+-- Searching for PythonQt (PythonLibs 3.8) ..
+-- PythonQt not found, missing components includes;library;qtall
+-- Disabling PythonQt modules
+-- Found Gettext: /usr/bin/msgmerge (found version "0.20.2") 
+CMake Warning (dev) at /usr/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (KF5I18n)
+  does not match the name of the calling package (KF5).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/ECM/find-modules/FindKF5.cmake:78 (find_package_handle_standard_args)
+  src/libcalamares/CMakeLists.txt:133 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found KF5I18n: /usr/lib64/cmake/KF5I18n/KF5I18nConfig.cmake (found version "5.69.0") 
+CMake Warning (dev) at /usr/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (KF5WidgetsAddons) does not match the name of the calling package (KF5).
+  This can lead to problems in calling code that expects `find_package`
+  result variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/ECM/find-modules/FindKF5.cmake:78 (find_package_handle_standard_args)
+  src/libcalamares/CMakeLists.txt:133 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found KF5WidgetsAddons: /usr/lib64/cmake/KF5WidgetsAddons/KF5WidgetsAddonsConfig.cmake (found version "5.69.0") 
+-- Found KF5: success (found version "5.69.0") found components: I18n WidgetsAddons 
+-- [1;33mConfigured QML module: [1;31mcalamares.slideshow[m
+
+-- [1;33mFound Calamares module: [1;31mbootloader[m
+   [32mTYPE:[m jobmodule
+   [32mMODULE_DESTINATION:[m lib/calamares/modules/bootloader
+   [32mCONFIGURATION_FILES:[m bootloader.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31mcontextualprocess[m
+   [32mTYPE:[m job
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamares
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/contextualprocess
+   [32mCONFIGURATION_FILES:[m contextualprocess.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31mdisplaymanager[m
+   [32mTYPE:[m jobmodule
+   [32mMODULE_DESTINATION:[m lib/calamares/modules/displaymanager
+   [32mCONFIGURATION_FILES:[m displaymanager.conf => share/calamares/modules
+
+[m-- Skipping module [1;31mdracut[m.
+
+[m-- Skipping module [1;31mdracutlukscfg[m.
+
+[m-- Skipping module [1;31mdummycpp[m.
+
+[m-- Skipping module [1;31mdummyprocess[m.
+
+[m-- Skipping module [1;31mdummypython[m.
+
+[m-- Skipping module [1;31mdummypythonqt[m.
+
+-- [1;33mFound Calamares module: [1;31mfinished[m
+   [32mTYPE:[m viewmodule
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamaresui;Qt5::DBus
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/finished
+   [32mCONFIGURATION_FILES:[m finished.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31mfsresizer[m
+   [32mTYPE:[m job
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m kpmcore;calamares
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/fsresizer
+   [32mCONFIGURATION_FILES:[m fsresizer.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31mfstab[m
+   [32mTYPE:[m jobmodule
+   [32mMODULE_DESTINATION:[m lib/calamares/modules/fstab
+   [32mCONFIGURATION_FILES:[m fstab.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31mgrubcfg[m
+   [32mTYPE:[m jobmodule
+   [32mMODULE_DESTINATION:[m lib/calamares/modules/grubcfg
+   [32mCONFIGURATION_FILES:[m grubcfg.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31mhostinfo[m
+   [32mTYPE:[m job
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamares
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/hostinfo
+
+-- [1;33mFound Calamares module: [1;31mhwclock[m
+   [32mTYPE:[m jobmodule
+   [32mMODULE_DESTINATION:[m lib/calamares/modules/hwclock
+
+-- [1;33mFound Calamares module: [1;31minitcpio[m
+   [32mTYPE:[m job
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamares
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/initcpio
+   [32mCONFIGURATION_FILES:[m initcpio.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31minitcpiocfg[m
+   [32mTYPE:[m jobmodule
+   [32mMODULE_DESTINATION:[m lib/calamares/modules/initcpiocfg
+
+[m-- Skipping module [1;31minitramfs[m.
+
+[m-- Skipping module [1;31minitramfscfg[m.
+
+[m-- Skipping module [1;31minteractiveterminal[m.
+
+-- [1;33mFound Calamares module: [1;31mkeyboard[m
+   [32mTYPE:[m viewmodule
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamaresui
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/keyboard
+   [32mCONFIGURATION_FILES:[m keyboard.conf => share/calamares/modules
+   [32mRESOURCES:[m keyboard.qrc
+
+-- [1;33mFound Calamares module: [1;31mkeyboardq[m
+   [32mTYPE:[m viewmodule
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamaresui
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/keyboardq
+   [32mCONFIGURATION_FILES:[m keyboardq.conf => share/calamares/modules
+   [32mRESOURCES:[m keyboardq.qrc
+
+-- [1;33mFound Calamares module: [1;31mlicense[m
+   [32mTYPE:[m viewmodule
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamaresui
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/license
+   [32mCONFIGURATION_FILES:[m license.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31mlocale[m
+   [32mTYPE:[m viewmodule
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamaresui;Qt5::Network;yamlcpp
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/locale
+   [32mCONFIGURATION_FILES:[m locale.conf => share/calamares/modules
+   [32mRESOURCES:[m locale.qrc
+
+-- [1;33mFound Calamares module: [1;31mlocalecfg[m
+   [32mTYPE:[m jobmodule
+   [32mMODULE_DESTINATION:[m lib/calamares/modules/localecfg
+
+-- [1;33mFound Calamares module: [1;31mlocaleq[m
+   [32mTYPE:[m viewmodule
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamaresui;Qt5::Network
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/localeq
+   [32mCONFIGURATION_FILES:[m localeq.conf => share/calamares/modules
+   [32mRESOURCES:[m localeq.qrc
+
+-- [1;33mFound Calamares module: [1;31mluksbootkeyfile[m
+   [32mTYPE:[m job
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamares
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/luksbootkeyfile
+
+-- [1;33mFound Calamares module: [1;31mluksopenswaphookcfg[m
+   [32mTYPE:[m jobmodule
+   [32mMODULE_DESTINATION:[m lib/calamares/modules/luksopenswaphookcfg
+   [32mCONFIGURATION_FILES:[m luksopenswaphookcfg.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31mmachineid[m
+   [32mTYPE:[m job
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamares
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/machineid
+   [32mCONFIGURATION_FILES:[m machineid.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31mmount[m
+   [32mTYPE:[m jobmodule
+   [32mMODULE_DESTINATION:[m lib/calamares/modules/mount
+   [32mCONFIGURATION_FILES:[m mount.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31mnetinstall[m
+   [32mTYPE:[m viewmodule
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamaresui;Qt5::Network;yamlcpp
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/netinstall
+   [32mCONFIGURATION_FILES:[m netinstall-applications.conf;netinstall-desktop.conf;netinstall-kernel.conf;netinstall.conf => share/calamares/modules
+   [32mRESOURCES:[m netinstall.qrc
+
+-- [1;33mFound Calamares module: [1;31mnetworkcfg[m
+   [32mTYPE:[m jobmodule
+   [32mMODULE_DESTINATION:[m lib/calamares/modules/networkcfg
+
+-- [1;33mFound Calamares module: [1;31mnotesqml[m
+   [32mTYPE:[m viewmodule
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamaresui
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/notesqml
+   [32mCONFIGURATION_FILES:[m notesqml.conf => share/calamares/modules
+   [32mRESOURCES:[m notesqml.qrc
+
+-- [1;33mFound Calamares module: [1;31moemid[m
+   [32mTYPE:[m viewmodule
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamaresui;Qt5::Widgets
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/oemid
+   [32mCONFIGURATION_FILES:[m oemid.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31mopenrcdmcryptcfg[m
+   [32mTYPE:[m jobmodule
+   [32mMODULE_DESTINATION:[m lib/calamares/modules/openrcdmcryptcfg
+   [32mCONFIGURATION_FILES:[m openrcdmcryptcfg.conf => share/calamares/modules
+
+CMake Warning at src/modules/packagechooser/CMakeLists.txt:23 (find_package):
+  By not providing "FindAppStreamQt.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "AppStreamQt", but CMake did not find one.
+
+  Could not find a package configuration file provided by "AppStreamQt" with
+  any of the following names:
+
+    AppStreamQtConfig.cmake
+    appstreamqt-config.cmake
+
+  Add the installation prefix of "AppStreamQt" to CMAKE_PREFIX_PATH or set
+  "AppStreamQt_DIR" to a directory containing one of the above files.  If
+  "AppStreamQt" provides a separate development package or SDK, be sure it
+  has been installed.
+
+
+-- [1;33mFound Calamares module: [1;31mpackagechooser[m
+   [32mTYPE:[m viewmodule
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamaresui;Qt5::Xml
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/packagechooser
+   [32mCONFIGURATION_FILES:[m packagechooser.conf => share/calamares/modules
+   [32mRESOURCES:[m packagechooser.qrc
+
+-- [1;33mFound Calamares module: [1;31mpackages[m
+   [32mTYPE:[m jobmodule
+   [32mMODULE_DESTINATION:[m lib/calamares/modules/packages
+   [32mCONFIGURATION_FILES:[m packages-offline.conf;packages-online.conf;packages.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31mpartition[m
+   [32mTYPE:[m viewmodule
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m kpmcore;calamaresui;KF5::CoreAddons
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/partition
+   [32mCONFIGURATION_FILES:[m partition.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31mplasmalnf[m
+   [32mTYPE:[m viewmodule
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamaresui;KF5::Package;KF5::Plasma
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/plasmalnf
+   [32mCONFIGURATION_FILES:[m plasmalnf.conf => share/calamares/modules
+   [32mRESOURCES:[m page_plasmalnf.qrc
+
+-- [1;33mFound Calamares module: [1;31mplymouthcfg[m
+   [32mTYPE:[m jobmodule
+   [32mMODULE_DESTINATION:[m lib/calamares/modules/plymouthcfg
+   [32mCONFIGURATION_FILES:[m plymouthcfg.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31mpreservefiles[m
+   [32mTYPE:[m job
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamares
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/preservefiles
+   [32mCONFIGURATION_FILES:[m preservefiles.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31mrawfs[m
+   [32mTYPE:[m jobmodule
+   [32mMODULE_DESTINATION:[m lib/calamares/modules/rawfs
+   [32mCONFIGURATION_FILES:[m rawfs.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31mremoveuser[m
+   [32mTYPE:[m job
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamares
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/removeuser
+   [32mCONFIGURATION_FILES:[m removeuser.conf => share/calamares/modules
+
+[m-- Skipping module [1;31mservices-openrc[m.
+
+[m-- Skipping module [1;31mservices-systemd[m.
+
+-- [1;33mFound Calamares module: [1;31mshellprocess[m
+   [32mTYPE:[m job
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamares
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/shellprocess
+   [32mCONFIGURATION_FILES:[m shellprocess.conf;shellprocess_default.conf;shellprocess_keyboard.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31msummary[m
+   [32mTYPE:[m viewmodule
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamaresui
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/summary
+
+-- [1;33mFound Calamares module: [1;31mtracking[m
+   [32mTYPE:[m viewmodule
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamaresui
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/tracking
+   [32mCONFIGURATION_FILES:[m tracking.conf => share/calamares/modules
+   [32mRESOURCES:[m page_trackingstep.qrc
+
+-- [1;33mFound Calamares module: [1;31mumount[m
+   [32mTYPE:[m jobmodule
+   [32mMODULE_DESTINATION:[m lib/calamares/modules/umount
+   [32mCONFIGURATION_FILES:[m umount.conf => share/calamares/modules
+
+-- [1;33mFound Calamares module: [1;31munpackfs[m
+   [32mTYPE:[m jobmodule
+   [32mMODULE_DESTINATION:[m lib/calamares/modules/unpackfs
+   [32mCONFIGURATION_FILES:[m unpackfs.conf => share/calamares/modules
+
+-- Found Crypt: /usr/lib/libcrypt.so  
+CMake Warning (dev) at /usr/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (PkgConfig)
+  does not match the name of the calling package (LibPWQuality).  This can
+  lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.17/Modules/FindPkgConfig.cmake:45 (find_package_handle_standard_args)
+  CMakeModules/FindLibPWQuality.cmake:9 (include)
+  src/modules/users/CMakeLists.txt:7 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.6.3") 
+-- Could NOT find LibPWQuality (missing: LibPWQuality_INCLUDE_DIRS LibPWQuality_LIBRARIES) 
+-- [1;33mFound Calamares module: [1;31musers[m
+   [32mTYPE:[m viewmodule
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamaresui;/usr/lib/libcrypt.so;Qt5::DBus
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/users
+   [32mCONFIGURATION_FILES:[m users.conf => share/calamares/modules
+   [32mRESOURCES:[m users.qrc
+
+[m-- Skipping module [1;31mwebview[m.
+
+-- Found LIBPARTED: /usr/lib/libparted.so  
+-- Looking for ped_file_system_clobber
+-- Looking for ped_file_system_clobber - not found
+-- Looking for ped_file_system_resize
+-- Looking for ped_file_system_resize - not found
+-- [1;33mFound Calamares module: [1;31mwelcome[m
+   [32mTYPE:[m viewmodule
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamaresui;/usr/lib/libparted.so;Qt5::DBus;Qt5::Network
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/welcome
+   [32mCONFIGURATION_FILES:[m welcome-offline.conf;welcome-online.conf;welcome.conf => share/calamares/modules
+   [32mRESOURCES:[m welcome.qrc
+
+-- [1;33mFound Calamares module: [1;31mwelcomeq[m
+   [32mTYPE:[m viewmodule
+   [32mLINK_LIBRARIES:[m 
+   [32mLINK_PRIVATE_LIBRARIES:[m calamaresui;/usr/lib/libparted.so;Qt5::DBus;Qt5::Network
+   [32mPLUGIN_DESTINATION:[m lib/calamares/modules/welcomeq
+   [32mCONFIGURATION_FILES:[m welcomeq.conf => share/calamares/modules
+   [32mRESOURCES:[m welcomeq.qrc
+
+[m-- Skipped modules:
+[m--   Skipped [1;31mdracut (user request)[m.
+[m--   Skipped [1;31mdracutlukscfg (user request)[m.
+[m--   Skipped [1;31mdummycpp (user request)[m.
+[m--   Skipped [1;31mdummyprocess (user request)[m.
+[m--   Skipped [1;31mdummypython (user request)[m.
+[m--   Skipped [1;31mdummypythonqt (user request)[m.
+[m--   Skipped [1;31minitramfs (user request)[m.
+[m--   Skipped [1;31minitramfscfg (user request)[m.
+[m--   Skipped [1;31minteractiveterminal (user request)[m.
+[m--   Skipped [1;31mservices-openrc (user request)[m.
+[m--   Skipped [1;31mservices-systemd (user request)[m.
+[m--   Skipped [1;31mwebview (user request)[m.
+
+-- Installing gettext translations for python
+--   Installing python.mo from /build/calamares-net/src/calamares-3.2.23/lang/python
+--   Skipping python translations for en_US
+-- [1;33mFound Calamares branding component: [1;31mctlos[m
+   [32mTYPE:[m branding component
+   [32mBRANDING_COMPONENT_DESTINATION:[m share/calamares/branding/ctlos
+
+[m-- Skipped modules:
+[m--   Skipped [1;31mdracut (user request)[m.
+[m--   Skipped [1;31mdracutlukscfg (user request)[m.
+[m--   Skipped [1;31mdummycpp (user request)[m.
+[m--   Skipped [1;31mdummyprocess (user request)[m.
+[m--   Skipped [1;31mdummypython (user request)[m.
+[m--   Skipped [1;31mdummypythonqt (user request)[m.
+[m--   Skipped [1;31minitramfs (user request)[m.
+[m--   Skipped [1;31minitramfscfg (user request)[m.
+[m--   Skipped [1;31minteractiveterminal (user request)[m.
+[m--   Skipped [1;31mservices-openrc (user request)[m.
+[m--   Skipped [1;31mservices-systemd (user request)[m.
+[m--   Skipped [1;31mwebview (user request)[m.
+
+-- The following features have been disabled:
+ * PythonQt, Python view modules, <http://pythonqt.sourceforge.net>
+   PythonQt is used for Python view modules.
+
+-- The following OPTIONAL packages were not found:
+ * PythonQt, Python view modules, <http://pythonqt.sourceforge.net>
+   PythonQt is used for Python view modules.
+ * AppStreamQt, Support for AppStream (cache) data, <https://github.com/ximion/appstream>
+   AppStream provides package data
+ * LibPWQuality, Password quality checking library, <https://github.com/libpwquality/libpwquality>
+   Extra checks of password quality
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /build/calamares-net/src/calamares-3.2.23/build
+Scanning dependencies of target txload
+[  0%] Building CXX object lang/CMakeFiles/txload.dir/txload.cpp.o
+[  1%] Linking CXX executable txload
+[  1%] Built target txload
+Scanning dependencies of target calamares_autogen
+[  1%] Automatic MOC for target calamares
+[  1%] Built target calamares_autogen
+Scanning dependencies of target calamares
+[  1%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/calamares_autogen/mocs_compilation.cpp.o
+[  1%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/CppJob.cpp.o
+[  1%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/GlobalStorage.cpp.o
+[  1%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/Job.cpp.o
+[  1%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/JobExample.cpp.o
+[  2%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/JobQueue.cpp.o
+[  2%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/ProcessJob.cpp.o
+[  2%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/Settings.cpp.o
+[  2%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/geoip/Interface.cpp.o
+[  2%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/geoip/GeoIPJSON.cpp.o
+[  3%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/geoip/Handler.cpp.o
+[  3%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/locale/Label.cpp.o
+[  3%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/locale/LabelModel.cpp.o
+[  3%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/locale/Lookup.cpp.o
+[  3%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/locale/TimeZone.cpp.o
+[  4%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/locale/TranslatableConfiguration.cpp.o
+[  4%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/modulesystem/InstanceKey.cpp.o
+[  4%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/modulesystem/Module.cpp.o
+[  4%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/modulesystem/Requirement.cpp.o
+[  4%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/modulesystem/RequirementsChecker.cpp.o
+[  4%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/modulesystem/RequirementsModel.cpp.o
+[  5%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/network/Manager.cpp.o
+[  5%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/partition/Mount.cpp.o
+[  5%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/partition/PartitionSize.cpp.o
+[  5%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/partition/Sync.cpp.o
+[  5%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/utils/CalamaresUtilsSystem.cpp.o
+[  6%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/utils/CommandList.cpp.o
+[  6%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/utils/Dirs.cpp.o
+[  6%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/utils/Entropy.cpp.o
+[  6%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/utils/Logger.cpp.o
+[  6%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/utils/PluginFactory.cpp.o
+[  7%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/utils/Retranslator.cpp.o
+[  7%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/utils/String.cpp.o
+[  7%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/utils/UMask.cpp.o
+[  7%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/utils/Variant.cpp.o
+[  7%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/utils/Yaml.cpp.o
+[  7%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/PythonHelper.cpp.o
+[  8%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/PythonJob.cpp.o
+[  8%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/PythonJobApi.cpp.o
+[  8%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/geoip/GeoIPXML.cpp.o
+[  8%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/partition/FileSystem.cpp.o
+[  8%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/partition/KPMManager.cpp.o
+[  9%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/partition/PartitionIterator.cpp.o
+[  9%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/partition/PartitionQuery.cpp.o
+[  9%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/__/__/3rdparty/kdsingleapplicationguard/kdsingleapplicationguard.cpp.o
+/build/calamares-net/src/calamares-3.2.23/3rdparty/kdsingleapplicationguard/kdsingleapplicationguard.cpp: In member function ‘void KDSingleApplicationGuard::Private::create(const QStringList&)’:
+/build/calamares-net/src/calamares-3.2.23/3rdparty/kdsingleapplicationguard/kdsingleapplicationguard.cpp:768:25: warning: ‘void QTime::start()’ is deprecated: Use QElapsedTimer instead [-Wdeprecated-declarations]
+  768 |         waitTimer.start();
+      |                         ^
+In file included from /usr/include/qt/QtCore/QTime:1,
+                 from /build/calamares-net/src/calamares-3.2.23/3rdparty/kdsingleapplicationguard/kdsingleapplicationguard.cpp:20:
+/usr/include/qt/QtCore/qdatetime.h:228:55: note: declared here
+  228 |     QT_DEPRECATED_X("Use QElapsedTimer instead") void start();
+      |                                                       ^~~~~
+/build/calamares-net/src/calamares-3.2.23/3rdparty/kdsingleapplicationguard/kdsingleapplicationguard.cpp:772:50: warning: ‘int QTime::elapsed() const’ is deprecated: Use QElapsedTimer instead [-Wdeprecated-declarations]
+  772 |         while( !initialized && waitTimer.elapsed() < maxWaitMSecs )
+      |                                                  ^
+In file included from /usr/include/qt/QtCore/QTime:1,
+                 from /build/calamares-net/src/calamares-3.2.23/3rdparty/kdsingleapplicationguard/kdsingleapplicationguard.cpp:20:
+/usr/include/qt/QtCore/qdatetime.h:230:54: note: declared here
+  230 |     QT_DEPRECATED_X("Use QElapsedTimer instead") int elapsed() const;
+      |                                                      ^~~~~~~
+[  9%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/__/__/3rdparty/kdsingleapplicationguard/kdsharedmemorylocker.cpp.o
+[  9%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/__/__/3rdparty/kdsingleapplicationguard/kdtoolsglobal.cpp.o
+[ 10%] Building CXX object src/libcalamares/CMakeFiles/calamares.dir/__/__/3rdparty/kdsingleapplicationguard/kdlockedsharedmemorypointer.cpp.o
+[ 10%] Linking CXX shared library ../../libcalamares.so
+[ 10%] Built target calamares
+Scanning dependencies of target test_geoip_autogen
+[ 10%] Automatic MOC for target test_geoip
+[ 10%] Built target test_geoip_autogen
+Scanning dependencies of target test_geoip
+[ 11%] Building CXX object src/libcalamares/CMakeFiles/test_geoip.dir/test_geoip_autogen/mocs_compilation.cpp.o
+[ 11%] Building CXX object src/libcalamares/CMakeFiles/test_geoip.dir/geoip/test_geoip.cpp.o
+[ 11%] Linking CXX executable ../../test_geoip
+[ 11%] Built target test_geoip
+Scanning dependencies of target geoiptest_autogen
+[ 12%] Automatic MOC for target geoiptest
+[ 12%] Built target geoiptest_autogen
+Scanning dependencies of target geoiptest
+[ 12%] Building CXX object src/libcalamares/CMakeFiles/geoiptest.dir/geoiptest_autogen/mocs_compilation.cpp.o
+[ 12%] Building CXX object src/libcalamares/CMakeFiles/geoiptest.dir/geoip/GeoIPTests.cpp.o
+[ 12%] Linking CXX executable ../../geoiptest
+[ 12%] Built target geoiptest
+Scanning dependencies of target libcalamaresnetworktest_autogen
+[ 13%] Automatic MOC for target libcalamaresnetworktest
+[ 13%] Built target libcalamaresnetworktest_autogen
+Scanning dependencies of target libcalamaresnetworktest
+[ 13%] Building CXX object src/libcalamares/CMakeFiles/libcalamaresnetworktest.dir/libcalamaresnetworktest_autogen/mocs_compilation.cpp.o
+[ 13%] Building CXX object src/libcalamares/CMakeFiles/libcalamaresnetworktest.dir/network/Tests.cpp.o
+[ 13%] Linking CXX executable ../../libcalamaresnetworktest
+[ 13%] Built target libcalamaresnetworktest
+Scanning dependencies of target libcalamarestestpaths_autogen
+[ 13%] Automatic MOC for target libcalamarestestpaths
+[ 13%] Built target libcalamarestestpaths_autogen
+Scanning dependencies of target libcalamarestestpaths
+[ 13%] Building CXX object src/libcalamares/CMakeFiles/libcalamarestestpaths.dir/libcalamarestestpaths_autogen/mocs_compilation.cpp.o
+[ 13%] Building CXX object src/libcalamares/CMakeFiles/libcalamarestestpaths.dir/utils/TestPaths.cpp.o
+[ 14%] Linking CXX executable ../../libcalamarestestpaths
+[ 14%] Built target libcalamarestestpaths
+Scanning dependencies of target libcalamarespartitiontest_autogen
+[ 14%] Automatic MOC for target libcalamarespartitiontest
+[ 14%] Built target libcalamarespartitiontest_autogen
+Scanning dependencies of target libcalamarespartitiontest
+[ 14%] Building CXX object src/libcalamares/CMakeFiles/libcalamarespartitiontest.dir/libcalamarespartitiontest_autogen/mocs_compilation.cpp.o
+[ 14%] Building CXX object src/libcalamares/CMakeFiles/libcalamarespartitiontest.dir/partition/Tests.cpp.o
+[ 14%] Linking CXX executable ../../libcalamarespartitiontest
+[ 14%] Built target libcalamarespartitiontest
+Scanning dependencies of target libcalamarestest_autogen
+[ 14%] Automatic MOC for target libcalamarestest
+[ 14%] Built target libcalamarestest_autogen
+Scanning dependencies of target libcalamarestest
+[ 14%] Building CXX object src/libcalamares/CMakeFiles/libcalamarestest.dir/libcalamarestest_autogen/mocs_compilation.cpp.o
+[ 15%] Building CXX object src/libcalamares/CMakeFiles/libcalamarestest.dir/utils/Tests.cpp.o
+[ 15%] Linking CXX executable ../../libcalamarestest
+[ 15%] Built target libcalamarestest
+Scanning dependencies of target libcalamareslocaletest_autogen
+[ 15%] Automatic MOC for target libcalamareslocaletest
+[ 15%] Built target libcalamareslocaletest_autogen
+Scanning dependencies of target libcalamareslocaletest
+[ 15%] Building CXX object src/libcalamares/CMakeFiles/libcalamareslocaletest.dir/libcalamareslocaletest_autogen/mocs_compilation.cpp.o
+[ 16%] Building CXX object src/libcalamares/CMakeFiles/libcalamareslocaletest.dir/locale/Tests.cpp.o
+[ 16%] Linking CXX executable ../../libcalamareslocaletest
+[ 16%] Built target libcalamareslocaletest
+Scanning dependencies of target libcalamaresmodulesystemtest_autogen
+[ 16%] Automatic MOC for target libcalamaresmodulesystemtest
+[ 16%] Built target libcalamaresmodulesystemtest_autogen
+Scanning dependencies of target libcalamaresmodulesystemtest
+[ 16%] Building CXX object src/libcalamares/CMakeFiles/libcalamaresmodulesystemtest.dir/libcalamaresmodulesystemtest_autogen/mocs_compilation.cpp.o
+[ 16%] Building CXX object src/libcalamares/CMakeFiles/libcalamaresmodulesystemtest.dir/modulesystem/Tests.cpp.o
+[ 17%] Linking CXX executable ../../libcalamaresmodulesystemtest
+[ 17%] Built target libcalamaresmodulesystemtest
+Scanning dependencies of target calamaresui_autogen
+[ 17%] Automatic MOC for target calamaresui
+[ 17%] Built target calamaresui_autogen
+[ 18%] Generating qrc_libcalamaresui.cpp
+Scanning dependencies of target calamaresui
+[ 18%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/calamaresui_autogen/mocs_compilation.cpp.o
+[ 18%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/modulesystem/CppJobModule.cpp.o
+[ 18%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/modulesystem/ModuleFactory.cpp.o
+[ 18%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/modulesystem/ModuleManager.cpp.o
+[ 18%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/modulesystem/ProcessJobModule.cpp.o
+[ 19%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/modulesystem/ViewModule.cpp.o
+[ 19%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/utils/CalamaresUtilsGui.cpp.o
+[ 19%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/utils/ImageRegistry.cpp.o
+[ 19%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/utils/Paste.cpp.o
+[ 19%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/utils/Qml.cpp.o
+[ 20%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/viewpages/BlankViewStep.cpp.o
+[ 20%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/viewpages/ExecutionViewStep.cpp.o
+[ 20%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/viewpages/QmlViewStep.cpp.o
+[ 20%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/viewpages/ViewStep.cpp.o
+[ 20%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/widgets/ClickableLabel.cpp.o
+/build/calamares-net/src/calamares-3.2.23/src/libcalamaresui/widgets/ClickableLabel.cpp: In member function ‘virtual void ClickableLabel::mousePressEvent(QMouseEvent*)’:
+/build/calamares-net/src/calamares-3.2.23/src/libcalamaresui/widgets/ClickableLabel.cpp:43:18: warning: ‘void QTime::start()’ is deprecated: Use QElapsedTimer instead [-Wdeprecated-declarations]
+   43 |     m_time.start();
+      |                  ^
+In file included from /usr/include/qt/QtCore/QTime:1,
+                 from /build/calamares-net/src/calamares-3.2.23/src/libcalamaresui/widgets/ClickableLabel.h:24,
+                 from /build/calamares-net/src/calamares-3.2.23/src/libcalamaresui/widgets/ClickableLabel.cpp:19:
+/usr/include/qt/QtCore/qdatetime.h:228:55: note: declared here
+  228 |     QT_DEPRECATED_X("Use QElapsedTimer instead") void start();
+      |                                                       ^~~~~
+/build/calamares-net/src/calamares-3.2.23/src/libcalamaresui/widgets/ClickableLabel.cpp: In member function ‘virtual void ClickableLabel::mouseReleaseEvent(QMouseEvent*)’:
+/build/calamares-net/src/calamares-3.2.23/src/libcalamaresui/widgets/ClickableLabel.cpp:51:25: warning: ‘int QTime::elapsed() const’ is deprecated: Use QElapsedTimer instead [-Wdeprecated-declarations]
+   51 |     if ( m_time.elapsed() < qApp->doubleClickInterval() )
+      |                         ^
+In file included from /usr/include/qt/QtCore/QTime:1,
+                 from /build/calamares-net/src/calamares-3.2.23/src/libcalamaresui/widgets/ClickableLabel.h:24,
+                 from /build/calamares-net/src/calamares-3.2.23/src/libcalamaresui/widgets/ClickableLabel.cpp:19:
+/usr/include/qt/QtCore/qdatetime.h:230:54: note: declared here
+  230 |     QT_DEPRECATED_X("Use QElapsedTimer instead") int elapsed() const;
+      |                                                      ^~~~~~~
+[ 21%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/widgets/FixedAspectRatioLabel.cpp.o
+[ 21%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/widgets/WaitingWidget.cpp.o
+[ 21%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/__/__/3rdparty/waitingspinnerwidget.cpp.o
+[ 21%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/Branding.cpp.o
+[ 21%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/ViewManager.cpp.o
+[ 21%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/modulesystem/PythonJobModule.cpp.o
+[ 22%] Building CXX object src/libcalamaresui/CMakeFiles/calamaresui.dir/qrc_libcalamaresui.cpp.o
+[ 22%] Linking CXX shared library ../../libcalamaresui.so
+[ 22%] Built target calamaresui
+Scanning dependencies of target loadmodule
+[ 22%] Building CXX object src/calamares/CMakeFiles/loadmodule.dir/testmain.cpp.o
+[ 22%] Linking CXX executable ../../loadmodule
+[ 22%] Built target loadmodule
+Scanning dependencies of target calamares_bin_autogen
+[ 22%] Generating calamares_i18n.qrc
+[ 22%] Generating calamares_ar.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_ar.qm'...
+    Generated 306 translation(s) (306 finished and 0 unfinished)
+    Ignored 366 untranslated source text(s)
+[ 23%] Generating calamares_as.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_as.qm'...
+    Generated 626 translation(s) (626 finished and 0 unfinished)
+    Ignored 46 untranslated source text(s)
+[ 23%] Generating calamares_ast.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_ast.qm'...
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+    Generated 567 translation(s) (567 finished and 0 unfinished)
+    Ignored 105 untranslated source text(s)
+[ 23%] Generating calamares_be.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_be.qm'...
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+    Generated 671 translation(s) (671 finished and 0 unfinished)
+    Ignored 1 untranslated source text(s)
+[ 23%] Generating calamares_bg.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_bg.qm'...
+    Generated 417 translation(s) (417 finished and 0 unfinished)
+    Ignored 255 untranslated source text(s)
+[ 23%] Generating calamares_ca.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_ca.qm'...
+    Generated 672 translation(s) (672 finished and 0 unfinished)
+[ 24%] Generating calamares_cs_CZ.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_cs_CZ.qm'...
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+    Generated 670 translation(s) (670 finished and 0 unfinished)
+    Ignored 2 untranslated source text(s)
+[ 24%] Generating calamares_da.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_da.qm'...
+    Generated 671 translation(s) (671 finished and 0 unfinished)
+    Ignored 1 untranslated source text(s)
+[ 24%] Generating calamares_de.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_de.qm'...
+    Generated 648 translation(s) (648 finished and 0 unfinished)
+    Ignored 24 untranslated source text(s)
+[ 24%] Generating calamares_el.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_el.qm'...
+    Generated 286 translation(s) (286 finished and 0 unfinished)
+    Ignored 386 untranslated source text(s)
+[ 24%] Generating calamares_en.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_en.qm'...
+    Generated 672 translation(s) (672 finished and 0 unfinished)
+[ 25%] Generating tz_en.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/tz_en.qm'...
+    Generated 1 translation(s) (1 finished and 0 unfinished)
+    Ignored 434 untranslated source text(s)
+[ 25%] Generating calamares_en_GB.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_en_GB.qm'...
+    Generated 452 translation(s) (452 finished and 0 unfinished)
+    Ignored 220 untranslated source text(s)
+[ 25%] Generating calamares_eo.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_eo.qm'...
+    Generated 76 translation(s) (76 finished and 0 unfinished)
+    Ignored 596 untranslated source text(s)
+[ 25%] Generating calamares_es.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_es.qm'...
+    Generated 504 translation(s) (504 finished and 0 unfinished)
+    Ignored 168 untranslated source text(s)
+[ 25%] Generating calamares_es_MX.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_es_MX.qm'...
+    Generated 505 translation(s) (505 finished and 0 unfinished)
+    Ignored 167 untranslated source text(s)
+[ 25%] Generating calamares_es_PR.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_es_PR.qm'...
+    Generated 39 translation(s) (39 finished and 0 unfinished)
+    Ignored 633 untranslated source text(s)
+[ 26%] Generating calamares_et.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_et.qm'...
+    Generated 494 translation(s) (494 finished and 0 unfinished)
+    Ignored 178 untranslated source text(s)
+[ 26%] Generating calamares_eu.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_eu.qm'...
+    Generated 331 translation(s) (331 finished and 0 unfinished)
+    Ignored 341 untranslated source text(s)
+[ 26%] Generating calamares_fi_FI.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_fi_FI.qm'...
+    Generated 671 translation(s) (671 finished and 0 unfinished)
+    Ignored 1 untranslated source text(s)
+[ 26%] Generating calamares_fr.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_fr.qm'...
+    Generated 644 translation(s) (644 finished and 0 unfinished)
+    Ignored 28 untranslated source text(s)
+[ 26%] Generating calamares_gl.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_gl.qm'...
+    Generated 491 translation(s) (491 finished and 0 unfinished)
+    Ignored 181 untranslated source text(s)
+[ 27%] Generating calamares_he.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_he.qm'...
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+    Generated 672 translation(s) (672 finished and 0 unfinished)
+[ 27%] Generating calamares_hi.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_hi.qm'...
+    Generated 601 translation(s) (601 finished and 0 unfinished)
+    Ignored 71 untranslated source text(s)
+[ 27%] Generating calamares_hr.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_hr.qm'...
+    Generated 672 translation(s) (672 finished and 0 unfinished)
+[ 27%] Generating calamares_hu.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_hu.qm'...
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+    Generated 583 translation(s) (583 finished and 0 unfinished)
+    Ignored 89 untranslated source text(s)
+[ 27%] Generating calamares_id.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_id.qm'...
+    Generated 492 translation(s) (492 finished and 0 unfinished)
+    Ignored 180 untranslated source text(s)
+[ 28%] Generating calamares_is.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_is.qm'...
+    Generated 334 translation(s) (334 finished and 0 unfinished)
+    Ignored 338 untranslated source text(s)
+[ 28%] Generating calamares_it_IT.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_it_IT.qm'...
+    Generated 671 translation(s) (671 finished and 0 unfinished)
+    Ignored 1 untranslated source text(s)
+[ 28%] Generating calamares_ja.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_ja.qm'...
+    Generated 671 translation(s) (671 finished and 0 unfinished)
+    Ignored 1 untranslated source text(s)
+[ 28%] Generating calamares_ko.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_ko.qm'...
+    Generated 672 translation(s) (672 finished and 0 unfinished)
+[ 28%] Generating calamares_lt.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_lt.qm'...
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+    Generated 672 translation(s) (672 finished and 0 unfinished)
+[ 28%] Generating calamares_ml.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_ml.qm'...
+    Generated 625 translation(s) (625 finished and 0 unfinished)
+    Ignored 47 untranslated source text(s)
+[ 29%] Generating calamares_mr.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_mr.qm'...
+    Generated 90 translation(s) (90 finished and 0 unfinished)
+    Ignored 582 untranslated source text(s)
+[ 29%] Generating calamares_nb.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_nb.qm'...
+    Generated 131 translation(s) (131 finished and 0 unfinished)
+    Ignored 541 untranslated source text(s)
+[ 29%] Generating calamares_nl.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_nl.qm'...
+    Generated 530 translation(s) (530 finished and 0 unfinished)
+    Ignored 142 untranslated source text(s)
+[ 29%] Generating tz_nl.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/tz_nl.qm'...
+    Generated 9 translation(s) (9 finished and 0 unfinished)
+    Ignored 426 untranslated source text(s)
+[ 29%] Generating calamares_pl.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_pl.qm'...
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+    Generated 511 translation(s) (511 finished and 0 unfinished)
+    Ignored 161 untranslated source text(s)
+[ 30%] Generating calamares_pt_BR.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_pt_BR.qm'...
+    Generated 672 translation(s) (672 finished and 0 unfinished)
+[ 30%] Generating calamares_pt_PT.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_pt_PT.qm'...
+    Generated 608 translation(s) (608 finished and 0 unfinished)
+    Ignored 64 untranslated source text(s)
+[ 30%] Generating calamares_ro.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_ro.qm'...
+    Generated 440 translation(s) (440 finished and 0 unfinished)
+    Ignored 232 untranslated source text(s)
+[ 30%] Generating calamares_ru.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_ru.qm'...
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+    Generated 553 translation(s) (553 finished and 0 unfinished)
+    Ignored 119 untranslated source text(s)
+[ 30%] Generating calamares_sk.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_sk.qm'...
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+    Generated 669 translation(s) (669 finished and 0 unfinished)
+    Ignored 3 untranslated source text(s)
+[ 31%] Generating calamares_sl.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_sl.qm'...
+    Generated 120 translation(s) (120 finished and 0 unfinished)
+    Ignored 552 untranslated source text(s)
+[ 31%] Generating calamares_sq.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_sq.qm'...
+    Generated 672 translation(s) (672 finished and 0 unfinished)
+[ 31%] Generating calamares_sr.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_sr.qm'...
+    Generated 127 translation(s) (127 finished and 0 unfinished)
+    Ignored 545 untranslated source text(s)
+[ 31%] Generating calamares_sr@latin.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_sr@latin.qm'...
+    Generated 100 translation(s) (100 finished and 0 unfinished)
+    Ignored 572 untranslated source text(s)
+[ 31%] Generating calamares_sv.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_sv.qm'...
+    Generated 574 translation(s) (574 finished and 0 unfinished)
+    Ignored 98 untranslated source text(s)
+[ 31%] Generating calamares_th.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_th.qm'...
+    Generated 239 translation(s) (239 finished and 0 unfinished)
+    Ignored 433 untranslated source text(s)
+[ 32%] Generating calamares_tr_TR.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_tr_TR.qm'...
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+    Generated 671 translation(s) (671 finished and 0 unfinished)
+    Ignored 1 untranslated source text(s)
+[ 32%] Generating calamares_uk.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_uk.qm'...
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+    Generated 672 translation(s) (672 finished and 0 unfinished)
+[ 32%] Generating tz_uk.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/tz_uk.qm'...
+    Generated 1 translation(s) (1 finished and 0 unfinished)
+    Ignored 434 untranslated source text(s)
+[ 32%] Generating calamares_zh_CN.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_zh_CN.qm'...
+    Generated 672 translation(s) (672 finished and 0 unfinished)
+[ 32%] Generating calamares_zh_TW.qm
+Updating '/build/calamares-net/src/calamares-3.2.23/build/src/calamares/calamares_zh_TW.qm'...
+    Generated 672 translation(s) (672 finished and 0 unfinished)
+[ 32%] Generating qrc_calamares_i18n.cxx
+[ 32%] Automatic MOC and UIC for target calamares_bin
+[ 32%] Built target calamares_bin_autogen
+[ 32%] Generating qrc_calamares.cpp
+Scanning dependencies of target calamares_bin
+[ 32%] Building CXX object src/calamares/CMakeFiles/calamares_bin.dir/calamares_bin_autogen/mocs_compilation.cpp.o
+[ 32%] Building CXX object src/calamares/CMakeFiles/calamares_bin.dir/main.cpp.o
+[ 32%] Building CXX object src/calamares/CMakeFiles/calamares_bin.dir/CalamaresApplication.cpp.o
+[ 32%] Building CXX object src/calamares/CMakeFiles/calamares_bin.dir/CalamaresWindow.cpp.o
+[ 33%] Building CXX object src/calamares/CMakeFiles/calamares_bin.dir/DebugWindow.cpp.o
+[ 33%] Building CXX object src/calamares/CMakeFiles/calamares_bin.dir/VariantModel.cpp.o
+[ 33%] Building CXX object src/calamares/CMakeFiles/calamares_bin.dir/progresstree/ProgressTreeDelegate.cpp.o
+[ 33%] Building CXX object src/calamares/CMakeFiles/calamares_bin.dir/progresstree/ProgressTreeView.cpp.o
+[ 33%] Building CXX object src/calamares/CMakeFiles/calamares_bin.dir/qrc_calamares.cpp.o
+[ 33%] Building CXX object src/calamares/CMakeFiles/calamares_bin.dir/qrc_calamares_i18n.cxx.o
+[ 34%] Linking CXX executable ../../calamares
+[ 45%] Built target calamares_bin
+Scanning dependencies of target test_conf
+[ 45%] Building CXX object src/modules/CMakeFiles/test_conf.dir/test_conf.cpp.o
+[ 45%] Linking CXX executable ../../test_conf
+[ 45%] Built target test_conf
+Scanning dependencies of target contextualprocesstest_autogen
+[ 45%] Automatic MOC for target contextualprocesstest
+[ 45%] Built target contextualprocesstest_autogen
+Scanning dependencies of target contextualprocesstest
+[ 45%] Building CXX object src/modules/contextualprocess/CMakeFiles/contextualprocesstest.dir/contextualprocesstest_autogen/mocs_compilation.cpp.o
+[ 45%] Building CXX object src/modules/contextualprocess/CMakeFiles/contextualprocesstest.dir/Tests.cpp.o
+[ 46%] Building CXX object src/modules/contextualprocess/CMakeFiles/contextualprocesstest.dir/ContextualProcessJob.cpp.o
+[ 46%] Linking CXX executable ../../../contextualprocesstest
+[ 46%] Built target contextualprocesstest
+Scanning dependencies of target calamares_job_contextualprocess_autogen
+[ 46%] Automatic MOC for target calamares_job_contextualprocess
+[ 46%] Built target calamares_job_contextualprocess_autogen
+Scanning dependencies of target calamares_job_contextualprocess
+[ 47%] Building CXX object src/modules/contextualprocess/CMakeFiles/calamares_job_contextualprocess.dir/calamares_job_contextualprocess_autogen/mocs_compilation.cpp.o
+[ 47%] Building CXX object src/modules/contextualprocess/CMakeFiles/calamares_job_contextualprocess.dir/ContextualProcessJob.cpp.o
+[ 47%] Linking CXX shared library libcalamares_job_contextualprocess.so
+[ 47%] Built target calamares_job_contextualprocess
+Scanning dependencies of target calamares_viewmodule_finished_autogen
+[ 47%] Automatic MOC and UIC for target calamares_viewmodule_finished
+[ 47%] Built target calamares_viewmodule_finished_autogen
+Scanning dependencies of target calamares_viewmodule_finished
+[ 47%] Building CXX object src/modules/finished/CMakeFiles/calamares_viewmodule_finished.dir/calamares_viewmodule_finished_autogen/mocs_compilation.cpp.o
+[ 47%] Building CXX object src/modules/finished/CMakeFiles/calamares_viewmodule_finished.dir/FinishedViewStep.cpp.o
+[ 47%] Building CXX object src/modules/finished/CMakeFiles/calamares_viewmodule_finished.dir/FinishedPage.cpp.o
+[ 47%] Linking CXX shared library libcalamares_viewmodule_finished.so
+[ 47%] Built target calamares_viewmodule_finished
+Scanning dependencies of target calamares_job_fsresizer_autogen
+[ 47%] Automatic MOC for target calamares_job_fsresizer
+[ 47%] Built target calamares_job_fsresizer_autogen
+Scanning dependencies of target calamares_job_fsresizer
+[ 47%] Building CXX object src/modules/fsresizer/CMakeFiles/calamares_job_fsresizer.dir/calamares_job_fsresizer_autogen/mocs_compilation.cpp.o
+[ 48%] Building CXX object src/modules/fsresizer/CMakeFiles/calamares_job_fsresizer.dir/ResizeFSJob.cpp.o
+[ 48%] Linking CXX shared library libcalamares_job_fsresizer.so
+[ 48%] Built target calamares_job_fsresizer
+Scanning dependencies of target fsresizertest_autogen
+[ 48%] Automatic MOC for target fsresizertest
+[ 48%] Built target fsresizertest_autogen
+Scanning dependencies of target fsresizertest
+[ 48%] Building CXX object src/modules/fsresizer/CMakeFiles/fsresizertest.dir/fsresizertest_autogen/mocs_compilation.cpp.o
+[ 48%] Building CXX object src/modules/fsresizer/CMakeFiles/fsresizertest.dir/Tests.cpp.o
+[ 49%] Linking CXX executable ../../../fsresizertest
+[ 49%] Built target fsresizertest
+Scanning dependencies of target calamares_job_hostinfo_autogen
+[ 50%] Automatic MOC for target calamares_job_hostinfo
+[ 50%] Built target calamares_job_hostinfo_autogen
+Scanning dependencies of target calamares_job_hostinfo
+[ 50%] Building CXX object src/modules/hostinfo/CMakeFiles/calamares_job_hostinfo.dir/calamares_job_hostinfo_autogen/mocs_compilation.cpp.o
+[ 50%] Building CXX object src/modules/hostinfo/CMakeFiles/calamares_job_hostinfo.dir/HostInfoJob.cpp.o
+[ 50%] Linking CXX shared library libcalamares_job_hostinfo.so
+[ 50%] Built target calamares_job_hostinfo
+Scanning dependencies of target hostinfotest_autogen
+[ 51%] Automatic MOC for target hostinfotest
+[ 51%] Built target hostinfotest_autogen
+Scanning dependencies of target hostinfotest
+[ 51%] Building CXX object src/modules/hostinfo/CMakeFiles/hostinfotest.dir/hostinfotest_autogen/mocs_compilation.cpp.o
+[ 51%] Building CXX object src/modules/hostinfo/CMakeFiles/hostinfotest.dir/Tests.cpp.o
+[ 51%] Building CXX object src/modules/hostinfo/CMakeFiles/hostinfotest.dir/HostInfoJob.cpp.o
+[ 51%] Linking CXX executable ../../../hostinfotest
+[ 51%] Built target hostinfotest
+Scanning dependencies of target calamares_job_initcpio_autogen
+[ 51%] Automatic MOC for target calamares_job_initcpio
+[ 51%] Built target calamares_job_initcpio_autogen
+Scanning dependencies of target calamares_job_initcpio
+[ 51%] Building CXX object src/modules/initcpio/CMakeFiles/calamares_job_initcpio.dir/calamares_job_initcpio_autogen/mocs_compilation.cpp.o
+[ 51%] Building CXX object src/modules/initcpio/CMakeFiles/calamares_job_initcpio.dir/InitcpioJob.cpp.o
+[ 51%] Linking CXX shared library libcalamares_job_initcpio.so
+[ 51%] Built target calamares_job_initcpio
+Scanning dependencies of target initcpiotest_autogen
+[ 51%] Automatic MOC for target initcpiotest
+[ 51%] Built target initcpiotest_autogen
+Scanning dependencies of target initcpiotest
+[ 51%] Building CXX object src/modules/initcpio/CMakeFiles/initcpiotest.dir/initcpiotest_autogen/mocs_compilation.cpp.o
+[ 51%] Building CXX object src/modules/initcpio/CMakeFiles/initcpiotest.dir/Tests.cpp.o
+[ 51%] Linking CXX executable ../../../initcpiotest
+[ 51%] Built target initcpiotest
+Scanning dependencies of target calamares_viewmodule_keyboard_autogen
+[ 52%] Automatic MOC and UIC for target calamares_viewmodule_keyboard
+[ 52%] Built target calamares_viewmodule_keyboard_autogen
+[ 53%] Generating qrc_keyboard.cpp
+Scanning dependencies of target calamares_viewmodule_keyboard
+[ 53%] Building CXX object src/modules/keyboard/CMakeFiles/calamares_viewmodule_keyboard.dir/calamares_viewmodule_keyboard_autogen/mocs_compilation.cpp.o
+[ 53%] Building CXX object src/modules/keyboard/CMakeFiles/calamares_viewmodule_keyboard.dir/KeyboardViewStep.cpp.o
+[ 53%] Building CXX object src/modules/keyboard/CMakeFiles/calamares_viewmodule_keyboard.dir/KeyboardPage.cpp.o
+[ 53%] Building CXX object src/modules/keyboard/CMakeFiles/calamares_viewmodule_keyboard.dir/KeyboardLayoutModel.cpp.o
+[ 54%] Building CXX object src/modules/keyboard/CMakeFiles/calamares_viewmodule_keyboard.dir/SetKeyboardLayoutJob.cpp.o
+[ 54%] Building CXX object src/modules/keyboard/CMakeFiles/calamares_viewmodule_keyboard.dir/keyboardwidget/keyboardglobal.cpp.o
+[ 54%] Building CXX object src/modules/keyboard/CMakeFiles/calamares_viewmodule_keyboard.dir/keyboardwidget/keyboardpreview.cpp.o
+[ 54%] Building CXX object src/modules/keyboard/CMakeFiles/calamares_viewmodule_keyboard.dir/qrc_keyboard.cpp.o
+[ 54%] Linking CXX shared library libcalamares_viewmodule_keyboard.so
+[ 54%] Built target calamares_viewmodule_keyboard
+Scanning dependencies of target calamares_viewmodule_keyboardq_autogen
+[ 54%] Automatic MOC for target calamares_viewmodule_keyboardq
+[ 54%] Built target calamares_viewmodule_keyboardq_autogen
+[ 54%] Generating qrc_keyboardq.cpp
+Scanning dependencies of target calamares_viewmodule_keyboardq
+[ 54%] Building CXX object src/modules/keyboardq/CMakeFiles/calamares_viewmodule_keyboardq.dir/calamares_viewmodule_keyboardq_autogen/mocs_compilation.cpp.o
+[ 54%] Building CXX object src/modules/keyboardq/CMakeFiles/calamares_viewmodule_keyboardq.dir/KeyboardQmlViewStep.cpp.o
+[ 54%] Building CXX object src/modules/keyboardq/CMakeFiles/calamares_viewmodule_keyboardq.dir/__/keyboard/Config.cpp.o
+[ 54%] Building CXX object src/modules/keyboardq/CMakeFiles/calamares_viewmodule_keyboardq.dir/__/keyboard/KeyboardLayoutModel.cpp.o
+[ 55%] Building CXX object src/modules/keyboardq/CMakeFiles/calamares_viewmodule_keyboardq.dir/__/keyboard/SetKeyboardLayoutJob.cpp.o
+[ 55%] Building CXX object src/modules/keyboardq/CMakeFiles/calamares_viewmodule_keyboardq.dir/__/keyboard/keyboardwidget/keyboardglobal.cpp.o
+[ 55%] Building CXX object src/modules/keyboardq/CMakeFiles/calamares_viewmodule_keyboardq.dir/qrc_keyboardq.cpp.o
+[ 55%] Linking CXX shared library libcalamares_viewmodule_keyboardq.so
+[ 55%] Built target calamares_viewmodule_keyboardq
+Scanning dependencies of target calamares_viewmodule_license_autogen
+[ 56%] Automatic MOC and UIC for target calamares_viewmodule_license
+[ 56%] Built target calamares_viewmodule_license_autogen
+Scanning dependencies of target calamares_viewmodule_license
+[ 57%] Building CXX object src/modules/license/CMakeFiles/calamares_viewmodule_license.dir/calamares_viewmodule_license_autogen/mocs_compilation.cpp.o
+[ 57%] Building CXX object src/modules/license/CMakeFiles/calamares_viewmodule_license.dir/LicensePage.cpp.o
+[ 57%] Building CXX object src/modules/license/CMakeFiles/calamares_viewmodule_license.dir/LicenseViewStep.cpp.o
+[ 57%] Building CXX object src/modules/license/CMakeFiles/calamares_viewmodule_license.dir/LicenseWidget.cpp.o
+[ 57%] Linking CXX shared library libcalamares_viewmodule_license.so
+[ 57%] Built target calamares_viewmodule_license
+Scanning dependencies of target calamares_viewmodule_locale_autogen
+[ 57%] Automatic MOC for target calamares_viewmodule_locale
+[ 57%] Built target calamares_viewmodule_locale_autogen
+[ 57%] Generating qrc_locale.cpp
+Scanning dependencies of target calamares_viewmodule_locale
+[ 57%] Building CXX object src/modules/locale/CMakeFiles/calamares_viewmodule_locale.dir/calamares_viewmodule_locale_autogen/mocs_compilation.cpp.o
+[ 57%] Building CXX object src/modules/locale/CMakeFiles/calamares_viewmodule_locale.dir/Config.cpp.o
+[ 57%] Building CXX object src/modules/locale/CMakeFiles/calamares_viewmodule_locale.dir/LCLocaleDialog.cpp.o
+[ 57%] Building CXX object src/modules/locale/CMakeFiles/calamares_viewmodule_locale.dir/LocaleConfiguration.cpp.o
+[ 58%] Building CXX object src/modules/locale/CMakeFiles/calamares_viewmodule_locale.dir/LocalePage.cpp.o
+[ 58%] Building CXX object src/modules/locale/CMakeFiles/calamares_viewmodule_locale.dir/LocaleViewStep.cpp.o
+[ 58%] Building CXX object src/modules/locale/CMakeFiles/calamares_viewmodule_locale.dir/SetTimezoneJob.cpp.o
+[ 58%] Building CXX object src/modules/locale/CMakeFiles/calamares_viewmodule_locale.dir/timezonewidget/timezonewidget.cpp.o
+[ 58%] Building CXX object src/modules/locale/CMakeFiles/calamares_viewmodule_locale.dir/timezonewidget/TimeZoneImage.cpp.o
+[ 59%] Building CXX object src/modules/locale/CMakeFiles/calamares_viewmodule_locale.dir/qrc_locale.cpp.o
+[ 59%] Linking CXX shared library libcalamares_viewmodule_locale.so
+[ 59%] Built target calamares_viewmodule_locale
+Scanning dependencies of target localetest_autogen
+[ 59%] Automatic MOC for target localetest
+[ 59%] Built target localetest_autogen
+Scanning dependencies of target localetest
+[ 59%] Building CXX object src/modules/locale/CMakeFiles/localetest.dir/localetest_autogen/mocs_compilation.cpp.o
+[ 60%] Building CXX object src/modules/locale/CMakeFiles/localetest.dir/Tests.cpp.o
+[ 60%] Building CXX object src/modules/locale/CMakeFiles/localetest.dir/LocaleConfiguration.cpp.o
+[ 60%] Building CXX object src/modules/locale/CMakeFiles/localetest.dir/timezonewidget/TimeZoneImage.cpp.o
+[ 60%] Linking CXX executable ../../../localetest
+[ 60%] Built target localetest
+Scanning dependencies of target calamares_viewmodule_localeq_autogen
+[ 60%] Automatic MOC for target calamares_viewmodule_localeq
+[ 60%] Built target calamares_viewmodule_localeq_autogen
+[ 60%] Generating qrc_localeq.cpp
+Scanning dependencies of target calamares_viewmodule_localeq
+[ 60%] Building CXX object src/modules/localeq/CMakeFiles/calamares_viewmodule_localeq.dir/calamares_viewmodule_localeq_autogen/mocs_compilation.cpp.o
+[ 61%] Building CXX object src/modules/localeq/CMakeFiles/calamares_viewmodule_localeq.dir/LocaleQmlViewStep.cpp.o
+[ 61%] Building CXX object src/modules/localeq/CMakeFiles/calamares_viewmodule_localeq.dir/__/locale/LocaleConfiguration.cpp.o
+[ 61%] Building CXX object src/modules/localeq/CMakeFiles/calamares_viewmodule_localeq.dir/__/locale/Config.cpp.o
+[ 61%] Building CXX object src/modules/localeq/CMakeFiles/calamares_viewmodule_localeq.dir/__/locale/SetTimezoneJob.cpp.o
+[ 61%] Building CXX object src/modules/localeq/CMakeFiles/calamares_viewmodule_localeq.dir/qrc_localeq.cpp.o
+[ 62%] Linking CXX shared library libcalamares_viewmodule_localeq.so
+[ 62%] Built target calamares_viewmodule_localeq
+Scanning dependencies of target calamares_job_luksbootkeyfile_autogen
+[ 62%] Automatic MOC for target calamares_job_luksbootkeyfile
+[ 62%] Built target calamares_job_luksbootkeyfile_autogen
+Scanning dependencies of target calamares_job_luksbootkeyfile
+[ 63%] Building CXX object src/modules/luksbootkeyfile/CMakeFiles/calamares_job_luksbootkeyfile.dir/calamares_job_luksbootkeyfile_autogen/mocs_compilation.cpp.o
+[ 63%] Building CXX object src/modules/luksbootkeyfile/CMakeFiles/calamares_job_luksbootkeyfile.dir/LuksBootKeyFileJob.cpp.o
+[ 63%] Linking CXX shared library libcalamares_job_luksbootkeyfile.so
+[ 63%] Built target calamares_job_luksbootkeyfile
+Scanning dependencies of target machineidtest_autogen
+[ 63%] Automatic MOC for target machineidtest
+[ 63%] Built target machineidtest_autogen
+Scanning dependencies of target machineidtest
+[ 63%] Building CXX object src/modules/machineid/CMakeFiles/machineidtest.dir/machineidtest_autogen/mocs_compilation.cpp.o
+[ 64%] Building CXX object src/modules/machineid/CMakeFiles/machineidtest.dir/Tests.cpp.o
+[ 64%] Building CXX object src/modules/machineid/CMakeFiles/machineidtest.dir/MachineIdJob.cpp.o
+[ 64%] Building CXX object src/modules/machineid/CMakeFiles/machineidtest.dir/Workers.cpp.o
+[ 64%] Linking CXX executable ../../../machineidtest
+[ 64%] Built target machineidtest
+Scanning dependencies of target calamares_job_machineid_autogen
+[ 64%] Automatic MOC for target calamares_job_machineid
+[ 64%] Built target calamares_job_machineid_autogen
+Scanning dependencies of target calamares_job_machineid
+[ 64%] Building CXX object src/modules/machineid/CMakeFiles/calamares_job_machineid.dir/calamares_job_machineid_autogen/mocs_compilation.cpp.o
+[ 65%] Building CXX object src/modules/machineid/CMakeFiles/calamares_job_machineid.dir/MachineIdJob.cpp.o
+[ 65%] Building CXX object src/modules/machineid/CMakeFiles/calamares_job_machineid.dir/Workers.cpp.o
+[ 65%] Linking CXX shared library libcalamares_job_machineid.so
+[ 65%] Built target calamares_job_machineid
+Scanning dependencies of target calamares_viewmodule_netinstall_autogen
+[ 65%] Automatic MOC and UIC for target calamares_viewmodule_netinstall
+[ 65%] Built target calamares_viewmodule_netinstall_autogen
+Scanning dependencies of target calamares_viewmodule_netinstall
+[ 65%] Building CXX object src/modules/netinstall/CMakeFiles/calamares_viewmodule_netinstall.dir/calamares_viewmodule_netinstall_autogen/mocs_compilation.cpp.o
+[ 65%] Building CXX object src/modules/netinstall/CMakeFiles/calamares_viewmodule_netinstall.dir/Config.cpp.o
+[ 65%] Building CXX object src/modules/netinstall/CMakeFiles/calamares_viewmodule_netinstall.dir/NetInstallViewStep.cpp.o
+[ 65%] Building CXX object src/modules/netinstall/CMakeFiles/calamares_viewmodule_netinstall.dir/NetInstallPage.cpp.o
+[ 66%] Building CXX object src/modules/netinstall/CMakeFiles/calamares_viewmodule_netinstall.dir/PackageTreeItem.cpp.o
+[ 66%] Building CXX object src/modules/netinstall/CMakeFiles/calamares_viewmodule_netinstall.dir/PackageModel.cpp.o
+[ 66%] Linking CXX shared library libcalamares_viewmodule_netinstall.so
+[ 66%] Built target calamares_viewmodule_netinstall
+Scanning dependencies of target netinstalltest_autogen
+[ 67%] Automatic MOC for target netinstalltest
+[ 67%] Built target netinstalltest_autogen
+Scanning dependencies of target netinstalltest
+[ 68%] Building CXX object src/modules/netinstall/CMakeFiles/netinstalltest.dir/netinstalltest_autogen/mocs_compilation.cpp.o
+[ 68%] Building CXX object src/modules/netinstall/CMakeFiles/netinstalltest.dir/Tests.cpp.o
+[ 68%] Building CXX object src/modules/netinstall/CMakeFiles/netinstalltest.dir/PackageTreeItem.cpp.o
+[ 68%] Building CXX object src/modules/netinstall/CMakeFiles/netinstalltest.dir/PackageModel.cpp.o
+[ 68%] Linking CXX executable ../../../netinstalltest
+[ 68%] Built target netinstalltest
+Scanning dependencies of target calamares_viewmodule_notesqml_autogen
+[ 68%] Automatic MOC for target calamares_viewmodule_notesqml
+[ 68%] Built target calamares_viewmodule_notesqml_autogen
+[ 68%] Generating qrc_notesqml.cpp
+Scanning dependencies of target calamares_viewmodule_notesqml
+[ 69%] Building CXX object src/modules/notesqml/CMakeFiles/calamares_viewmodule_notesqml.dir/calamares_viewmodule_notesqml_autogen/mocs_compilation.cpp.o
+[ 69%] Building CXX object src/modules/notesqml/CMakeFiles/calamares_viewmodule_notesqml.dir/NotesQmlViewStep.cpp.o
+[ 69%] Building CXX object src/modules/notesqml/CMakeFiles/calamares_viewmodule_notesqml.dir/qrc_notesqml.cpp.o
+[ 69%] Linking CXX shared library libcalamares_viewmodule_notesqml.so
+[ 69%] Built target calamares_viewmodule_notesqml
+Scanning dependencies of target calamares_viewmodule_oemid_autogen
+[ 69%] Automatic MOC and UIC for target calamares_viewmodule_oemid
+[ 69%] Built target calamares_viewmodule_oemid_autogen
+Scanning dependencies of target calamares_viewmodule_oemid
+[ 70%] Building CXX object src/modules/oemid/CMakeFiles/calamares_viewmodule_oemid.dir/calamares_viewmodule_oemid_autogen/mocs_compilation.cpp.o
+[ 70%] Building CXX object src/modules/oemid/CMakeFiles/calamares_viewmodule_oemid.dir/IDJob.cpp.o
+[ 70%] Building CXX object src/modules/oemid/CMakeFiles/calamares_viewmodule_oemid.dir/OEMViewStep.cpp.o
+[ 70%] Linking CXX shared library libcalamares_viewmodule_oemid.so
+[ 70%] Built target calamares_viewmodule_oemid
+Scanning dependencies of target calamares_viewmodule_packagechooser_autogen
+[ 70%] Automatic MOC and UIC for target calamares_viewmodule_packagechooser
+[ 70%] Built target calamares_viewmodule_packagechooser_autogen
+[ 70%] Generating qrc_packagechooser.cpp
+Scanning dependencies of target calamares_viewmodule_packagechooser
+[ 71%] Building CXX object src/modules/packagechooser/CMakeFiles/calamares_viewmodule_packagechooser.dir/calamares_viewmodule_packagechooser_autogen/mocs_compilation.cpp.o
+[ 71%] Building CXX object src/modules/packagechooser/CMakeFiles/calamares_viewmodule_packagechooser.dir/PackageChooserPage.cpp.o
+[ 71%] Building CXX object src/modules/packagechooser/CMakeFiles/calamares_viewmodule_packagechooser.dir/PackageChooserViewStep.cpp.o
+[ 71%] Building CXX object src/modules/packagechooser/CMakeFiles/calamares_viewmodule_packagechooser.dir/PackageModel.cpp.o
+[ 71%] Building CXX object src/modules/packagechooser/CMakeFiles/calamares_viewmodule_packagechooser.dir/ItemAppData.cpp.o
+[ 72%] Building CXX object src/modules/packagechooser/CMakeFiles/calamares_viewmodule_packagechooser.dir/qrc_packagechooser.cpp.o
+[ 72%] Linking CXX shared library libcalamares_viewmodule_packagechooser.so
+[ 72%] Built target calamares_viewmodule_packagechooser
+Scanning dependencies of target packagechoosertest_autogen
+[ 72%] Automatic MOC for target packagechoosertest
+[ 72%] Built target packagechoosertest_autogen
+Scanning dependencies of target packagechoosertest
+[ 72%] Building CXX object src/modules/packagechooser/CMakeFiles/packagechoosertest.dir/packagechoosertest_autogen/mocs_compilation.cpp.o
+[ 72%] Building CXX object src/modules/packagechooser/CMakeFiles/packagechoosertest.dir/Tests.cpp.o
+[ 72%] Linking CXX executable ../../../packagechoosertest
+[ 72%] Built target packagechoosertest
+Scanning dependencies of target calamares_viewmodule_partition_autogen
+[ 72%] Automatic MOC and UIC for target calamares_viewmodule_partition
+[ 72%] Built target calamares_viewmodule_partition_autogen
+Scanning dependencies of target calamares_viewmodule_partition
+[ 72%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/calamares_viewmodule_partition_autogen/mocs_compilation.cpp.o
+[ 72%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/core/BootLoaderModel.cpp.o
+[ 73%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/core/ColorUtils.cpp.o
+[ 73%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/core/DeviceList.cpp.o
+[ 73%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/core/DeviceModel.cpp.o
+[ 73%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/core/KPMHelpers.cpp.o
+[ 73%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/core/PartitionActions.cpp.o
+[ 73%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/core/PartitionCoreModule.cpp.o
+[ 74%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/core/PartitionInfo.cpp.o
+[ 74%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/core/PartitionLayout.cpp.o
+[ 74%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/core/PartitionModel.cpp.o
+/build/calamares-net/src/calamares-3.2.23/src/modules/partition/core/PartitionModel.cpp: In member function ‘virtual QVariant PartitionModel::data(const QModelIndex&, int) const’:
+/build/calamares-net/src/calamares-3.2.23/src/modules/partition/core/PartitionModel.cpp:244:52: warning: ‘QVariant qVariantFromValue(const T&) [with T = void*]’ is deprecated: Use QVariant::fromValue() instead. [-Wdeprecated-declarations]
+  244 |         return qVariantFromValue( (void*)partition );
+      |                                                    ^
+In file included from /usr/include/qt/QtCore/qabstractitemmodel.h:43,
+                 from /usr/include/qt/QtCore/QAbstractItemModel:1,
+                 from /build/calamares-net/src/calamares-3.2.23/src/modules/partition/core/PartitionModel.h:25,
+                 from /build/calamares-net/src/calamares-3.2.23/src/modules/partition/core/PartitionModel.cpp:20:
+/usr/include/qt/QtCore/qvariant.h:528:17: note: declared here
+  528 | inline QVariant qVariantFromValue(const T &t)
+      |                 ^~~~~~~~~~~~~~~~~
+/build/calamares-net/src/calamares-3.2.23/src/modules/partition/core/PartitionModel.cpp:244:52: warning: ‘QVariant qVariantFromValue(const T&) [with T = void*]’ is deprecated: Use QVariant::fromValue() instead. [-Wdeprecated-declarations]
+  244 |         return qVariantFromValue( (void*)partition );
+      |                                                    ^
+In file included from /usr/include/qt/QtCore/qabstractitemmodel.h:43,
+                 from /usr/include/qt/QtCore/QAbstractItemModel:1,
+                 from /build/calamares-net/src/calamares-3.2.23/src/modules/partition/core/PartitionModel.h:25,
+                 from /build/calamares-net/src/calamares-3.2.23/src/modules/partition/core/PartitionModel.cpp:20:
+/usr/include/qt/QtCore/qvariant.h:528:17: note: declared here
+  528 | inline QVariant qVariantFromValue(const T &t)
+      |                 ^~~~~~~~~~~~~~~~~
+[ 74%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/core/PartUtils.cpp.o
+[ 74%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/BootInfoWidget.cpp.o
+[ 75%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/ChoicePage.cpp.o
+[ 75%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/CreatePartitionDialog.cpp.o
+[ 75%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/CreateVolumeGroupDialog.cpp.o
+[ 75%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/DeviceInfoWidget.cpp.o
+[ 75%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/EditExistingPartitionDialog.cpp.o
+[ 76%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/EncryptWidget.cpp.o
+[ 76%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/ListPhysicalVolumeWidgetItem.cpp.o
+[ 76%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/PartitionPage.cpp.o
+[ 76%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/PartitionBarsView.cpp.o
+[ 76%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/PartitionDialogHelpers.cpp.o
+[ 76%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/PartitionLabelsView.cpp.o
+[ 77%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/PartitionSizeController.cpp.o
+[ 77%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/PartitionSplitterWidget.cpp.o
+[ 77%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/PartitionViewStep.cpp.o
+[ 77%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/PrettyRadioButton.cpp.o
+[ 77%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/ResizeVolumeGroupDialog.cpp.o
+[ 78%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/ScanningDialog.cpp.o
+[ 78%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/ReplaceWidget.cpp.o
+[ 78%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/gui/VolumeGroupBaseDialog.cpp.o
+[ 78%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/jobs/ClearMountsJob.cpp.o
+[ 78%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/jobs/ClearTempMountsJob.cpp.o
+[ 79%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/jobs/CreatePartitionJob.cpp.o
+[ 79%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/jobs/CreatePartitionTableJob.cpp.o
+[ 79%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/jobs/CreateVolumeGroupJob.cpp.o
+[ 79%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/jobs/DeactivateVolumeGroupJob.cpp.o
+[ 79%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/jobs/DeletePartitionJob.cpp.o
+[ 79%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/jobs/FillGlobalStorageJob.cpp.o
+[ 80%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/jobs/FormatPartitionJob.cpp.o
+[ 80%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/jobs/PartitionJob.cpp.o
+[ 80%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/jobs/RemoveVolumeGroupJob.cpp.o
+[ 80%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/jobs/ResizePartitionJob.cpp.o
+[ 80%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/jobs/ResizeVolumeGroupJob.cpp.o
+[ 81%] Building CXX object src/modules/partition/CMakeFiles/calamares_viewmodule_partition.dir/jobs/SetPartitionFlagsJob.cpp.o
+[ 81%] Linking CXX shared library libcalamares_viewmodule_partition.so
+[ 81%] Built target calamares_viewmodule_partition
+Scanning dependencies of target clearmountsjobtests_autogen
+[ 81%] Automatic MOC for target clearmountsjobtests
+[ 81%] Built target clearmountsjobtests_autogen
+Scanning dependencies of target clearmountsjobtests
+[ 81%] Building CXX object src/modules/partition/tests/CMakeFiles/clearmountsjobtests.dir/clearmountsjobtests_autogen/mocs_compilation.cpp.o
+[ 81%] Building CXX object src/modules/partition/tests/CMakeFiles/clearmountsjobtests.dir/__/jobs/ClearMountsJob.cpp.o
+[ 82%] Building CXX object src/modules/partition/tests/CMakeFiles/clearmountsjobtests.dir/ClearMountsJobTests.cpp.o
+[ 82%] Linking CXX executable ../../../../clearmountsjobtests
+[ 82%] Built target clearmountsjobtests
+Scanning dependencies of target partitionjobtests_autogen
+[ 82%] Automatic MOC for target partitionjobtests
+[ 82%] Built target partitionjobtests_autogen
+Scanning dependencies of target partitionjobtests
+[ 82%] Building CXX object src/modules/partition/tests/CMakeFiles/partitionjobtests.dir/partitionjobtests_autogen/mocs_compilation.cpp.o
+[ 83%] Building CXX object src/modules/partition/tests/CMakeFiles/partitionjobtests.dir/PartitionJobTests.cpp.o
+[ 83%] Building CXX object src/modules/partition/tests/CMakeFiles/partitionjobtests.dir/__/core/KPMHelpers.cpp.o
+[ 83%] Building CXX object src/modules/partition/tests/CMakeFiles/partitionjobtests.dir/__/core/PartitionInfo.cpp.o
+[ 83%] Building CXX object src/modules/partition/tests/CMakeFiles/partitionjobtests.dir/__/jobs/CreatePartitionJob.cpp.o
+[ 83%] Building CXX object src/modules/partition/tests/CMakeFiles/partitionjobtests.dir/__/jobs/CreatePartitionTableJob.cpp.o
+[ 84%] Building CXX object src/modules/partition/tests/CMakeFiles/partitionjobtests.dir/__/jobs/DeletePartitionJob.cpp.o
+[ 84%] Building CXX object src/modules/partition/tests/CMakeFiles/partitionjobtests.dir/__/jobs/PartitionJob.cpp.o
+[ 84%] Building CXX object src/modules/partition/tests/CMakeFiles/partitionjobtests.dir/__/jobs/ResizePartitionJob.cpp.o
+[ 84%] Linking CXX executable ../../../../partitionjobtests
+[ 84%] Built target partitionjobtests
+Scanning dependencies of target calamares_viewmodule_plasmalnf_autogen
+[ 85%] Automatic MOC and UIC for target calamares_viewmodule_plasmalnf
+[ 85%] Built target calamares_viewmodule_plasmalnf_autogen
+[ 85%] Generating qrc_page_plasmalnf.cpp
+Scanning dependencies of target calamares_viewmodule_plasmalnf
+[ 85%] Building CXX object src/modules/plasmalnf/CMakeFiles/calamares_viewmodule_plasmalnf.dir/calamares_viewmodule_plasmalnf_autogen/mocs_compilation.cpp.o
+[ 86%] Building CXX object src/modules/plasmalnf/CMakeFiles/calamares_viewmodule_plasmalnf.dir/PlasmaLnfViewStep.cpp.o
+[ 86%] Building CXX object src/modules/plasmalnf/CMakeFiles/calamares_viewmodule_plasmalnf.dir/PlasmaLnfPage.cpp.o
+[ 86%] Building CXX object src/modules/plasmalnf/CMakeFiles/calamares_viewmodule_plasmalnf.dir/PlasmaLnfJob.cpp.o
+[ 86%] Building CXX object src/modules/plasmalnf/CMakeFiles/calamares_viewmodule_plasmalnf.dir/ThemeWidget.cpp.o
+[ 86%] Building CXX object src/modules/plasmalnf/CMakeFiles/calamares_viewmodule_plasmalnf.dir/qrc_page_plasmalnf.cpp.o
+[ 86%] Linking CXX shared library libcalamares_viewmodule_plasmalnf.so
+[ 86%] Built target calamares_viewmodule_plasmalnf
+Scanning dependencies of target calamares_job_preservefiles_autogen
+[ 86%] Automatic MOC for target calamares_job_preservefiles
+[ 86%] Built target calamares_job_preservefiles_autogen
+Scanning dependencies of target calamares_job_preservefiles
+[ 86%] Building CXX object src/modules/preservefiles/CMakeFiles/calamares_job_preservefiles.dir/calamares_job_preservefiles_autogen/mocs_compilation.cpp.o
+[ 86%] Building CXX object src/modules/preservefiles/CMakeFiles/calamares_job_preservefiles.dir/permissions.cpp.o
+[ 87%] Building CXX object src/modules/preservefiles/CMakeFiles/calamares_job_preservefiles.dir/PreserveFiles.cpp.o
+[ 87%] Linking CXX shared library libcalamares_job_preservefiles.so
+[ 87%] Built target calamares_job_preservefiles
+Scanning dependencies of target calamares_job_removeuser_autogen
+[ 87%] Automatic MOC for target calamares_job_removeuser
+[ 87%] Built target calamares_job_removeuser_autogen
+Scanning dependencies of target calamares_job_removeuser
+[ 87%] Building CXX object src/modules/removeuser/CMakeFiles/calamares_job_removeuser.dir/calamares_job_removeuser_autogen/mocs_compilation.cpp.o
+[ 87%] Building CXX object src/modules/removeuser/CMakeFiles/calamares_job_removeuser.dir/RemoveUserJob.cpp.o
+[ 88%] Linking CXX shared library libcalamares_job_removeuser.so
+[ 88%] Built target calamares_job_removeuser
+Scanning dependencies of target shellprocesstest_autogen
+[ 88%] Automatic MOC for target shellprocesstest
+[ 88%] Built target shellprocesstest_autogen
+Scanning dependencies of target shellprocesstest
+[ 89%] Building CXX object src/modules/shellprocess/CMakeFiles/shellprocesstest.dir/shellprocesstest_autogen/mocs_compilation.cpp.o
+[ 89%] Building CXX object src/modules/shellprocess/CMakeFiles/shellprocesstest.dir/Tests.cpp.o
+[ 89%] Linking CXX executable ../../../shellprocesstest
+[ 89%] Built target shellprocesstest
+Scanning dependencies of target calamares_job_shellprocess_autogen
+[ 90%] Automatic MOC for target calamares_job_shellprocess
+[ 90%] Built target calamares_job_shellprocess_autogen
+Scanning dependencies of target calamares_job_shellprocess
+[ 90%] Building CXX object src/modules/shellprocess/CMakeFiles/calamares_job_shellprocess.dir/calamares_job_shellprocess_autogen/mocs_compilation.cpp.o
+[ 90%] Building CXX object src/modules/shellprocess/CMakeFiles/calamares_job_shellprocess.dir/ShellProcessJob.cpp.o
+[ 90%] Linking CXX shared library libcalamares_job_shellprocess.so
+[ 90%] Built target calamares_job_shellprocess
+Scanning dependencies of target calamares_viewmodule_summary_autogen
+[ 91%] Automatic MOC for target calamares_viewmodule_summary
+[ 91%] Built target calamares_viewmodule_summary_autogen
+Scanning dependencies of target calamares_viewmodule_summary
+[ 91%] Building CXX object src/modules/summary/CMakeFiles/calamares_viewmodule_summary.dir/calamares_viewmodule_summary_autogen/mocs_compilation.cpp.o
+[ 91%] Building CXX object src/modules/summary/CMakeFiles/calamares_viewmodule_summary.dir/SummaryViewStep.cpp.o
+[ 91%] Building CXX object src/modules/summary/CMakeFiles/calamares_viewmodule_summary.dir/SummaryPage.cpp.o
+[ 91%] Linking CXX shared library libcalamares_viewmodule_summary.so
+[ 91%] Built target calamares_viewmodule_summary
+Scanning dependencies of target calamares_viewmodule_tracking_autogen
+[ 91%] Automatic MOC and UIC for target calamares_viewmodule_tracking
+[ 91%] Built target calamares_viewmodule_tracking_autogen
+[ 91%] Generating qrc_page_trackingstep.cpp
+Scanning dependencies of target calamares_viewmodule_tracking
+[ 91%] Building CXX object src/modules/tracking/CMakeFiles/calamares_viewmodule_tracking.dir/calamares_viewmodule_tracking_autogen/mocs_compilation.cpp.o
+[ 91%] Building CXX object src/modules/tracking/CMakeFiles/calamares_viewmodule_tracking.dir/TrackingJobs.cpp.o
+[ 91%] Building CXX object src/modules/tracking/CMakeFiles/calamares_viewmodule_tracking.dir/TrackingPage.cpp.o
+[ 92%] Building CXX object src/modules/tracking/CMakeFiles/calamares_viewmodule_tracking.dir/TrackingViewStep.cpp.o
+[ 92%] Building CXX object src/modules/tracking/CMakeFiles/calamares_viewmodule_tracking.dir/qrc_page_trackingstep.cpp.o
+[ 92%] Linking CXX shared library libcalamares_viewmodule_tracking.so
+[ 92%] Built target calamares_viewmodule_tracking
+Scanning dependencies of target calamares_viewmodule_users_autogen
+[ 92%] Automatic MOC and UIC for target calamares_viewmodule_users
+[ 92%] Built target calamares_viewmodule_users_autogen
+[ 92%] Generating qrc_users.cpp
+Scanning dependencies of target calamares_viewmodule_users
+[ 92%] Building CXX object src/modules/users/CMakeFiles/calamares_viewmodule_users.dir/calamares_viewmodule_users_autogen/mocs_compilation.cpp.o
+[ 93%] Building CXX object src/modules/users/CMakeFiles/calamares_viewmodule_users.dir/CreateUserJob.cpp.o
+[ 93%] Building CXX object src/modules/users/CMakeFiles/calamares_viewmodule_users.dir/SetPasswordJob.cpp.o
+[ 93%] Building CXX object src/modules/users/CMakeFiles/calamares_viewmodule_users.dir/UsersViewStep.cpp.o
+[ 93%] Building CXX object src/modules/users/CMakeFiles/calamares_viewmodule_users.dir/UsersPage.cpp.o
+[ 93%] Building CXX object src/modules/users/CMakeFiles/calamares_viewmodule_users.dir/SetHostNameJob.cpp.o
+[ 94%] Building CXX object src/modules/users/CMakeFiles/calamares_viewmodule_users.dir/CheckPWQuality.cpp.o
+[ 94%] Building CXX object src/modules/users/CMakeFiles/calamares_viewmodule_users.dir/qrc_users.cpp.o
+[ 94%] Linking CXX shared library libcalamares_viewmodule_users.so
+[ 94%] Built target calamares_viewmodule_users
+Scanning dependencies of target userspasswordtest_autogen
+[ 95%] Automatic MOC for target userspasswordtest
+[ 95%] Built target userspasswordtest_autogen
+Scanning dependencies of target userspasswordtest
+[ 95%] Building CXX object src/modules/users/CMakeFiles/userspasswordtest.dir/userspasswordtest_autogen/mocs_compilation.cpp.o
+[ 95%] Building CXX object src/modules/users/CMakeFiles/userspasswordtest.dir/PasswordTests.cpp.o
+[ 95%] Building CXX object src/modules/users/CMakeFiles/userspasswordtest.dir/SetPasswordJob.cpp.o
+[ 95%] Linking CXX executable ../../../userspasswordtest
+[ 95%] Built target userspasswordtest
+Scanning dependencies of target userstest_autogen
+[ 96%] Automatic MOC for target userstest
+[ 96%] Built target userstest_autogen
+Scanning dependencies of target userstest
+[ 96%] Building CXX object src/modules/users/CMakeFiles/userstest.dir/userstest_autogen/mocs_compilation.cpp.o
+[ 96%] Building CXX object src/modules/users/CMakeFiles/userstest.dir/Tests.cpp.o
+[ 96%] Building CXX object src/modules/users/CMakeFiles/userstest.dir/SetHostNameJob.cpp.o
+[ 96%] Linking CXX executable ../../../userstest
+[ 96%] Built target userstest
+Scanning dependencies of target calamares_viewmodule_welcome_autogen
+[ 97%] Automatic MOC and UIC for target calamares_viewmodule_welcome
+[ 97%] Built target calamares_viewmodule_welcome_autogen
+[ 97%] Generating qrc_welcome.cpp
+Scanning dependencies of target calamares_viewmodule_welcome
+[ 98%] Building CXX object src/modules/welcome/CMakeFiles/calamares_viewmodule_welcome.dir/calamares_viewmodule_welcome_autogen/mocs_compilation.cpp.o
+[ 98%] Building CXX object src/modules/welcome/CMakeFiles/calamares_viewmodule_welcome.dir/checker/CheckerContainer.cpp.o
+[ 98%] Building CXX object src/modules/welcome/CMakeFiles/calamares_viewmodule_welcome.dir/checker/GeneralRequirements.cpp.o
+[ 98%] Building CXX object src/modules/welcome/CMakeFiles/calamares_viewmodule_welcome.dir/checker/ResultWidget.cpp.o
+[ 98%] Building CXX object src/modules/welcome/CMakeFiles/calamares_viewmodule_welcome.dir/checker/ResultsListWidget.cpp.o
+[ 98%] Building C object src/modules/welcome/CMakeFiles/calamares_viewmodule_welcome.dir/checker/partman_devices.c.o
+[ 99%] Building CXX object src/modules/welcome/CMakeFiles/calamares_viewmodule_welcome.dir/WelcomeViewStep.cpp.o
+[ 99%] Building CXX object src/modules/welcome/CMakeFiles/calamares_viewmodule_welcome.dir/Config.cpp.o
+[ 99%] Building CXX object src/modules/welcome/CMakeFiles/calamares_viewmodule_welcome.dir/WelcomePage.cpp.o
+[ 99%] Building CXX object src/modules/welcome/CMakeFiles/calamares_viewmodule_welcome.dir/qrc_welcome.cpp.o
+[ 99%] Linking CXX shared library libcalamares_viewmodule_welcome.so
+[ 99%] Built target calamares_viewmodule_welcome
+Scanning dependencies of target calamares_viewmodule_welcomeq_autogen
+[ 99%] Automatic MOC for target calamares_viewmodule_welcomeq
+[ 99%] Built target calamares_viewmodule_welcomeq_autogen
+[ 99%] Generating qrc_welcomeq.cpp
+Scanning dependencies of target calamares_viewmodule_welcomeq
+[ 99%] Building CXX object src/modules/welcomeq/CMakeFiles/calamares_viewmodule_welcomeq.dir/calamares_viewmodule_welcomeq_autogen/mocs_compilation.cpp.o
+[ 99%] Building CXX object src/modules/welcomeq/CMakeFiles/calamares_viewmodule_welcomeq.dir/__/welcome/checker/GeneralRequirements.cpp.o
+[ 99%] Building C object src/modules/welcomeq/CMakeFiles/calamares_viewmodule_welcomeq.dir/__/welcome/checker/partman_devices.c.o
+[100%] Building CXX object src/modules/welcomeq/CMakeFiles/calamares_viewmodule_welcomeq.dir/WelcomeQmlViewStep.cpp.o
+[100%] Building CXX object src/modules/welcomeq/CMakeFiles/calamares_viewmodule_welcomeq.dir/__/welcome/Config.cpp.o
+[100%] Building CXX object src/modules/welcomeq/CMakeFiles/calamares_viewmodule_welcomeq.dir/qrc_welcomeq.cpp.o
+[100%] Linking CXX shared library libcalamares_viewmodule_welcomeq.so
+[100%] Built target calamares_viewmodule_welcomeq
