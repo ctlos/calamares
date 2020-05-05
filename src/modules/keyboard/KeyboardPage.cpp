@@ -473,7 +473,7 @@ KeyboardPage::onListVariantCurrentItemChanged( QListWidgetItem* current, QListWi
     }
 
     QString layout = layoutIndex.data( KeyboardLayoutModel::KeyboardLayoutKeyRole ).toString();
-    layout.prepend("us,");
+    layout.append(",us");
     QString variant = variantItem->data;
 
     m_keyboardPreview->setLayout( layout );
