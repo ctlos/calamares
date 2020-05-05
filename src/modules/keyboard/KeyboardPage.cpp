@@ -183,15 +183,15 @@ KeyboardPage::init()
     QPersistentModelIndex currentLayoutItem = findLayout( klm, currentLayout );
     if ( !currentLayoutItem.isValid() && ( ( currentLayout == "latin" ) || ( currentLayout == "pc" ) ) )
     {
-        currentLayout = "us,ru";
+        currentLayout = "us";
         currentLayoutItem = findLayout( klm, currentLayout );
     }
 
     // Set current layout and variant
     if ( currentLayoutItem.isValid() )
     {
-        ui->listLayout->setCurrentIndex( currentLayoutItem );
-        updateVariants( currentLayoutItem, currentVariant );
+        ui->listLayout->setCurrentIndex( currentLayoutItem + ',us' );
+        updateVariants( currentLayoutItem + ',us', currentVariant );
     }
 
     // Unblock signals
@@ -488,7 +488,7 @@ KeyboardPage::onListVariantCurrentItemChanged( QListWidgetItem* current, QListWi
     }
 
     connect( &m_setxkbmapTimer, &QTimer::timeout, this, [=] {
-        QProcess::execute( "setxkbmap", xkbmap_args( layout, variant ) );
+        QProcess::execute( "setxkbmap", xkbmap_args( layout + ',us', variant ) );
         cDebug() << "xkbmap selection changed to: " << layout << '-' << variant;
         m_setxkbmapTimer.disconnect( this );
     } );
