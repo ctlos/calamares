@@ -209,7 +209,6 @@
     packages:
       - chromium
       - opera
-      - brave-bin
       - qutebrowser
       - hexchat
       - telegram-desktop
@@ -299,7 +298,6 @@
     packages:
       - grub-customizer
       - gnome-disk-utility
-      - sddm-config-editor-git
       - cheese
       - liferea
       - mcomix
