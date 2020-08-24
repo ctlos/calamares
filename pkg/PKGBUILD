@@ -1,16 +1,20 @@
 # Ctlos Calamares
 pkgname=calamares-net
 pkgver=3.2.29
-pkgrel=1
+pkgrel=2
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 license=(GPL)
 url="https://github.com/ctlos/calamares"
 license=('LGPL')
-depends=('kconfig' 'kcoreaddons' 'kiconthemes' 'ki18n' 'kio' 'solid' 'yaml-cpp' 'kpmcore' 'mkinitcpio-openswap'
-         'boost-libs' 'ckbcomp' 'hwinfo' 'qt5-svg' 'polkit-qt5' 'gtk-update-icon-cache' 'plasma-framework'
-         'qt5-xmlpatterns' 'squashfs-tools' 'yad')
-makedepends=('extra-cmake-modules' 'qt5-tools' 'qt5-translations' 'git' 'boost')
+
+depends=('boost-libs' 'upower' 'solid' 'doxygen' 'dmidecode' 'gptfdisk' 'hwinfo' 'yaml-cpp'
+         'kservice' 'kwidgetsaddons' 'kpmcore' 'kparts' 'kconfig' 'kcoreaddons' 'kiconthemes' 'ki18n' 'kio'
+         'plasma-framework' 'polkit-qt5' 'qt5-webengine' 'qt5-svg' 'qt5-xmlpatterns'
+         'ckbcomp' 'mkinitcpio-openswap' 'squashfs-tools' 'libpwquality' 'yad' 'gtk-update-icon-cache')
+
+makedepends=('git' 'boost' 'extra-cmake-modules' 'qt5-tools' 'qt5-translations')
+
 conflicts=('calamares')
 backup=('usr/share/calamares/modules/bootloader.conf'
         'usr/share/calamares/modules/displaymanager.conf'
@@ -47,7 +51,8 @@ build() {
               -DCMAKE_BUILD_TYPE=Release \
               -DCMAKE_INSTALL_PREFIX=/usr \
               -DCMAKE_INSTALL_LIBDIR=lib \
-              -DWITH_PYTHONQT:BOOL=OFF \
+              -DWITH_KF5DBus=OFF \
+              -DWITH_PYTHONQT:BOOL=ON \
               -DBoost_NO_BOOST_CMAKE=ON \
               -DSKIP_MODULES="webview interactiveterminal initramfs \
                               initramfscfg dracut dracutlukscfg \
