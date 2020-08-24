@@ -262,6 +262,18 @@
     hidden: false
     selected: false
     packages:
+      - adobe-source-sans-pro-fonts
+      - noto-fonts
+      - noto-fonts-emoji
+      - noto-fonts-cjk
+      - ttf-bitstream-vera
+      - ttf-dejavu
+      - ttf-droid
+      - ttf-hack
+      - ttf-inconsolata
+      - ttf-liberation
+      - ttf-roboto
+      - ttf-ubuntu-font-family
       - terminus-font
   - name: "Dev Tools"
     description: "Development"
@@ -308,7 +320,10 @@
     selected: false
     packages:
       - virtualbox
+      - virtualbox-host-modules-arch
       - virtualbox-host-dkms
+      - virtualbox-guest-iso
+      - virtualbox-guest-dkms
   - name: "Usb iso"
     description: "Usb"
     critical: false
@@ -316,7 +331,6 @@
     selected: false
     packages:
       - gnome-multi-writer
-      - etcher-bin
       - imagewriter
       - woeusb
   - name: "Games"
