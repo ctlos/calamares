@@ -31,11 +31,18 @@ The IDs are based on the object names in the C++ code.
 #licenseItem {  }
 #licenseItemFullText {  }
 */
+
 /*
 #debugButton {
   color: white;
 }
 */
+/*
 #mainText{
-  font : bold 14px;
+  font: bold 14px;
+}
+*/
+
+#Slideshow, #SlideshowPictures {
+  background: #161720;
 }

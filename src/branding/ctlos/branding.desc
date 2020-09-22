@@ -4,7 +4,7 @@ welcomeStyleCalamares:   false
 welcomeExpandingLogo:    true
 windowPlacement:         center
 windowExpanding:         normal
-windowSize:              900px,620px
+windowSize:              1000px,650px
 
 strings:
     productName:         Ctlos Linux
