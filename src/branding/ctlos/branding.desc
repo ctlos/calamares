@@ -1,26 +1,32 @@
 ---
-componentName:  ctlos
+componentName:           ctlos
+welcomeStyleCalamares:   false
+welcomeExpandingLogo:    true
+windowPlacement:         center
+windowExpanding:         normal
+windowSize:              900px,620px
 
 strings:
     productName:         Ctlos Linux
-    shortProductName:    Ctlos
-    version:             0.1
-    shortVersion:        0.1
-    versionedName:       Ctlos Linux 0.1
-    shortVersionedName:  Ctlos Linux 0.1
     bootloaderEntryName: Ctlos
     productUrl:          https://ctlos.github.io
-    supportUrl:          https://github.com/ctlos/ctlosiso/issues
-    
+    supportUrl:          https://ctlos.github.io/wiki
+    releaseNotesUrl:     https://ctlos.github.io/wiki/changelog
+    knownIssuesUrl:      https://github.com/ctlos/ctlosiso/issues
+    donateUrl:           https://ctlos.github.io/donat
+
 
 images:
     productLogo:         "logo.png"
     productIcon:         "logo.png"
     productWelcome:      "languages.png"
+    productWallpaper:    "wallpaper.png"
 
 slideshow:               "show.qml"
+slideshowAPI:            2
 
 style:
    sidebarBackground:    "#353945"
    sidebarText:          "#FFFFFF"
-   sidebarTextSelect:    "#353945"
+   sidebarTextSelect:    "#FFFFFF"
+   sidebarTextHighlight: "#4A65BD"

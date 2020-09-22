@@ -1,6 +1,7 @@
-/* === This file is part of Calamares - <http://github.com/calamares> ===
+/* === This file is part of Calamares - <https://github.com/calamares> ===
  *
  *   Copyright 2015, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2018, Adriaan de Groot <groot@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -22,39 +23,75 @@ import calamares.slideshow 1.0;
 Presentation
 {
     id: presentation
+    function nextSlide() {
+        console.log("QML Component (default slideshow) Next slide");
+        presentation.goToNextSlide();
+    }
 
     Timer {
-        interval: 20000
-        running: true
+        id: advanceTimer
+        interval: 5000
+        running: presentation.activatedInCalamares
         repeat: true
-        onTriggered: presentation.goToNextSlide()
+        onTriggered: nextSlide()
     }
-    
+
     Slide {
-        anchors.fill: parent
         Image {
             id: background1
             source: "slide.png"
-            anchors.fill: parent
+            x:0
+            y:0
+            width: 900; height: 610
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
         }
     }
 
+
     Slide {
-        anchors.fill: parent
         Image {
             id: background2
             source: "slide1.png"
-            anchors.fill: parent
+            x:0
+            y:0
+            width: 900; height: 610
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
         }
     }
 
     Slide {
-        anchors.fill: parent
         Image {
             id: background3
             source: "slide2.png"
-            anchors.fill: parent
+            x:0
+            y:0
+            width: 900; height: 610
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
         }
     }
-}
 
+    Slide {
+        Image {
+            id: background4
+            source: "slide3.png"
+            x:0
+            y:0
+            width: 900; height: 610
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+    }
+
+    function onActivate() {
+          console.log("QML Component (default slideshow) activated");
+          presentation.currentSlide = 0;
+    }
+
+    function onLeave() {
+          console.log("QML Component (default slideshow) deactivated");
+    }
+
+}
