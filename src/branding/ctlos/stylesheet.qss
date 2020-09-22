@@ -42,7 +42,3 @@ The IDs are based on the object names in the C++ code.
   font: bold 14px;
 }
 */
-
-#viewManagerStack {
-  background: #161720;
-}
