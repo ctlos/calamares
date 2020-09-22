@@ -4,7 +4,7 @@ welcomeStyleCalamares:   false
 welcomeExpandingLogo:    true
 windowPlacement:         center
 windowExpanding:         normal
-windowSize:              1000px,650px
+windowSize:              1000px,600px
 
 strings:
     productName:         Ctlos Linux
@@ -26,7 +26,7 @@ slideshow:               "show.qml"
 slideshowAPI:            2
 
 style:
-   sidebarBackground:    "#353945"
+   sidebarBackground:    "#1D2026"
    sidebarText:          "#FFFFFF"
    sidebarTextSelect:    "#FFFFFF"
    sidebarTextHighlight: "#4A65BD"
