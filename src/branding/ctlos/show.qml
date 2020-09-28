@@ -23,7 +23,6 @@ import calamares.slideshow 1.0;
 Presentation
 {
     id: presentation
-
     function nextSlide() {
         console.log("QML Component (default slideshow) Next slide");
         presentation.goToNextSlide();
@@ -31,45 +30,53 @@ Presentation
 
     Timer {
         id: advanceTimer
-        interval: 2000
+        interval: 5000
         running: presentation.activatedInCalamares
         repeat: true
         onTriggered: nextSlide()
     }
 
     Slide {
-
         Image {
             id: background1
             source: "slide.png"
+            width: 1000; height: 550
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
-
     }
 
 
     Slide {
-
         Image {
             id: background2
             source: "slide1.png"
+            width: 1000; height: 550
             fillMode: Image.PreserveAspectFit
-      anchors.centerIn: parent
+            anchors.centerIn: parent
         }
-
     }
 
     Slide {
-
         Image {
             id: background3
             source: "slide2.png"
+            width: 1000; height: 550
             fillMode: Image.PreserveAspectFit
-      anchors.centerIn: parent
+            anchors.centerIn: parent
         }
-
     }
+
+    Slide {
+        Image {
+            id: background4
+            source: "slide3.png"
+            width: 1000; height: 550
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+    }
+
     function onActivate() {
           console.log("QML Component (default slideshow) activated");
           presentation.currentSlide = 0;
