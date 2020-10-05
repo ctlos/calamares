@@ -1,7 +1,7 @@
 # Ctlos Calamares
-pkgname=calamares-net
+pkgname=calamares-dev
 pkgver=3.2.30
-pkgrel=4
+pkgrel=1
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 license=(GPL)
@@ -21,7 +21,7 @@ backup=('usr/share/calamares/modules/bootloader.conf'
         'usr/share/calamares/modules/unpackfs.conf')
 
 source+=("https://github.com/calamares/calamares/releases/download/v${pkgver}/calamares-${pkgver}.tar.gz"
-         git+https://github.com/ctlos/calamares#branch=dev)
+         git+https://github.com/ctlos/calamares#branch=net)
 
 sha256sums=('SKIP'
             'SKIP')
