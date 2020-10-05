@@ -21,10 +21,10 @@ def run():
      pass
 
     GET_PACSTRAP = "curl -s -Lo /tmp/pacstrap.sh https://raw.githubusercontent.com/ctlos/ctlos-sh/master/pacstrap.sh"
-    PAC_STRAP = "/tmp/pacstrap.sh"
+    PAC_STRAP = "sh /tmp/pacstrap.sh"
 
     try:
         subprocess.call(GET_PACSTRAP.split(' '))
-        subprocess.call([PAC_STRAP])
+        subprocess.call(PAC_STRAP.split(' '))
     except:
         pass
