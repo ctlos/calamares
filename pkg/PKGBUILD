@@ -1,6 +1,6 @@
 # Ctlos Calamares
 pkgname=calamares-dev
-pkgver=3.2.30
+pkgver=3.2.32.1
 pkgrel=5
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
