@@ -4,7 +4,6 @@ pkgver=3.2.32.1
 pkgrel=5
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
-license=(GPL)
 url="https://github.com/ctlos/calamares"
 license=('LGPL')
 
