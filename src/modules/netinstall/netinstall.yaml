@@ -96,6 +96,13 @@
     critical: false
     packages:
       - ctlos-i3-skel
+  - name: "Frankenwm"
+    description: "Tiling window manager"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+      - ctlos-frankenwm-skel
   - name: "Budgie"
     description: "Desktop environment"
     hidden: false
