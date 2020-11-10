@@ -1,7 +1,7 @@
 # Ctlos Calamares
 pkgname=calamares-dev
-pkgver=3.2.32.1
-pkgrel=6
+pkgver=3.2.33
+pkgrel=1
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 url="https://github.com/ctlos/calamares"
@@ -22,7 +22,7 @@ backup=('usr/share/calamares/modules/bootloader.conf'
 source+=("https://github.com/calamares/calamares/releases/download/v${pkgver}/calamares-${pkgver}.tar.gz"
          git+https://github.com/ctlos/calamares#branch=dev)
 
-sha256sums=('SKIP'
+sha256sums=('3866143cd251280b6177df1b2f3c8d9ef50147790b1d53ea895521aed37d0980'
             'SKIP')
 
 prepare() {
