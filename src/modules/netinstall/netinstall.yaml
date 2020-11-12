@@ -210,7 +210,7 @@
   - name: "Sddm"
     description: "Sddm qt"
     critical: false
-    hidden: true
+    hidden: false
     selected: true
     packages:
       - sddm
