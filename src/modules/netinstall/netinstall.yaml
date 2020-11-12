@@ -203,9 +203,9 @@
 
 - name: "Dm"
   description: "Login manager"
-  hidden: false
-  selected: true
   critical: false
+  hidden: true
+  selected: true
   subgroups:
   - name: "Sddm"
     description: "Sddm qt"
