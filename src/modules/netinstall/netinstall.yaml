@@ -1,3 +1,230 @@
+- name: "Default"
+  description: "Default group"
+  hidden: true
+  selected: true
+  critical: false
+  packages:
+    - amd-ucode
+    - appstream
+    - archlinux-appstream-data
+    - arch-install-scripts
+    - b43-fwcutter
+    - base
+    - base-devel
+    - bind-tools
+    - broadcom-wl
+    - btrfs-progs
+    - crda
+    - darkhttpd
+    - ddrescue
+    - dhclient
+    - diffutils
+    - dmraid
+    - dnsmasq
+    - dosfstools
+    - edk2-shell
+    - efibootmgr
+    - ethtool
+    - exfatprogs
+    - f2fs-tools
+    - gpm
+    - gptfdisk
+    - grub
+    - haveged
+    - hdparm
+    - intel-ucode
+    - ipw2100-fw
+    - ipw2200-fw
+    - iwd
+    - jfsutils
+    - linux
+    - linux-headers
+    - linux-firmware
+    - lsb-release
+    - lsscsi
+    - lvm2
+    - memtest86+
+    - mkinitcpio
+    - mkinitcpio-archiso
+    - mkinitcpio-nfs-utils
+    - mtools
+    - nano
+    - nbd
+    - ndisc6
+    - nfs-utils
+    - nilfs-utils
+    - ntfs-3g
+    - nvme-cli
+    - openconnect
+    - openssh
+    - partclone
+    - parted
+    - partimage
+    - ppp
+    - pptpclient
+    - reflector
+    - reiserfsprogs
+    - rp-pppoe
+    - rsync
+    - sdparm
+    - sg3_utils
+    - smartmontools
+    - sudo
+    - syslinux
+    - systemd-resolvconf
+    - testdisk
+    - usb_modeswitch
+    - usbutils
+    - vpnc
+    - wireless-regdb
+    - wireless_tools
+    - wpa_supplicant
+    - wvdial
+    - xfsprogs
+    - xl2tpd
+    - zsh
+    - xorg-apps
+    - xorg-fonts
+    - xorg-server
+    - xorg-server-common
+    - xorg-xinit
+    - xorg-xkill
+    - xorg-xrdb
+    - xorg-xinput
+    - mesa
+    - mesa-vdpau
+    - intel-tbb
+    - libva
+    - libva-mesa-driver
+    - libva-intel-driver
+    - libva-vdpau-driver
+    - xf86-input-elographics
+    - xf86-input-evdev
+    - xf86-input-libinput
+    - xf86-input-void
+    - xf86-input-vmmouse
+    - xf86-video-amdgpu
+    - xf86-video-ati
+    - xf86-video-dummy
+    - xf86-video-fbdev
+    - xf86-video-intel
+    - xf86-video-nouveau
+    - xf86-video-openchrome
+    - xf86-video-sisusb
+    - xf86-video-vesa
+    - xf86-video-vmware
+    - xf86-video-voodoo
+    - gvfs
+    - gvfs-afc
+    - gvfs-goa
+    - gvfs-google
+    - gvfs-gphoto2
+    - gvfs-mtp
+    - gvfs-nfs
+    - gvfs-smb
+    - mtpfs
+    - gzip
+    - p7zip
+    - unzip
+    - unrar
+    - dialog
+    - net-tools
+    - networkmanager
+    - networkmanager-openconnect
+    - networkmanager-openvpn
+    - networkmanager-pptp
+    - networkmanager-vpnc
+    - mobile-broadband-provider-info
+    - modemmanager
+    - geoip
+    - alsa-firmware
+    - alsa-utils
+    - gstreamer
+    - gstreamer-vaapi
+    - gst-libav
+    - gst-plugins-bad
+    - gst-plugins-base
+    - gst-plugins-good
+    - gst-plugins-ugly
+    - pulseaudio
+    - pulseaudio-alsa
+    - pulseaudio-bluetooth
+    - lib32-alsa-plugins
+    - libcdio
+    - libdvdread
+    - libdvdnav
+    - gtk-engines
+    - gtk-engine-murrine
+    - qt5ct
+    - arc-gtk-theme
+    - papirus-icon-theme
+    - capitaine-cursors
+    - xdg-user-dirs-gtk
+    - gnome-keyring
+    - cronie
+    - chrpath
+    - expac
+    - wmctrl
+    - gtk2-perl
+    - perl-file-desktopentry
+    - intltool
+    - bash-completion
+    - zsh-autosuggestions
+    - tmux
+    - pv
+    - curl
+    - git
+    - imagemagick
+    - neofetch
+    - numlockx
+    - w3m
+    - scrot
+    - slop
+    - htop
+    - ranger
+    - rofi
+    - ripgrep
+    - syntax-highlighting
+    - mpd
+    - mpc
+    - ncmpcpp
+    - newsboat
+    - mediainfo
+    - ffmpeg
+    - ffmpegthumbnailer
+    - ffmpegthumbs
+    - youtube-dl
+    - tor
+    - privoxy
+    - xdotool
+    - xsel
+    - yad
+    - unclutter
+
+- name: "Dm"
+  description: "Login manager"
+  hidden: false
+  selected: false
+  critical: false
+  subgroups:
+  - name: "Sddm"
+    description: "Sddm qt"
+    critical: false
+    hidden: true
+    selected: true
+    packages:
+      - sddm
+      - qt5-svg
+      - qt5-quickcontrols2
+      - qt5-graphicaleffects
+  - name: "Lightdm"
+    description: "Lightdm gtk"
+    critical: false
+    hidden: true
+    selected: false
+    packages:
+      - lightdm-gtk-greeter
+
 - name: "Kernel & Drivers"
   description: "Install Kernel & Drivers"
   critical: false
@@ -276,10 +503,13 @@
       - ttf-bitstream-vera
       - ttf-dejavu
       - ttf-droid
+      - ttf-font-awesome
       - ttf-hack
       - ttf-inconsolata
       - ttf-liberation
+      - ttf-opensans
       - ttf-roboto
+      - ttf-roboto-mono
       - ttf-ubuntu-font-family
       - terminus-font
   - name: "Dev Tools"
@@ -326,11 +556,11 @@
     hidden: false
     selected: false
     packages:
-      - virtualbox
+      - virtualbox-guest-dkms
+      - virtualbox-guest-utils
+      - virtualbox-guest-iso
       - virtualbox-host-modules-arch
       - virtualbox-host-dkms
-      - virtualbox-guest-iso
-      - virtualbox-guest-dkms
   - name: "Usb iso"
     description: "Usb"
     critical: false
