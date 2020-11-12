@@ -294,6 +294,13 @@
   hidden: false
   selected: false
   subgroups:
+  - name: "Ctlos Base"
+    description: "Ctlos base skel config"
+    critical: false
+    hidden: true
+    selected: true
+    packages:
+      - ctlos-base-skel
   - name: "Xfce"
     description: "Desktop environment"
     critical: false
@@ -309,6 +316,14 @@
     critical: false
     packages:
       - ctlos-openbox-skel
+  - name: "Xfwm4"
+    description: "Window manager"
+    critical: false
+    hidden: false
+    selected: false
+    expanded: true
+    packages:
+      - ctlos-xfwm-skel
   - name: "Bspwm"
     description: "Tiling window manager"
     hidden: false
