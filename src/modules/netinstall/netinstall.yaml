@@ -204,7 +204,7 @@
 - name: "Dm"
   description: "Login manager"
   hidden: false
-  selected: false
+  selected: true
   critical: false
   subgroups:
   - name: "Sddm"
@@ -220,7 +220,7 @@
   - name: "Lightdm"
     description: "Lightdm gtk"
     critical: false
-    hidden: true
+    hidden: false
     selected: false
     packages:
       - lightdm-gtk-greeter
