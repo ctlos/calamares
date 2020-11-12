@@ -201,6 +201,33 @@
     - yad
     - unclutter
 
+- name: "Ctlos aur pkg"
+  description: "Aur pkg & ctlos repo"
+  hidden: true
+  selected: true
+  critical: false
+  packages:
+    - yay-bin
+    - inxi
+    - fzf-extras
+    - oh-my-zsh-git
+    - zsh-fast-syntax-highlighting-git
+    - ttf-clear-sans
+    - nerd-fonts-hack
+    - otb-uw_ttyp0
+    - cava
+    - gotop-bin
+    - timeshift
+    - pamac-aur
+    - qogir-icon-theme-git
+    - qt5-styleplugins
+    - qgnomeplatform-git
+    - networkmanager-l2tp
+    - ctlos-keyring
+    - ctlos-mirrorlist
+    - ctlos-welcome
+    - ctlos-sddm-themes
+
 - name: "Dm"
   description: "Login manager"
   critical: false
