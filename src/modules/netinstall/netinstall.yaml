@@ -311,8 +311,6 @@
       - grub-customizer
       - gnome-disk-utility
       - cheese
-      - liferea
-      - mcomix
   - name: "Virtualbox"
     description: "Install virtualbox"
     critical: false
