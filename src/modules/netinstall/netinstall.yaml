@@ -82,6 +82,14 @@
     critical: false
     packages:
       - ctlos-openbox-skel
+  - name: "Xfwm4"
+    description: "Window manager xfce"
+    critical: false
+    hidden: false
+    selected: false
+    expanded: true
+    packages:
+      - ctlos-xfwm-skel
   - name: "Bspwm"
     description: "Tiling window manager"
     hidden: false
