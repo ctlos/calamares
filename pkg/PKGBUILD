@@ -1,7 +1,7 @@
 # Ctlos Calamares
 pkgname=calamares-net
 pkgver=3.2.35.1
-pkgrel=4
+pkgrel=5
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 url="https://github.com/ctlos/calamares"
