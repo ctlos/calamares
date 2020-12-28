@@ -118,24 +118,31 @@
     critical: false
     packages:
       - budgie-desktop
-      - gnome
-      - gnome-multi-writer
+      - gnome-control-center
+      - gnome-backgrounds
+      - gnome-screensaver
+      - gnome-terminal
+      - nautilus-sendto
+      - gnome-nettool
       - gnome-usage
+      - gnome-multi-writer
+      - dconf-editor
       - network-manager-applet
-      - fwupd
   - name: "GNOME"
     description: "Desktop environment"
     hidden: false
     selected: false
     critical: false
     packages:
-      - gnome
+      - gnome-shell
+      - gnome-control-center
+      - gnome-terminal
       - gnome-tweaks
       - nautilus-sendto
       - gnome-nettool
       - gnome-usage
       - gnome-multi-writer
-      - adwaita-icon-theme
+      - dconf-editor
       - chrome-gnome-shell
       - gnome-software-packagekit-plugin
       - gnome-packagekit
@@ -204,7 +211,6 @@
       - fwupd
       - python-dbus
       - kdebase-meta
-      - python-dbus
       - gwenview
       - ark
       - okular
