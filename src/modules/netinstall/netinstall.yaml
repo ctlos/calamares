@@ -296,6 +296,7 @@
       - ttf-roboto
       - ttf-ubuntu-font-family
       - terminus-font
+      - powerline-fonts
   - name: "Dev Tools"
     description: "Development"
     critical: false
