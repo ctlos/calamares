@@ -1,19 +1,19 @@
 #!/bin/bash
 
-online_method(){
+online_method() {
 sudo cp -praf /usr/share/calamares/settings-online.conf /usr/share/calamares/settings.conf
 sudo cp -praf /usr/share/calamares/modules/packages-online.conf /usr/share/calamares/modules/packages.conf
 sudo cp -praf /usr/share/calamares/modules/welcome-online.conf /usr/share/calamares/modules/welcome.conf
 }
 
-offline_method(){
+offline_method() {
 sudo cp -praf /usr/share/calamares/settings-offline.conf /usr/share/calamares/settings.conf
 sudo cp -praf /usr/share/calamares/modules/packages-offline.conf /usr/share/calamares/modules/packages.conf
 sudo cp -praf /usr/share/calamares/modules/welcome-offline.conf /usr/share/calamares/modules/welcome.conf
 }
 
-run_calamares(){
-  if [ $(which pkexec) ]; then
+run_calamares() {
+  if [[ $(command -v pkexec) ]]; then
     # pkexec --disable-internal-agent "/usr/bin/calamares" "$@"
     bash -c "sudo -E /usr/bin/calamares"
   else
@@ -21,9 +21,9 @@ run_calamares(){
   fi
 }
 
-install_method(){
+install_method() {
   yad --center --borders=20 \
-  --image=gtk-dialog-question \
+  --image=dialog-question \
   --title="Installation method" \
   --text="<span font=\"12\">Выберите метод установки\n(Choose installation method)\n</span>" \
   --button="Online":1 \
