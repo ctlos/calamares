@@ -75,6 +75,7 @@
     expanded: true
     packages:
       - ctlos-xfce-skel
+      - alacarte
   - name: "Openbox"
     description: "Window manager"
     hidden: false
@@ -231,9 +232,11 @@
       - chromium
       - opera
       - qutebrowser
+      - librewolf-bin
       - hexchat
       - telegram-desktop
       - discord
+      - lightcord-bin
       - pidgin
       - falkon
       - filezilla
@@ -306,7 +309,11 @@
       - code
       - neovim
       - emacs
+      - micro-bin
       - gitg
+      - go
+      - ruby
+      - python2
   - name: "Graphics & Media"
     description: "Graphics & Media"
     critical: false
@@ -319,9 +326,11 @@
       - krita
       - gimp
       - pinta
+      - azpainter
       - audacity
       - kdenlive
       - obs-studio
+      - qmplay2
       - deadbeef
       - lollypop
   - name: "Other"
@@ -330,6 +339,11 @@
     hidden: false
     selected: false
     packages:
+      - auto-cpufreq
+      - nohang-git
+      - pfetch-git
+      - brainfuck-psiphon-pro-go-bin
+      - ventoy-bin
       - grub-customizer
       - gnome-disk-utility
       - cheese
@@ -352,7 +366,7 @@
     packages:
       - gnome-multi-writer
       - imagewriter
-      - woeusb
+      - woeusb-ng
   - name: "Games"
     description: "Install Games pkg"
     critical: false
