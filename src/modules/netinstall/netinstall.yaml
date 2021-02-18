@@ -75,7 +75,6 @@
     expanded: true
     packages:
       - ctlos-xfce-skel
-      - alacarte
   - name: "Openbox"
     description: "Window manager"
     hidden: false
