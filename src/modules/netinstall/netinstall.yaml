@@ -313,6 +313,8 @@
       - go
       - ruby
       - python2
+      - docker
+      - docker-compose
   - name: "Graphics & Media"
     description: "Graphics & Media"
     critical: false
