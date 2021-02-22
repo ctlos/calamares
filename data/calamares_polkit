@@ -1,5 +1,11 @@
 #!/bin/bash
 
+init_pacman() {
+sudo pacman-key --init
+sudo pacman-key --populate
+sudo pacman-key --refresh-keys --keyserver hkp://keys.gnupg.net
+}
+
 online_method() {
 sudo cp -praf /usr/share/calamares/settings-online.conf /usr/share/calamares/settings.conf
 sudo cp -praf /usr/share/calamares/modules/packages-online.conf /usr/share/calamares/modules/packages.conf
@@ -15,9 +21,9 @@ sudo cp -praf /usr/share/calamares/modules/welcome-offline.conf /usr/share/calam
 run_calamares() {
   if [[ $(command -v pkexec) ]]; then
     # pkexec --disable-internal-agent "/usr/bin/calamares" "$@"
-    bash -c "sudo -E /usr/bin/calamares"
+    bash -c "sudo -E /usr/bin/calamares -d"
   else
-    sudo -E /usr/bin/calamares
+    sudo -E /usr/bin/calamares -d
   fi
 }
 
@@ -25,19 +31,27 @@ install_method() {
   yad --center --borders=20 \
   --image=dialog-question \
   --title="Installation method" \
-  --text="<span font=\"12\">Выберите метод установки\n(Choose installation method)\n</span>" \
+  --text="<span font=\"12\">Выберите метод установки\n(Choose installation method)</span>\n" \
+  --button="Cancel":0 \
   --button="Online":1 \
   --button="Offline":2
+  res=$?
 
-ANSWER=$?
-
-  if [[ $ANSWER == "1" ]]; then
+  if [[ $res == 1 ]]; then
+    init_pacman
     online_method
     run_calamares
+    exit 0
   fi
-  if [[ $ANSWER == "2" ]]; then
+
+  if [[ $res == 2 ]]; then
     offline_method
     run_calamares
+    exit 0
+  fi
+
+  if [[ $res == 0 ]]; then
+    exit 0
   fi
 }
 

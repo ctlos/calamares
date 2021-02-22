@@ -245,6 +245,7 @@
       - qbittorrent
       - transmission-gtk
       - ktorrent
+      - torrserver-bin
       - wireshark-qt
   - name: "Terminals"
     description: "Terminals"

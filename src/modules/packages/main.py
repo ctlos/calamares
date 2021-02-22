@@ -290,10 +290,10 @@ class PMPacman(PackageManager):
         check_target_env_call(["pacman", "-Rs", "--noconfirm"] + pkgs)
 
     def update_db(self):
-        check_target_env_call(["pacman", "-Sy"])
+        check_target_env_call(["pacman", "-Syy", "--noconfirm"])
 
     def update_system(self):
-        check_target_env_call(["pacman", "-Su", "--noconfirm"])
+        check_target_env_call(["pacman", "-Suu", "--noconfirm"])
 
 
 class PMPortage(PackageManager):
