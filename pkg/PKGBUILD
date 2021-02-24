@@ -1,12 +1,12 @@
-# Ctlos Calamares
-pkgname=calamares
-pkgver=3.2.32.1
+# Rach Calamares
+pkgname=calamares-rach
+pkgver=3.2.36
 pkgrel=1
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 url="https://github.com/ctlos/calamares"
 license=('LGPL')
-conflicts=('calamares-net' 'calamares-dev')
+conflicts=('calamares' 'calamares-net' 'calamares-dev')
 
 depends=('kconfig' 'kcoreaddons' 'kiconthemes' 'ki18n' 'kio' 'solid' 'yaml-cpp' 'kpmcore' 'mkinitcpio-openswap'
          'boost-libs' 'ckbcomp' 'hwinfo' 'qt5-svg' 'polkit-qt5' 'gtk-update-icon-cache' 'plasma-framework'
@@ -20,7 +20,7 @@ backup=('usr/share/calamares/modules/bootloader.conf'
         'usr/share/calamares/modules/unpackfs.conf')
 
 source+=("https://github.com/calamares/calamares/releases/download/v${pkgver}/calamares-${pkgver}.tar.gz"
-         git+https://github.com/ctlos/calamares#branch=master)
+         git+https://github.com/ctlos/calamares#branch=rach)
 
 sha256sums=('SKIP'
             'SKIP')
@@ -32,7 +32,7 @@ prepare() {
     sed -i -e 's/"Install configuration files" OFF/"Install configuration files" ON/' CMakeLists.txt
 
     # change branding
-    sed -i -e "s/default/ctlos/g" src/branding/CMakeLists.txt
+    sed -i -e "s/default/rach/g" src/branding/CMakeLists.txt
 
 }
 

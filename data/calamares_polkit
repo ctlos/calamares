@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [ $(which pkexec) ]; then
+if [[ $(command -v pkexec) ]]; then
   # pkexec --disable-internal-agent "/usr/bin/calamares" "$@"
-  bash -c "sudo -E /usr/bin/calamares"
+  bash -c "sudo -E /usr/bin/calamares -d"
 else
-  /usr/bin/calamares "$@"
+  sudo -E /usr/bin/calamares -d
 fi

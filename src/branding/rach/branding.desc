@@ -1,5 +1,5 @@
 ---
-componentName:           ctlos
+componentName:           rach
 welcomeStyleCalamares:   false
 welcomeExpandingLogo:    true
 windowPlacement:         center
@@ -7,20 +7,19 @@ windowExpanding:         normal
 windowSize:              1000px,600px
 
 strings:
-    productName:         Ctlos Linux
-    bootloaderEntryName: Ctlos
-    productUrl:          https://ctlos.github.io
-    supportUrl:          https://ctlos.github.io/wiki
+    productName:         Rach Linups
+    bootloaderEntryName: Rach
+    productUrl:          https://ctlos.github.io/rach
+    supportUrl:          https://gitlab.com/ctlos
     releaseNotesUrl:     https://ctlos.github.io/wiki/changelog
-    knownIssuesUrl:      https://github.com/ctlos/ctlosiso/issues
+    knownIssuesUrl:      https://gitlab.com/ctlos/ctlosiso
     donateUrl:           https://ctlos.github.io/donat
 
 
 images:
-    productLogo:         "logo.png"
-    productIcon:         "logo.png"
+    productLogo:         "squid.png"
+    productIcon:         "squid.png"
     productWelcome:      "languages.png"
-    productWallpaper:    "wallpaper.png"
 
 slideshow:               "show.qml"
 slideshowAPI:            2
