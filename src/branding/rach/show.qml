@@ -55,10 +55,10 @@ Presentation {
 
                 Text {
                     id: logoText1
-                    color: "#e0e3e0"
+                    color: "#161720"
                     text: qsTr("Rach")
                     font.pointSize: 64
-                    styleColor: "#e0e3e0"
+                    styleColor: "#161720"
                     horizontalAlignment: Text.AlignRight
                     verticalAlignment: Text.AlignVCenter
                     anchors.verticalCenter: parent.verticalCenter
@@ -69,7 +69,7 @@ Presentation {
 
             Rectangle {
                 id: whiteRect1
-                color: "#e0e3e0"
+                color: "#161720"
                 Layout.fillHeight: true
                 Layout.fillWidth: true
                 border.width: 0
@@ -109,7 +109,7 @@ Presentation {
                 Text {
                     id: wikiRemText
                     width: parent.width / 2
-                    color: "#e0e3e0"
+                    color: "#161720"
                     text: qsTr("Rach Linups Details")
                     anchors.horizontalCenter: parent.horizontalCenter
                     font.pointSize: 18
@@ -122,7 +122,7 @@ Presentation {
 
             Rectangle {
                 id: whiteRect2
-                color: "#e0e3e0"
+                color: "#161720"
                 Layout.fillHeight: true
                 Layout.fillWidth: true
                 border.width: 0
