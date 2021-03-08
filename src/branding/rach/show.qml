@@ -112,7 +112,7 @@ Presentation {
                     color: "#161720"
                     text: qsTr("Rach Linups Details")
                     anchors.horizontalCenter: parent.horizontalCenter
-                    font.pointSize: 18
+                    font.pointSize: 20
                     wrapMode: Text.WordWrap
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignHCenter
@@ -130,12 +130,12 @@ Presentation {
                 Text {
                     id: wikiLinkText
                     color: "#4A65BD"
-                    text: "https://ctlos.github.io/rach"
+                    text: "https://git.io/linups"
                     style: Text.Raised
                     font.underline: true
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
-                    font.pointSize: 18
+                    font.pointSize: 20
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignHCenter
                     wrapMode: Text.WrapAnywhere
@@ -147,6 +147,70 @@ Presentation {
 
                         onClicked: {
                             Qt.openUrlExternally("https://ctlos.github.io/rach")
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Slide {
+        anchors.rightMargin: 0
+        anchors.fill: parent
+        anchors.bottomMargin: 0
+        anchors.topMargin: 0
+        anchors.leftMargin: 0
+        RowLayout {
+            id: rowLayout3
+            anchors.fill: parent
+            spacing: 0
+            Rectangle {
+                id: blueRect3
+                color: "#161720"
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+                border.width: 0
+
+                Text {
+                    id: wikiRemText
+                    width: parent.width / 2
+                    color: "#4A65BD"
+                    text: qsTr("Rach Linups Telegram")
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    font.pointSize: 20
+                    wrapMode: Text.WordWrap
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                }
+            }
+
+            Rectangle {
+                id: whiteRect3
+                color: "#4A65BD"
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+                border.width: 0
+
+                Text {
+                    id: wikiLinkText
+                    color: "#161720"
+                    text: "t.me/rach_linups"
+                    style: Text.Raised
+                    font.underline: true
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    font.pointSize: 20
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
+                    wrapMode: Text.WrapAnywhere
+
+                    MouseArea {
+                        id: wikiLinkTextMouseArea
+                        anchors.fill: parent
+                        cursorShape: Qt.PointingHandCursor
+
+                        onClicked: {
+                            Qt.openUrlExternally("https://t.me/rach_linups")
                         }
                     }
                 }
