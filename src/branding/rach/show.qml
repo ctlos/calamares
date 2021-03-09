@@ -68,7 +68,7 @@ Presentation {
             }
 
             Rectangle {
-                id: whiteRect1
+                id: darkRect1
                 color: "#161720"
                 Layout.fillHeight: true
                 Layout.fillWidth: true
@@ -107,7 +107,7 @@ Presentation {
                 border.width: 0
 
                 Text {
-                    id: wikiRemText
+                    id: rachText
                     width: parent.width / 2
                     color: "#161720"
                     text: qsTr("Rach Linups Details")
@@ -121,14 +121,14 @@ Presentation {
             }
 
             Rectangle {
-                id: whiteRect2
+                id: darkRect2
                 color: "#161720"
                 Layout.fillHeight: true
                 Layout.fillWidth: true
                 border.width: 0
 
                 Text {
-                    id: wikiLinkText
+                    id: rachTextUrl
                     color: "#4A65BD"
                     text: "https://git.io/linups"
                     style: Text.Raised
@@ -141,7 +141,7 @@ Presentation {
                     wrapMode: Text.WrapAnywhere
 
                     MouseArea {
-                        id: wikiLinkTextMouseArea
+                        id: rachTextUrlMouseArea
                         anchors.fill: parent
                         cursorShape: Qt.PointingHandCursor
 
@@ -164,14 +164,14 @@ Presentation {
             anchors.fill: parent
             spacing: 0
             Rectangle {
-                id: blueRect3
+                id: darkRect3
                 color: "#161720"
                 Layout.fillHeight: true
                 Layout.fillWidth: true
                 border.width: 0
 
                 Text {
-                    id: wikiRemText
+                    id: rachTg
                     width: parent.width / 2
                     color: "#4A65BD"
                     text: qsTr("Rach Linups Telegram")
@@ -185,14 +185,14 @@ Presentation {
             }
 
             Rectangle {
-                id: whiteRect3
+                id: blueRect3
                 color: "#4A65BD"
                 Layout.fillHeight: true
                 Layout.fillWidth: true
                 border.width: 0
 
                 Text {
-                    id: wikiLinkText
+                    id: rachTgUrl
                     color: "#161720"
                     text: "t.me/rach_linups"
                     style: Text.Raised
@@ -205,7 +205,7 @@ Presentation {
                     wrapMode: Text.WrapAnywhere
 
                     MouseArea {
-                        id: wikiLinkTextMouseArea
+                        id: rachTgUrlMouseArea
                         anchors.fill: parent
                         cursorShape: Qt.PointingHandCursor
 

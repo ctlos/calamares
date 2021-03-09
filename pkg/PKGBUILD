@@ -1,7 +1,7 @@
 # Rach Calamares
 pkgname=calamares-rach
 pkgver=3.2.37
-pkgrel=1
+pkgrel=2
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 url="https://github.com/ctlos/calamares"
