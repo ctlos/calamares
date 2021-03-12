@@ -238,7 +238,6 @@
       - lightcord-bin
       - pidgin
       - falkon
-      - filezilla
       - geary
       - thunderbird
       - deluge
@@ -300,12 +299,22 @@
       - ttf-ubuntu-font-family
       - terminus-font
       - powerline-fonts
+  - name: "Tools"
+    description: "Reader & Other"
+    critical: false
+    hidden: false
+    selected: false
+    packages:
+      - zathura
+      - foliate
   - name: "Dev Tools"
     description: "Development"
     critical: false
     hidden: false
     selected: false
     packages:
+      - filezilla
+      - atom
       - code
       - neovim
       - emacs
