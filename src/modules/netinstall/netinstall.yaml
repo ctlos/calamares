@@ -39,7 +39,6 @@
     - lynx
     - man-db
     - man-pages
-    - mc
     - mdadm
     - memtest86+
     - mkinitcpio
@@ -63,7 +62,6 @@
     - sdparm
     - sg3_utils
     - smartmontools
-    - syslinux
     - systemd-resolvconf
     - tcpdump
     - testdisk
@@ -306,6 +304,7 @@
     - scrot
     - slop
     - htop
+    - mc
     - ranger
     - rofi
     - ripgrep
