@@ -581,13 +581,13 @@
       - okular
 
 - name: "Virtualbox"
-    description: "Install virtualbox"
-    critical: false
-    hidden: false
-    selected: false
-    packages:
-      - virtualbox
-      - virtualbox-host-modules-arch
-      - virtualbox-host-dkms
-      - virtualbox-guest-iso
-      - virtualbox-guest-dkms
+  description: "Install virtualbox"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - virtualbox
+    - virtualbox-host-modules-arch
+    - virtualbox-host-dkms
+    - virtualbox-guest-iso
+    - virtualbox-guest-dkms
