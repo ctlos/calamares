@@ -1,19 +1,16 @@
 - name: "Default"
   description: "Default group"
-  hidden: true
+  hidden: false
   selected: true
   critical: false
   packages:
     - amd-ucode
-    - appstream
     - archlinux-appstream-data
     - arch-install-scripts
-    - b43-fwcutter
-    - base
     - base-devel
     - bind-tools
-    - broadcom-wl
     - btrfs-progs
+    - clonezilla
     - crda
     - darkhttpd
     - ddrescue
@@ -27,28 +24,28 @@
     - ethtool
     - exfatprogs
     - f2fs-tools
+    - fsarchiver
     - gpm
     - gptfdisk
-    - grub
-    - haveged
     - hdparm
     - intel-ucode
     - ipw2100-fw
     - ipw2200-fw
-    - iwd
+    - irssi
     - jfsutils
-    - linux
-    - linux-headers
-    - linux-firmware
-    - lsb-release
+    - lftp
     - lsscsi
     - lvm2
+    - lynx
+    - man-db
+    - man-pages
+    - mc
+    - mdadm
     - memtest86+
     - mkinitcpio
     - mkinitcpio-archiso
     - mkinitcpio-nfs-utils
     - mtools
-    - nano
     - nbd
     - ndisc6
     - nfs-utils
@@ -56,211 +53,27 @@
     - ntfs-3g
     - nvme-cli
     - openconnect
-    - openssh
     - partclone
     - parted
     - partimage
     - ppp
     - pptpclient
-    - reflector
     - reiserfsprogs
     - rp-pppoe
-    - rsync
     - sdparm
     - sg3_utils
     - smartmontools
-    - sudo
     - syslinux
     - systemd-resolvconf
+    - tcpdump
     - testdisk
     - usb_modeswitch
     - usbutils
-    - vpnc
     - wireless-regdb
     - wireless_tools
-    - wpa_supplicant
     - wvdial
     - xfsprogs
     - xl2tpd
-    - zsh
-    - xorg-apps
-    - xorg-fonts
-    - xorg-server
-    - xorg-server-common
-    - xorg-xinit
-    - xorg-xkill
-    - xorg-xrdb
-    - xorg-xinput
-    - mesa
-    - mesa-vdpau
-    - intel-tbb
-    - libva
-    - libva-mesa-driver
-    - libva-intel-driver
-    - libva-vdpau-driver
-    - xf86-input-elographics
-    - xf86-input-evdev
-    - xf86-input-libinput
-    - xf86-input-void
-    - xf86-input-vmmouse
-    - xf86-video-amdgpu
-    - xf86-video-ati
-    - xf86-video-dummy
-    - xf86-video-fbdev
-    - xf86-video-intel
-    - xf86-video-nouveau
-    - xf86-video-openchrome
-    - xf86-video-sisusb
-    - xf86-video-vesa
-    - xf86-video-vmware
-    - xf86-video-voodoo
-    - gvfs
-    - gvfs-afc
-    - gvfs-goa
-    - gvfs-google
-    - gvfs-gphoto2
-    - gvfs-mtp
-    - gvfs-nfs
-    - gvfs-smb
-    - mtpfs
-    - gzip
-    - p7zip
-    - unzip
-    - unrar
-    - dialog
-    - net-tools
-    - networkmanager
-    - networkmanager-openconnect
-    - networkmanager-openvpn
-    - networkmanager-pptp
-    - networkmanager-vpnc
-    - mobile-broadband-provider-info
-    - modemmanager
-    - geoip
-    - alsa-firmware
-    - alsa-utils
-    - gstreamer
-    - gstreamer-vaapi
-    - gst-libav
-    - gst-plugins-bad
-    - gst-plugins-base
-    - gst-plugins-good
-    - gst-plugins-ugly
-    - pulseaudio
-    - pulseaudio-alsa
-    - pulseaudio-bluetooth
-    - lib32-alsa-plugins
-    - libcdio
-    - libdvdread
-    - libdvdnav
-    - gtk-engines
-    - gtk-engine-murrine
-    - qt5ct
-    - arc-gtk-theme
-    - papirus-icon-theme
-    - capitaine-cursors
-    - xdg-user-dirs-gtk
-    - gnome-keyring
-    - cronie
-    - chrpath
-    - expac
-    - wmctrl
-    - gtk2-perl
-    - perl-file-desktopentry
-    - intltool
-    - bash-completion
-    - zsh-autosuggestions
-    - tmux
-    - pv
-    - curl
-    - git
-    - imagemagick
-    - neofetch
-    - numlockx
-    - w3m
-    - scrot
-    - slop
-    - htop
-    - ranger
-    - rofi
-    - ripgrep
-    - syntax-highlighting
-    - mpd
-    - mpc
-    - ncmpcpp
-    - newsboat
-    - mediainfo
-    - ffmpeg
-    - ffmpegthumbnailer
-    - ffmpegthumbs
-    - youtube-dl
-    - tor
-    - privoxy
-    - xdotool
-    - xsel
-    - yad
-    - unclutter
-
-- name: "Ctlos pkg"
-  description: "ctlos repo"
-  hidden: true
-  selected: true
-  critical: false
-  packages:
-    - ctlos-system
-    - ctlos-base-skel
-    - ctlos-keyring
-    - ctlos-mirrorlist
-    - ctlos-welcome
-    - ctlos-sddm-themes
-    - ctlos-wall
-    - ctlos-qogir
-
-- name: "Aur pkg"
-  description: "ctlos repo & ctlos-aur"
-  hidden: true
-  selected: true
-  critical: false
-  packages:
-    - yay-bin
-    - inxi
-    - fzf-extras
-    - oh-my-zsh-git
-    - zsh-fast-syntax-highlighting-git
-    - ttf-clear-sans
-    - nerd-fonts-hack
-    - otb-uw_ttyp0
-    - cava
-    - gotop-bin
-    - timeshift
-    - pamac-aur
-    - qogir-icon-theme-git
-    - qt5-styleplugins
-    - qgnomeplatform
-
-- name: "Dm"
-  description: "Login manager"
-  critical: false
-  hidden: true
-  selected: true
-  subgroups:
-  - name: "Sddm"
-    description: "Sddm qt"
-    critical: false
-    hidden: false
-    selected: true
-    packages:
-      - sddm
-      - qt5-svg
-      - qt5-quickcontrols2
-      - qt5-graphicaleffects
-  - name: "Lightdm"
-    description: "Lightdm gtk"
-    critical: false
-    hidden: false
-    selected: false
-    packages:
-      - lightdm-gtk-greeter
 
 - name: "Kernel & Drivers"
   description: "Install Kernel & Drivers"
@@ -268,6 +81,16 @@
   hidden: false
   selected: false
   subgroups:
+  - name: "Linux"
+    description: "Install linux kernel"
+    critical: false
+    hidden: false
+    selected: true
+    packages:
+      - linux
+      - linux-headers
+      - linux-firmware
+      - linux-atm
   - name: "Linux-lts"
     description: "Install linux-lts kernel"
     critical: false
@@ -325,6 +148,245 @@
       - hplip
       - splix
 
+- name: "Xorg"
+  description: "Video Drivers"
+  hidden: false
+  selected: true
+  critical: false
+  packages:
+    - xorg-apps
+    - xorg-fonts
+    - xorg-server
+    - xorg-server-common
+    - xorg-xinit
+    - xorg-xkill
+    - xorg-xrdb
+    - xorg-xinput
+    - mesa
+    - mesa-vdpau
+    - intel-tbb
+    - libva
+    - libva-mesa-driver
+    - libva-intel-driver
+    - libva-vdpau-driver
+    - xf86-input-elographics
+    - xf86-input-evdev
+    - xf86-input-libinput
+    - xf86-input-void
+    - xf86-input-vmmouse
+    - xf86-video-amdgpu
+    - xf86-video-ati
+    - xf86-video-dummy
+    - xf86-video-fbdev
+    - xf86-video-intel
+    - xf86-video-nouveau
+    - xf86-video-openchrome
+    - xf86-video-sisusb
+    - xf86-video-vesa
+    - xf86-video-vmware
+    - xf86-video-voodoo
+
+- name: "File Systems"
+  description: "Fs Drivers"
+  hidden: false
+  selected: true
+  critical: false
+  packages:
+    - gvfs
+    - gvfs-afc
+    - gvfs-goa
+    - gvfs-google
+    - gvfs-gphoto2
+    - gvfs-mtp
+    - gvfs-nfs
+    - gvfs-smb
+    - mtpfs
+    - gzip
+    - p7zip
+    - unzip
+    - unrar
+
+- name: "Network"
+  description: "Drivers"
+  hidden: false
+  selected: true
+  critical: false
+  packages:
+    - nmap
+    - b43-fwcutter
+    - broadcom-wl
+    - openssh
+    - openvpn
+    - vpnc
+    - dhcpcd
+    - wpa_supplicant
+    - dialog
+    - net-tools
+    - networkmanager
+    - networkmanager-openconnect
+    - networkmanager-openvpn
+    - networkmanager-pptp
+    - networkmanager-vpnc
+    - networkmanager-l2tp
+    - mobile-broadband-provider-info
+    - modemmanager
+    - geoip
+    - blueman
+
+- name: "Audio"
+  description: "Drivers"
+  hidden: false
+  selected: true
+  critical: false
+  packages:
+    - alsa-firmware
+    - alsa-utils
+    - gstreamer
+    - gstreamer-vaapi
+    - gst-libav
+    - gst-plugins-bad
+    - gst-plugins-base
+    - gst-plugins-good
+    - gst-plugins-ugly
+    - pulseaudio
+    - pulseaudio-alsa
+    - pulseaudio-bluetooth
+    - pulseaudio-equalizer
+    - lib32-alsa-plugins
+    - libcdio
+    - libdvdread
+    - libdvdnav
+
+- name: "Gtk & fonts"
+  description: "Tools"
+  hidden: false
+  selected: true
+  critical: false
+  packages:
+    - gtk-engines
+    - gtk-engine-murrine
+    - qt5ct
+    - arc-gtk-theme
+    - papirus-icon-theme
+    - capitaine-cursors
+    - xdg-user-dirs-gtk
+    - ttf-font-awesome
+    - ttf-dejavu
+    - ttf-opensans
+    - ttf-ubuntu-font-family
+    - ttf-roboto
+    - ttf-roboto-mono
+    - noto-fonts-cjk
+    - noto-fonts-emoji
+
+- name: "Cli tools"
+  description: "Utils"
+  hidden: false
+  selected: true
+  critical: false
+  packages:
+    - os-prober
+    - gnome-keyring
+    - cronie
+    - chrpath
+    - expac
+    - wmctrl
+    - gtk2-perl
+    - perl-file-desktopentry
+    - intltool
+    - bash-completion
+    - zsh-autosuggestions
+    - tmux
+    - pv
+    - git
+    - imagemagick
+    - neofetch
+    - numlockx
+    - w3m
+    - scrot
+    - slop
+    - htop
+    - ranger
+    - rofi
+    - ripgrep
+    - syntax-highlighting
+    - mpd
+    - mpc
+    - ncmpcpp
+    - newsboat
+    - mediainfo
+    - ffmpeg
+    - ffmpegthumbnailer
+    - ffmpegthumbs
+    - youtube-dl
+    - tor
+    - privoxy
+    - xdotool
+    - xsel
+    - yad
+    - unclutter
+
+- name: "Ctlos pkg"
+  description: "ctlos repo"
+  hidden: true
+  selected: true
+  critical: false
+  packages:
+    - ctlos-system
+    - ctlos-base-skel
+    - ctlos-keyring
+    - ctlos-mirrorlist
+    - ctlos-welcome
+    - ctlos-sddm-themes
+    - ctlos-wall
+    - ctlos-qogir
+
+- name: "Aur pkg"
+  description: "ctlos repo & ctlos-aur"
+  hidden: false
+  selected: true
+  critical: false
+  packages:
+    - yay-bin
+    - inxi
+    - fzf-extras
+    - oh-my-zsh-git
+    - zsh-fast-syntax-highlighting-git
+    - ttf-clear-sans
+    - nerd-fonts-hack
+    - otb-uw_ttyp0
+    - cava
+    - gotop-bin
+    - timeshift
+    - pamac-aur
+    - qogir-icon-theme-git
+    - qt5-styleplugins
+    - qgnomeplatform
+
+- name: "Dm"
+  description: "Login manager"
+  critical: false
+  hidden: false
+  selected: true
+  subgroups:
+  - name: "Sddm"
+    description: "Sddm qt"
+    critical: false
+    hidden: false
+    selected: true
+    packages:
+      - sddm
+      - qt5-svg
+      - qt5-quickcontrols2
+      - qt5-graphicaleffects
+  - name: "Lightdm"
+    description: "Lightdm gtk"
+    critical: false
+    hidden: false
+    selected: false
+    packages:
+      - lightdm-gtk-greeter
+
 - name: "Desktop environment"
   description: "Install Desktop environment"
   critical: false
@@ -335,7 +397,7 @@
     description: "Desktop environment"
     critical: false
     hidden: false
-    selected: false
+    selected: true
     expanded: true
     packages:
       - ctlos-xfce-skel
@@ -518,3 +580,15 @@
       - gwenview
       - ark
       - okular
+
+- name: "Virtualbox"
+    description: "Install virtualbox"
+    critical: false
+    hidden: false
+    selected: false
+    packages:
+      - virtualbox
+      - virtualbox-host-modules-arch
+      - virtualbox-host-dkms
+      - virtualbox-guest-iso
+      - virtualbox-guest-dkms
