@@ -20,7 +20,6 @@ images:
     productLogo:         "logo.png"
     productIcon:         "logo.png"
     productWelcome:      "languages.png"
-    productWallpaper:    "wallpaper.png"
 
 slideshow:               "show.qml"
 slideshowAPI:            2

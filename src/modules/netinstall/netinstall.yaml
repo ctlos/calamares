@@ -201,8 +201,23 @@
     - yad
     - unclutter
 
-- name: "Ctlos aur pkg"
-  description: "Aur pkg & ctlos repo"
+- name: "Ctlos pkg"
+  description: "ctlos repo"
+  hidden: true
+  selected: true
+  critical: false
+  packages:
+    - ctlos-system
+    - ctlos-base-skel
+    - ctlos-keyring
+    - ctlos-mirrorlist
+    - ctlos-welcome
+    - ctlos-sddm-themes
+    - ctlos-wall
+    - ctlos-qogir
+
+- name: "Aur pkg"
+  description: "ctlos repo & ctlos-aur"
   hidden: true
   selected: true
   critical: false
@@ -221,12 +236,7 @@
     - pamac-aur
     - qogir-icon-theme-git
     - qt5-styleplugins
-    - qgnomeplatform-git
-    - networkmanager-l2tp
-    - ctlos-keyring
-    - ctlos-mirrorlist
-    - ctlos-welcome
-    - ctlos-sddm-themes
+    - qgnomeplatform
 
 - name: "Dm"
   description: "Login manager"
@@ -321,13 +331,6 @@
   hidden: false
   selected: false
   subgroups:
-  - name: "Ctlos Base"
-    description: "Ctlos base skel config"
-    critical: false
-    hidden: true
-    selected: true
-    packages:
-      - ctlos-base-skel
   - name: "Xfce"
     description: "Desktop environment"
     critical: false
@@ -336,6 +339,46 @@
     expanded: true
     packages:
       - ctlos-xfce-skel
+      - polkit-gnome
+      - alacarte
+      - catfish
+      - galculator
+      - gnome-multi-writer
+      - network-manager-applet
+      - xfce4-appfinder
+      - xfce4-battery-plugin
+      - xfce4-notifyd
+      - xfce4-panel
+      - xfce4-power-manager
+      - xfce4-pulseaudio-plugin
+      - xfce4-session
+      - xfce4-settings
+      - xfce4-terminal
+      - xfce4-whiskermenu-plugin
+      - xfce4-xkb-plugin
+      - xfce4-mpc-plugin
+      - xfce4-clipman-plugin
+      - xfce4-netload-plugin
+      - xfconf
+      - xfdesktop
+      - xfsprogs
+      - xfwm4
+      - thunar
+      - thunar-archive-plugin
+      - thunar-media-tags-plugin
+      - thunar-volman
+      - tumbler
+      - file-roller
+      - flameshot
+      - leafpad
+      - pavucontrol
+      - viewnior
+      - djvulibre
+      - xreader
+      - xfce4-windowck-plugin
+      - skippy-xd-git
+      - multilockscreen-git
+      - xfce4-docklike-plugin-git
   - name: "Openbox"
     description: "Window manager"
     hidden: false
@@ -344,7 +387,7 @@
     packages:
       - ctlos-openbox-skel
   - name: "Xfwm4"
-    description: "Window manager"
+    description: "Window manager xfce"
     critical: false
     hidden: false
     selected: false
@@ -365,7 +408,7 @@
     critical: false
     packages:
       - ctlos-i3-skel
-  - name: "Frankenwm"
+  - name: "Franken wm"
     description: "Tiling window manager"
     hidden: false
     selected: false
@@ -379,24 +422,31 @@
     critical: false
     packages:
       - budgie-desktop
-      - gnome
-      - gnome-multi-writer
+      - gnome-control-center
+      - gnome-backgrounds
+      - gnome-screensaver
+      - gnome-terminal
+      - nautilus-sendto
+      - gnome-nettool
       - gnome-usage
+      - gnome-multi-writer
+      - dconf-editor
       - network-manager-applet
-      - fwupd
   - name: "GNOME"
     description: "Desktop environment"
     hidden: false
     selected: false
     critical: false
     packages:
-      - gnome
+      - gnome-shell
+      - gnome-control-center
+      - gnome-terminal
       - gnome-tweaks
       - nautilus-sendto
       - gnome-nettool
       - gnome-usage
       - gnome-multi-writer
-      - adwaita-icon-theme
+      - dconf-editor
       - chrome-gnome-shell
       - gnome-software-packagekit-plugin
       - gnome-packagekit
@@ -465,200 +515,6 @@
       - fwupd
       - python-dbus
       - kdebase-meta
-      - python-dbus
       - gwenview
       - ark
       - okular
-
-- name: "Applications"
-  description: "Install Applications"
-  critical: false
-  hidden: false
-  selected: false
-  subgroups:
-  - name: "Internet"
-    description: "Internet software"
-    critical: false
-    hidden: false
-    selected: false
-    expanded: true
-    packages:
-      - chromium
-      - opera
-      - qutebrowser
-      - hexchat
-      - telegram-desktop
-      - discord
-      - pidgin
-      - falkon
-      - filezilla
-      - geary
-      - thunderbird
-      - deluge
-      - qbittorrent
-      - transmission-gtk
-      - ktorrent
-      - wireshark-qt
-  - name: "Terminals"
-    description: "Terminals"
-    critical: false
-    hidden: false
-    selected: false
-    packages:
-      - alacritty
-      - gnome-terminal
-      - guake
-      - kitty
-      - konsole
-      - lxterminal
-      - sakura
-      - termite
-      - terminator
-      - tilix
-      - tilda
-  - name: "File Manager"
-    description: "Filemanager"
-    critical: false
-    hidden: false
-    selected: false
-    packages:
-      - thunar
-      - caja
-      - dolphin
-      - nautilus
-      - nemo
-      - nemo-fileroller
-      - pcmanfm
-      - krusader
-      - catfish
-      - file-roller
-  - name: "Fonts"
-    description: "Fonts"
-    critical: false
-    hidden: false
-    selected: false
-    packages:
-      - adobe-source-sans-pro-fonts
-      - noto-fonts
-      - noto-fonts-emoji
-      - noto-fonts-cjk
-      - ttf-bitstream-vera
-      - ttf-dejavu
-      - ttf-droid
-      - ttf-font-awesome
-      - ttf-hack
-      - ttf-inconsolata
-      - ttf-liberation
-      - ttf-opensans
-      - ttf-roboto
-      - ttf-roboto-mono
-      - ttf-ubuntu-font-family
-      - terminus-font
-  - name: "Dev Tools"
-    description: "Development"
-    critical: false
-    hidden: false
-    selected: false
-    packages:
-      - code
-      - neovim
-      - emacs
-      - gitg
-  - name: "Graphics & Media"
-    description: "Graphics & Media"
-    critical: false
-    hidden: false
-    selected: false
-    packages:
-      - blender
-      - darktable
-      - digikam
-      - krita
-      - gimp
-      - pinta
-      - audacity
-      - kdenlive
-      - obs-studio
-      - deadbeef
-      - lollypop
-  - name: "Other"
-    description: "Other"
-    critical: false
-    hidden: false
-    selected: false
-    packages:
-      - grub-customizer
-      - gnome-disk-utility
-      - cheese
-      - liferea
-      - mcomix
-  - name: "Virtualbox"
-    description: "Install virtualbox"
-    critical: false
-    hidden: false
-    selected: false
-    packages:
-      - virtualbox-guest-dkms
-      - virtualbox-guest-utils
-      - virtualbox-guest-iso
-      - virtualbox-host-modules-arch
-      - virtualbox-host-dkms
-  - name: "Usb iso"
-    description: "Usb"
-    critical: false
-    hidden: false
-    selected: false
-    packages:
-      - gnome-multi-writer
-      - imagewriter
-      - woeusb
-  - name: "Games"
-    description: "Install Games pkg"
-    critical: false
-    hidden: false
-    selected: false
-    expanded: true
-    packages:
-      - extremetuxracer
-      - gnome-chess
-      - gnuchess
-      - lutris
-      - playonlinux
-      - teeworlds
-
-- name: "Office"
-  description: "Install Office pkg"
-  critical: false
-  hidden: false
-  selected: false
-  subgroups:
-  - name: "Abiword"
-    description: "Install abiword"
-    critical: false
-    hidden: false
-    selected: false
-    packages:
-      - abiword
-  - name: "Gnumeric"
-    description: "Install gnumeric"
-    critical: false
-    hidden: false
-    selected: false
-    packages:
-      - gnumeric
-  - name: "Libre Office Fresh"
-    description: "Install libre office fresh"
-    critical: false
-    hidden: false
-    selected: false
-    packages:
-      - libreoffice-fresh
-      # - libreoffice-fresh-$LOCALE
-  - name: "Libre Office Still"
-    description: "Install libre office still"
-    critical: false
-    hidden: false
-    selected: false
-    packages:
-      - libreoffice-still
-      # - libreoffice-still-${LOCALE}
