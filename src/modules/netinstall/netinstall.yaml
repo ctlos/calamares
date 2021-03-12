@@ -81,9 +81,10 @@
   subgroups:
   - name: "Linux"
     description: "Install linux kernel"
-    critical: false
     hidden: false
     selected: true
+    critical: false
+    expanded: true
     packages:
       - linux
       - linux-headers
@@ -91,25 +92,25 @@
       - linux-atm
   - name: "Linux-lts"
     description: "Install linux-lts kernel"
-    critical: false
     hidden: false
     selected: false
+    critical: false
     packages:
       - linux-lts
       - linux-lts-headers
   - name: "Linux-zen"
     description: "Install linux-zen kernel"
-    critical: false
     hidden: false
     selected: false
+    critical: false
     packages:
       - linux-zen
       - linux-zen-headers
   - name: "Nvidia"
     description: "Install nvidia"
-    critical: false
     hidden: false
     selected: false
+    critical: false
     packages:
       - nvidia
       - nvidia-settings
@@ -117,9 +118,9 @@
       - lib32-nvidia-utils
   - name: "Nvidia-lts"
     description: "Install nvidia-lts"
-    critical: false
     hidden: false
     selected: false
+    critical: false
     packages:
       - nvidia-lts
       - nvidia-settings
