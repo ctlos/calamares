@@ -141,7 +141,7 @@ Presentation {
                     wrapMode: Text.WrapAnywhere
 
                     MouseArea {
-                        id: rachTextUrlMouseArea
+                        id: slide2Text2MouseArea
                         anchors.fill: parent
                         cursorShape: Qt.PointingHandCursor
 
@@ -205,7 +205,7 @@ Presentation {
                     wrapMode: Text.WrapAnywhere
 
                     MouseArea {
-                        id: rachTgUrlMouseArea
+                        id: slide3Text2MouseArea
                         anchors.fill: parent
                         cursorShape: Qt.PointingHandCursor
 
@@ -269,7 +269,7 @@ Presentation {
                     wrapMode: Text.WrapAnywhere
 
                     MouseArea {
-                        id: rachTextUrlMouseArea
+                        id: slide4Text2MouseArea
                         anchors.fill: parent
                         cursorShape: Qt.PointingHandCursor
 
@@ -333,7 +333,7 @@ Presentation {
                     wrapMode: Text.WrapAnywhere
 
                     MouseArea {
-                        id: rachTgUrlMouseArea
+                        id: slide5Text2MouseArea
                         anchors.fill: parent
                         cursorShape: Qt.PointingHandCursor
 
@@ -341,6 +341,60 @@ Presentation {
                             Qt.openUrlExternally("https://vk.com/ctlos")
                         }
                     }
+                }
+            }
+        }
+    }
+    Slide {
+        anchors.rightMargin: 0
+        anchors.bottomMargin: 0
+        anchors.leftMargin: 0
+        anchors.topMargin: 0
+        anchors.fill: parent
+
+        RowLayout {
+            id: rowLayout6
+            anchors.fill: parent
+            spacing: 0
+            Rectangle {
+                id: blueRect6
+                color: "#4A65BD"
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+                border.width: 0
+
+                Text {
+                    id: slide6Text1
+                    color: "#161720"
+                    text: qsTr("Ctlos")
+                    font.pointSize: 64
+                    styleColor: "#161720"
+                    horizontalAlignment: Text.AlignRight
+                    verticalAlignment: Text.AlignVCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.right: parent.right
+                    anchors.rightMargin: 0
+                }
+            }
+
+            Rectangle {
+                id: darkRect6
+                color: "#161720"
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+                border.width: 0
+
+                Text {
+                    id: slide6Text2
+                    color: "#4A65BD"
+                    text: qsTr("Linux")
+                    font.pointSize: 64
+                    styleColor: "#4A65BD"
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.left: parent.left
+                    anchors.leftMargin: 0
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignLeft
                 }
             }
         }
