@@ -332,13 +332,8 @@
   critical: false
   packages:
     - ctlos-system
-    - ctlos-base-skel
     - ctlos-keyring
     - ctlos-mirrorlist
-    - ctlos-welcome
-    - ctlos-sddm-themes
-    - ctlos-wall
-    - ctlos-qogir
 
 - name: "Aur pkg"
   description: "ctlos repo & ctlos-aur"
@@ -378,6 +373,7 @@
       - qt5-svg
       - qt5-quickcontrols2
       - qt5-graphicaleffects
+      - ctlos-sddm-themes
   - name: "Lightdm"
     description: "Lightdm gtk"
     critical: false
@@ -399,7 +395,11 @@
     selected: true
     expanded: true
     packages:
+      - ctlos-base-skel
       - ctlos-xfce-skel
+      - ctlos-welcome
+      - ctlos-wall
+      - ctlos-qogir
       - polkit-gnome
       - alacarte
       - catfish

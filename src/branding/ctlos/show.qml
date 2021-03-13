@@ -302,7 +302,7 @@ Presentation {
                     id: slide5Text1
                     width: parent.width / 2
                     color: "#4A65BD"
-                    text: qsTr("Forum Ctlos")
+                    text: qsTr("Vk Ctlos")
                     anchors.horizontalCenter: parent.horizontalCenter
                     font.pointSize: 20
                     wrapMode: Text.WordWrap
@@ -430,8 +430,8 @@ Presentation {
                 Text {
                     id: slide7Text1
                     color: "#4A65BD"
-                    text: qsTr("© 2017")
-                    font.pointSize: 64
+                    text: qsTr("© 2017 ")
+                    font.pointSize: 32
                     styleColor: "#4A65BD"
                     horizontalAlignment: Text.AlignRight
                     verticalAlignment: Text.AlignVCenter
@@ -451,8 +451,8 @@ Presentation {
                 Text {
                     id: slide7Text2
                     color: "#161720"
-                    text: qsTr("Alex Creio")
-                    font.pointSize: 64
+                    text: qsTr(" Alex Creio")
+                    font.pointSize: 48
                     styleColor: "#161720"
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.left: parent.left
