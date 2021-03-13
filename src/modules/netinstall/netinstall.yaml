@@ -5,12 +5,11 @@
   critical: false
   packages:
     - amd-ucode
+    - intel-ucode
     - archlinux-appstream-data
     - arch-install-scripts
     - base-devel
     - bind-tools
-    - btrfs-progs
-    - clonezilla
     - crda
     - darkhttpd
     - ddrescue
@@ -18,17 +17,8 @@
     - diffutils
     - dmraid
     - dnsmasq
-    - dosfstools
-    - edk2-shell
-    - efibootmgr
     - ethtool
-    - exfatprogs
-    - f2fs-tools
-    - fsarchiver
     - gpm
-    - gptfdisk
-    - hdparm
-    - intel-ucode
     - ipw2100-fw
     - ipw2200-fw
     - irssi
@@ -42,14 +32,10 @@
     - mdadm
     - memtest86+
     - mkinitcpio
-    - mkinitcpio-archiso
     - mkinitcpio-nfs-utils
     - mtools
     - nbd
     - ndisc6
-    - nfs-utils
-    - nilfs-utils
-    - ntfs-3g
     - nvme-cli
     - openconnect
     - partclone
@@ -57,20 +43,16 @@
     - partimage
     - ppp
     - pptpclient
-    - reiserfsprogs
     - rp-pppoe
     - sdparm
     - sg3_utils
-    - smartmontools
     - systemd-resolvconf
     - tcpdump
-    - testdisk
     - usb_modeswitch
     - usbutils
     - wireless-regdb
     - wireless_tools
     - wvdial
-    - xfsprogs
     - xl2tpd
 
 - name: "Kernel & Drivers"
@@ -191,6 +173,24 @@
   selected: true
   critical: false
   packages:
+    - os-prober
+    - edk2-shell
+    - efibootmgr
+    - gptfdisk
+    - ntfs-3g
+    - btrfs-progs
+    - f2fs-tools
+    - reiserfsprogs
+    - exfatprogs
+    - xfsprogs
+    - clonezilla
+    - dosfstools
+    - fsarchiver
+    - hdparm
+    - smartmontools
+    - testdisk
+    - nfs-utils
+    - nilfs-utils
     - gvfs
     - gvfs-afc
     - gvfs-goa
@@ -284,7 +284,6 @@
   selected: true
   critical: false
   packages:
-    - os-prober
     - gnome-keyring
     - cronie
     - chrpath

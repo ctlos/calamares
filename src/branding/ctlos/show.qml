@@ -347,11 +347,10 @@ Presentation {
     }
     Slide {
         anchors.rightMargin: 0
-        anchors.bottomMargin: 0
-        anchors.leftMargin: 0
-        anchors.topMargin: 0
         anchors.fill: parent
-
+        anchors.bottomMargin: 0
+        anchors.topMargin: 0
+        anchors.leftMargin: 0
         RowLayout {
             id: rowLayout6
             anchors.fill: parent
@@ -365,15 +364,15 @@ Presentation {
 
                 Text {
                     id: slide6Text1
+                    width: parent.width / 2
                     color: "#161720"
-                    text: qsTr("Ctlos")
-                    font.pointSize: 64
-                    styleColor: "#161720"
-                    horizontalAlignment: Text.AlignRight
+                    text: qsTr("Github Ctlos")
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    font.pointSize: 20
+                    wrapMode: Text.WordWrap
                     verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
                     anchors.verticalCenter: parent.verticalCenter
-                    anchors.right: parent.right
-                    anchors.rightMargin: 0
                 }
             }
 
@@ -387,9 +386,74 @@ Presentation {
                 Text {
                     id: slide6Text2
                     color: "#4A65BD"
-                    text: qsTr("Linux")
+                    text: "github.com/ctlos"
+                    style: Text.Raised
+                    font.underline: true
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    font.pointSize: 20
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
+                    wrapMode: Text.WrapAnywhere
+
+                    MouseArea {
+                        id: slide6Text2MouseArea
+                        anchors.fill: parent
+                        cursorShape: Qt.PointingHandCursor
+
+                        onClicked: {
+                            Qt.openUrlExternally("https://github.com/ctlos")
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Slide {
+        anchors.rightMargin: 0
+        anchors.bottomMargin: 0
+        anchors.leftMargin: 0
+        anchors.topMargin: 0
+        anchors.fill: parent
+
+        RowLayout {
+            id: rowLayout7
+            anchors.fill: parent
+            spacing: 0
+            Rectangle {
+                id: darkRect7
+                color: "#161720"
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+                border.width: 0
+
+                Text {
+                    id: slide7Text1
+                    color: "#4A65BD"
+                    text: qsTr("© 2017")
                     font.pointSize: 64
                     styleColor: "#4A65BD"
+                    horizontalAlignment: Text.AlignRight
+                    verticalAlignment: Text.AlignVCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.right: parent.right
+                    anchors.rightMargin: 0
+                }
+            }
+
+            Rectangle {
+                id: blueRect7
+                color: "#4A65BD"
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+                border.width: 0
+
+                Text {
+                    id: slide7Text2
+                    color: "#161720"
+                    text: qsTr("Alex Creio")
+                    font.pointSize: 64
+                    styleColor: "#161720"
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.left: parent.left
                     anchors.leftMargin: 0
