@@ -378,7 +378,7 @@
       - pamac-aur
       - gparted
       - firefox
-      - firefox-i18n-$LOCALE
+      - firefox-i18n-ru
       - firefox-ublock-origin
       - mpv
       - smplayer
