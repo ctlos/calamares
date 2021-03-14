@@ -55,7 +55,17 @@
     - wvdial
     - xl2tpd
 
-- name: "Kernel & Drivers"
+- name: "Ctlos systems pkg"
+  description: "ctlos repo"
+  hidden: true
+  selected: true
+  critical: false
+  packages:
+    - ctlos-system
+    - ctlos-keyring
+    - ctlos-mirrorlist
+
+- name: "Kernel & Nvidia"
   description: "Install Kernel & Drivers"
   critical: false
   hidden: false
@@ -88,6 +98,14 @@
     packages:
       - linux-zen
       - linux-zen-headers
+  - name: "Linux-hardened"
+    description: "Install linux-hardened kernel"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+      - linux-hardened
+      - linux-hardened-headers
   - name: "Nvidia"
     description: "Install nvidia"
     hidden: false
@@ -99,7 +117,7 @@
       - nvidia-utils
       - lib32-nvidia-utils
   - name: "Nvidia-lts"
-    description: "Install nvidia-lts"
+    description: "Install nvidia-lts & linux-lts"
     hidden: false
     selected: false
     critical: false
@@ -107,27 +125,7 @@
       - nvidia-lts
       - nvidia-settings
       - nvidia-utils
-  - name: "Printing"
-    description: "Support for printing (Cups)"
-    hidden: false
-    selected: false
-    critical: false
-    packages:
-      - cups
-      - cups-filters
-      - cups-pdf
-      - ghostscript
-      - gsfonts
-      - foomatic-db
-      - foomatic-db-engine
-      - foomatic-db-ppds
-      - foomatic-db-nonfree
-      - foomatic-db-nonfree-ppds
-      - gutenprint
-      - foomatic-db-gutenprint-ppds
-      - system-config-printer
-      - hplip
-      - splix
+      - lib32-nvidia-utils
 
 - name: "Xorg"
   description: "Video Drivers"
@@ -168,7 +166,7 @@
     - xf86-video-voodoo
 
 - name: "File Systems"
-  description: "Fs Drivers"
+  description: "Drivers & tools"
   hidden: false
   selected: true
   critical: false
@@ -256,106 +254,145 @@
     - libdvdread
     - libdvdnav
 
-- name: "Gtk & fonts"
-  description: "Tools"
+- name: "Ctlos depends"
+  description: "Utils & ctlos depends"
   hidden: false
   selected: true
   critical: false
-  packages:
-    - gtk-engines
-    - gtk-engine-murrine
-    - qt5ct
-    - arc-gtk-theme
-    - papirus-icon-theme
-    - capitaine-cursors
-    - xdg-user-dirs-gtk
-    - ttf-font-awesome
-    - ttf-dejavu
-    - ttf-opensans
-    - ttf-ubuntu-font-family
-    - ttf-roboto
-    - ttf-roboto-mono
-    - noto-fonts-cjk
-    - noto-fonts-emoji
-
-- name: "Cli tools"
-  description: "Utils"
-  hidden: false
-  selected: true
-  critical: false
-  packages:
-    - gnome-keyring
-    - cronie
-    - chrpath
-    - expac
-    - wmctrl
-    - gtk2-perl
-    - perl-file-desktopentry
-    - intltool
-    - bash-completion
-    - zsh-autosuggestions
-    - tmux
-    - pv
-    - git
-    - imagemagick
-    - neofetch
-    - numlockx
-    - w3m
-    - scrot
-    - slop
-    - htop
-    - mc
-    - ranger
-    - rofi
-    - ripgrep
-    - syntax-highlighting
-    - mpd
-    - mpc
-    - ncmpcpp
-    - newsboat
-    - mediainfo
-    - ffmpeg
-    - ffmpegthumbnailer
-    - ffmpegthumbs
-    - youtube-dl
-    - tor
-    - privoxy
-    - xdotool
-    - xsel
-    - yad
-    - unclutter
-
-- name: "Ctlos pkg"
-  description: "ctlos repo"
-  hidden: true
-  selected: true
-  critical: false
-  packages:
-    - ctlos-system
-    - ctlos-keyring
-    - ctlos-mirrorlist
-
-- name: "Aur pkg"
-  description: "ctlos repo & ctlos-aur"
-  hidden: false
-  selected: true
-  critical: false
-  packages:
-    - yay-bin
-    - inxi
-    - fzf-extras
-    - oh-my-zsh-git
-    - zsh-fast-syntax-highlighting-git
-    - ttf-clear-sans
-    - nerd-fonts-hack
-    - otb-uw_ttyp0
-    - cava
-    - gotop-bin
-    - timeshift
-    - pamac-aur
-    - qogir-icon-theme-git
-    - qt5-styleplugins
-    - qgnomeplatform
+  subgroups:
+  - name: "Ctlos pkgs"
+    hidden: false
+    selected: true
+    critical: false
+    packages:
+      - ctlos-base-skel
+      - ctlos-qogir
+      - ctlos-welcome
+      - ctlos-wall
+  - name: "Gtk engines"
+    hidden: false
+    selected: true
+    critical: false
+    expanded: true
+    packages:
+      - gtk-engines
+      - gtk-engine-murrine
+      - xdg-user-dirs-gtk
+  - name: "Qt"
+    hidden: false
+    selected: true
+    critical: false
+    packages:
+      - qt5ct
+      - qt5-styleplugins
+      - qgnomeplatform
+  - name: "Themes"
+    hidden: false
+    selected: true
+    critical: false
+    packages:
+      - arc-gtk-theme
+  - name: "Icons & Cursors"
+    hidden: false
+    selected: true
+    critical: false
+    packages:
+      - papirus-icon-theme
+      - qogir-icon-theme-git
+      - capitaine-cursors
+  - name: "Fonts"
+    hidden: false
+    selected: true
+    critical: false
+    packages:
+      - ttf-font-awesome
+      - ttf-dejavu
+      - ttf-opensans
+      - ttf-ubuntu-font-family
+      - ttf-roboto
+      - ttf-roboto-mono
+      - ttf-clear-sans
+      - nerd-fonts-hack
+      - otb-uw_ttyp0
+      - noto-fonts-cjk
+      - noto-fonts-emoji
+  - name: "Ctlos cli depends"
+    hidden: false
+    selected: true
+    critical: false
+    packages:
+      - gnome-keyring
+      - yay-bin
+      - inxi
+      - fzf-extras
+      - neofetch
+      - bash-completion
+      - syntax-highlighting
+      - oh-my-zsh-git
+      - zsh-autosuggestions
+      - zsh-fast-syntax-highlighting-git
+      - cava
+      - gotop-bin
+      - tmux
+      - htop
+      - scrot
+      - mc
+      - ranger
+      - rofi
+      - mpd
+      - mpc
+      - ncmpcpp
+      - newsboat
+      - git
+      - wget
+      - xsel
+      - numlockx
+      - wmctrl
+      - mediainfo
+      - ffmpeg
+      - ffmpegthumbnailer
+      - ffmpegthumbs
+      - ripgrep
+      - cronie
+      - chrpath
+      - expac
+      - gtk2-perl
+      - perl-file-desktopentry
+      - intltool
+      - pv
+      - imagemagick
+      - w3m
+      - slop
+      - youtube-dl
+      - tor
+      - privoxy
+      - xdotool
+      - yad
+      - unclutter
+  - name: "Ctlos gui depends"
+    hidden: false
+    selected: true
+    critical: false
+    packages:
+      - timeshift
+      - pamac-aur
+      - gparted
+      - firefox
+      - firefox-i18n-ru
+      - firefox-ublock-origin
+      - mpv
+      - smplayer
+      - smplayer-skins
+      - smplayer-themes
+      - simplescreenrecorder
+      - audacious
+      - gufw
+      - keepassxc
+      - veracrypt
+      - telegram-desktop
+      - flameshot
+      - skippy-xd-git
+      - multilockscreen-git
 
 - name: "Dm"
   description: "Login manager"
@@ -395,16 +432,8 @@
     selected: true
     expanded: true
     packages:
-      - ctlos-base-skel
       - ctlos-xfce-skel
-      - ctlos-welcome
-      - ctlos-wall
-      - ctlos-qogir
       - polkit-gnome
-      - alacarte
-      - catfish
-      - galculator
-      - gnome-multi-writer
       - network-manager-applet
       - xfce4-appfinder
       - xfce4-battery-plugin
@@ -430,15 +459,12 @@
       - thunar-volman
       - tumbler
       - file-roller
-      - flameshot
       - leafpad
       - pavucontrol
       - viewnior
       - djvulibre
       - xreader
       - xfce4-windowck-plugin
-      - skippy-xd-git
-      - multilockscreen-git
       - xfce4-docklike-plugin-git
   - name: "Openbox"
     description: "Window manager"
@@ -589,5 +615,28 @@
     - virtualbox
     - virtualbox-host-modules-arch
     - virtualbox-host-dkms
-    - virtualbox-guest-iso
     - virtualbox-guest-dkms
+    - virtualbox-guest-utils
+    - virtualbox-guest-iso
+
+- name: "Printing"
+  description: "Support for printing (Cups)"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - cups
+    - cups-filters
+    - cups-pdf
+    - ghostscript
+    - gsfonts
+    - foomatic-db
+    - foomatic-db-engine
+    - foomatic-db-ppds
+    - foomatic-db-nonfree
+    - foomatic-db-nonfree-ppds
+    - gutenprint
+    - foomatic-db-gutenprint-ppds
+    - system-config-printer
+    - hplip
+    - splix
