@@ -1,14 +1,14 @@
-- name: "Default"
+- name: "Base-devel & Default Archiso"
   description: "Default group"
   hidden: false
   selected: true
   critical: false
   packages:
+    - base-devel
     - amd-ucode
     - intel-ucode
     - archlinux-appstream-data
     - arch-install-scripts
-    - base-devel
     - bind-tools
     - crda
     - darkhttpd
@@ -266,7 +266,6 @@
     critical: false
     packages:
       - ctlos-base-skel
-      - ctlos-qogir
       - ctlos-welcome
       - ctlos-wall
   - name: "Gtk engines"
@@ -292,6 +291,7 @@
     critical: false
     packages:
       - arc-gtk-theme
+      - ctlos-qogir
   - name: "Icons & Cursors"
     hidden: false
     selected: true
