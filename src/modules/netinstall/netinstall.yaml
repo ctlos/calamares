@@ -55,16 +55,6 @@
     - wvdial
     - xl2tpd
 
-- name: "Ctlos systems pkg"
-  description: "ctlos repo"
-  hidden: true
-  selected: true
-  critical: false
-  packages:
-    - ctlos-system
-    - ctlos-keyring
-    - ctlos-mirrorlist
-
 - name: "Kernel & Nvidia"
   description: "Install Kernel & Drivers"
   critical: false
@@ -267,6 +257,7 @@
     packages:
       - ctlos-base-skel
       - ctlos-welcome
+      - ctlos-helper
       - ctlos-wall
   - name: "Gtk engines"
     hidden: false
@@ -605,6 +596,16 @@
       - gwenview
       - ark
       - okular
+
+- name: "Ctlos systems pkg"
+  description: "ctlos repo"
+  hidden: true
+  selected: true
+  critical: false
+  packages:
+    - ctlos-system
+    - ctlos-keyring
+    - ctlos-mirrorlist
 
 - name: "Virtualbox"
   description: "Install virtualbox"
