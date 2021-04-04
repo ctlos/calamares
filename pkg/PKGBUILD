@@ -70,10 +70,5 @@ package() {
     cp -r ../settings-{on,off}line.conf $pkgdir/usr/share/calamares/
     cp -r ../src/modules/packages/packages-{on,off}line.conf $pkgdir/usr/share/calamares/modules/
     cp -r ../src/modules/welcome/welcome-{on,off}line.conf $pkgdir/usr/share/calamares/modules/
-
-
     cp -r ../src/modules/netinstall/netinstall.yaml $pkgdir/usr/share/calamares/modules/netinstall.yaml
-    # cp -r ../src/modules/netinstall/netinstall-kernel.yaml $pkgdir/usr/share/calamares/modules/netinstall-kernel.yaml
-    # cp -r ../src/modules/netinstall/netinstall-desktop.yaml $pkgdir/usr/share/calamares/modules/netinstall-desktop.yaml
-    # cp -r ../src/modules/netinstall/netinstall-applications.yaml $pkgdir/usr/share/calamares/modules/netinstall-applications.yaml
 }
