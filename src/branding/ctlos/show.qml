@@ -452,7 +452,7 @@ Presentation {
                     id: slide7Text2
                     color: "#161720"
                     text: qsTr(" Alex Creio")
-                    font.pointSize: 48
+                    font.pointSize: 32
                     styleColor: "#161720"
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.left: parent.left
