@@ -256,6 +256,23 @@ class PMEntropy(PackageManager):
         pass
 
 
+class PMLuet(PackageManager):
+    backend = "luet"
+
+    def install(self, pkgs, from_local=False):
+        check_target_env_call(["luet", "install", "-y"] + pkgs)
+
+    def remove(self, pkgs):
+        check_target_env_call(["luet", "uninstall", "-y"] + pkgs)
+
+    def update_db(self):
+          # Luet checks for DB update everytime its ran.
+        pass
+
+    def update_system(self):
+        check_target_env_call(["luet", "upgrade", "-y"])
+
+
 class PMPackageKit(PackageManager):
     backend = "packagekit"
 
@@ -562,11 +579,27 @@ def run():
 
     update_db = libcalamares.job.configuration.get("update_db", False)
     if update_db and libcalamares.globalstorage.value("hasInternet"):
-        pkgman.update_db()
+        try:
+            pkgman.update_db()
+        except subprocess.CalledProcessError as e:
+            libcalamares.utils.warning(str(e))
+            libcalamares.utils.debug("stdout:" + str(e.stdout))
+            libcalamares.utils.debug("stderr:" + str(e.stderr))
+            return (_("Package Manager error"),
+                    _("The package manager could not prepare updates. The command <pre>{!s}</pre> returned error code {!s}.")
+                    .format(e.cmd, e.returncode))
 
     update_system = libcalamares.job.configuration.get("update_system", False)
     if update_system and libcalamares.globalstorage.value("hasInternet"):
-        pkgman.update_system()
+        try:
+            pkgman.update_system()
+        except subprocess.CalledProcessError as e:
+            libcalamares.utils.warning(str(e))
+            libcalamares.utils.debug("stdout:" + str(e.stdout))
+            libcalamares.utils.debug("stderr:" + str(e.stderr))
+            return (_("Package Manager error"),
+                    _("The package manager could not update the system. The command <pre>{!s}</pre> returned error code {!s}.")
+                    .format(e.cmd, e.returncode))
 
     operations = libcalamares.job.configuration.get("operations", [])
     if libcalamares.globalstorage.contains("packageOperations"):
@@ -586,11 +619,18 @@ def run():
     for entry in operations:
         group_packages = 0
         libcalamares.utils.debug(pretty_name())
-        run_operations(pkgman, entry)
+        try:
+            run_operations(pkgman, entry)
+        except subprocess.CalledProcessError as e:
+            libcalamares.utils.warning(str(e))
+            libcalamares.utils.debug("stdout:" + str(e.stdout))
+            libcalamares.utils.debug("stderr:" + str(e.stderr))
+            return (_("Package Manager error"),
+                    _("The package manager could make changes to the installed system. The command <pre>{!s}</pre> returned error code {!s}.")
+                    .format(e.cmd, e.returncode))
 
     mode_packages = None
 
     libcalamares.job.setprogress(1.0)
-    libcalamares.utils.debug(pretty_name())
 
     return None
