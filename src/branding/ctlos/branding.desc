@@ -29,3 +29,8 @@ style:
    sidebarText:          "#FFFFFF"
    sidebarTextSelect:    "#FFFFFF"
    sidebarTextHighlight: "#4A65BD"
+
+uploadServer :
+    type:      "fiche"
+    url:       "http://termbin.com:9999"
+    sizeLimit: -1
