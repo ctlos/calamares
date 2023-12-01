@@ -1,7 +1,7 @@
 # Ctlos Calamares
 pkgname=calamares-dev
-pkgver=3.2.61
-pkgrel=12
+pkgver=3.3.0.alpha6
+pkgrel=13
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 url="https://github.com/ctlos/calamares"
@@ -11,7 +11,7 @@ conflicts=('calamares' 'calamares-net')
 depends=('kconfig' 'kcoreaddons' 'kiconthemes' 'ki18n' 'kio' 'kservice'
          'solid' 'yaml-cpp' 'kpmcore' 'mkinitcpio-openswap' 'cryptsetup'
          'boost-libs' 'ckbcomp' 'hwinfo' 'qt5-svg' 'polkit-qt5' 'gtk-update-icon-cache' 'plasma-framework'
-         'qt5-xmlpatterns' 'squashfs-tools' 'libpwquality' 'yad')
+         'qt5-xmlpatterns' 'squashfs-tools' 'libpwquality' 'yad' 'efibootmgr' 'icu' 'appstream-qt')
 
 makedepends=('extra-cmake-modules' 'qt5-tools' 'qt5-translations' 'git' 'boost' 'python-jsonschema' 'python-pyaml' 'python-unidecode')
 
