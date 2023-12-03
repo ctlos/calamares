@@ -6,6 +6,9 @@ windowPlacement:         center
 windowExpanding:         normal
 windowSize:              1000px,600px
 
+sidebar: widget
+navigation: widget
+
 strings:
     productName:         Ctlos Linux
     bootloaderEntryName: Ctlos
