@@ -30,8 +30,8 @@ slideshowAPI:            2
 style:
    sidebarBackground:        "#1D2026"
    sidebarText:              "#FFFFFF"
-   SidebarTextCurrent:       "#FFFFFF"
-   SidebarBackgroundCurrent: "#4A65BD"
+   SidebarTextCurrent:       "#4A65BD"
+   SidebarBackgroundCurrent: "#1D2026"
 
 uploadServer :
     type:      "fiche"

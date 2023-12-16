@@ -1,25 +1,57 @@
-/*
+#mainApp {
+}
 
-A branding component can ship a stylesheet (like this one)
-which is applied to parts of the Calamares user-interface.
-In principle, all parts can be styled through CSS.
-Missing parts should be filed as issues.
+#sidebarMenuApp {
+	background-color: #1D2026;
+}
 
-The IDs are based on the object names in the C++ code.
-*/
+QWidget {
+}
 
-/* Main application window.
+QDialogButtonBox {
+}
 
-#mainApp { }
-#logoApp { }
-#sidebarApp { }
-#sidebarMenuApp { }
-*/
+QPushButton {
+}
+QPushButton:pressed {
+}
+QPushButton:hover {
+}
+
+#debugButton {
+	background-color: #1D2026;
+}
+#debugButton:pressed {
+	color: #4A65BD;
+}
+#debugButton:hover {
+	color: #4A65BD;
+}
+
+#aboutButton {
+	background-color: #1D2026;
+}
+#aboutButton:pressed {
+	color: #4A65BD;
+}
+#aboutButton:hover {
+	color: #4A65BD;
+}
+
+#products {
+	font: 15px;
+}
+#productScreenshot {
+}
+#productName {
+}
+#productDescription {
+	font: 14px;
+}
 
 /* Partitioning module.
-
 #bootInfoIcon { }
-#bootInfoLable { }
+#bootInfoLabel { }
 #deviceInfoIcon { }
 #defineInfoLabel { }
 #scrollAreaWidgetContents { }
@@ -27,18 +59,6 @@ The IDs are based on the object names in the C++ code.
 */
 
 /* Licensing module.
-
 #licenseItem {  }
 #licenseItemFullText {  }
-*/
-
-/*
-#debugButton {
-  color: white;
-}
-*/
-/*
-#mainText{
-  font: bold 14px;
-}
 */
