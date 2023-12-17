@@ -2,7 +2,7 @@
 pkgname=calamares-dev
 pkgver=3.3.0.alpha6
 _pkgver=3.3.0-alpha6
-pkgrel=18
+pkgrel=19
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 url="https://github.com/ctlos/calamares"
