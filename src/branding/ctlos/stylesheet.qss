@@ -1,14 +1,18 @@
 #mainApp {
+	background-color:#2a2e32;
 }
 
 #sidebarMenuApp {
-	background-color: #1D2026;
+	background-color: #31363b;
+	background-position: center;
 }
 
 QWidget {
+	color: #ffffff;
 }
 
-QDialogButtonBox {
+QDialogButtonBox { 
+	dialogbuttonbox-buttons-have-icons: 0;
 }
 
 QPushButton {
@@ -19,23 +23,19 @@ QPushButton:hover {
 }
 
 #debugButton {
-	background-color: #1D2026;
+	background-color: #3E434E;
 }
 #debugButton:pressed {
-	color: #4A65BD;
 }
 #debugButton:hover {
-	color: #4A65BD;
 }
 
 #aboutButton {
-	background-color: #1D2026;
+	background-color: #3E434E;
 }
 #aboutButton:pressed {
-	color: #4A65BD;
 }
 #aboutButton:hover {
-	color: #4A65BD;
 }
 
 #products {
