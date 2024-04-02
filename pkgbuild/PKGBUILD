@@ -1,8 +1,8 @@
 # Ctlos Calamares
 pkgname=calamares-dev
-pkgver=3.3.5
-_pkgver=3.3.5
-pkgrel=1
+pkgver=3.3.6
+_pkgver=3.3.6
+pkgrel=02
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 url="https://github.com/ctlos/calamares"
@@ -20,7 +20,7 @@ backup=('usr/share/calamares/modules/bootloader.conf'
         'usr/share/calamares/modules/initcpio.conf'
         'usr/share/calamares/modules/unpackfs.conf')
 
-source+=("https://github.com/calamares/calamares/releases/download/v${_pkgver}/calamares-${_pkgver}.tar.gz"
+source+=("https://github.com/erikdubois/calamares/archive/refs/tags/$pkgver-$pkgrel.tar.gz"
         git+https://github.com/ctlos/calamares#branch=dev)
 
 sha256sums=('SKIP'
@@ -32,9 +32,11 @@ prepare() {
     cp -r ${srcdir}/calamares/src/modules/packages/packages-offline.conf ${srcdir}/calamares-${_pkgver}/src/modules/packages/packages.conf
     cp -r ${srcdir}/calamares/src/modules/welcome/welcome-offline.conf ${srcdir}/calamares-${_pkgver}/src/modules/welcome/welcome.conf
 
-    rm -rf ${srcdir}/calamares
+    # rm -rf ${srcdir}/calamares
     cd ${srcdir}/calamares-${_pkgver}
     sed -i -e 's/"Install configuration files" OFF/"Install configuration files" ON/' CMakeLists.txt
+
+    sed -i -e "s/desired_size = 512 \* 1024 \* 1024  \# 512MiB/desired_size = 512 \* 1024 \* 1024 \* 4  \# 2048MiB/" src/modules/fstab/main.py
 
     # change branding
     sed -i -e "s/default/ctlos/g" src/branding/CMakeLists.txt
