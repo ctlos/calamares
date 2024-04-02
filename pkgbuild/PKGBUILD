@@ -1,5 +1,5 @@
 # Ctlos Calamares
-pkgname=calamares-dev
+pkgname=calamares
 pkgver=3.3.6
 _pkgver=3.3.6
 pkgrel=02
