@@ -42,22 +42,19 @@ prepare() {
 }
 
 build() {
-    cd ${srcdir}/calamares-${_pkgver}
-
-    mkdir -p build
-    cd build
-        cmake .. \
-              -DCMAKE_BUILD_TYPE=Release \
-              -DCMAKE_INSTALL_PREFIX=/usr \
-              -DCMAKE_INSTALL_LIBDIR=lib \
-              -DWITH_KF5DBus=OFF \
-              -DBoost_NO_BOOST_CMAKE=ON \
-              -DSKIP_MODULES="webview interactiveterminal initramfs \
-                              initramfscfg dracut dracutlukscfg \
-                              dummyprocess dummypython dummycpp \
-                              dummypythonqt services-openrc services-systemd \
-                              keyboardq localeq welcomeq"
-        make
+    cmake -B build -S "${srcdir}/calamares" \
+    -DWITH_QT6=ON \
+    -DCMAKE_BUILD_TYPE=Debug \
+    -DCMAKE_INSTALL_LIBDIR=/usr/lib \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DINSTALL_CONFIG=OFF \
+    -DSKIP_MODULES="dracut \
+    dummycpp dummyprocess dummypython dummypythonqt \
+    finishedq initcpio keyboardq license localeq notesqml oemid \
+    openrcdmcryptcfg plymouthcfg plasmalnf services-openrc \
+    summaryq tracking usersq webview welcomeq"
+    export DESTDIR="$srcdir/build"
+    make -C build
 }
 
 package() {
