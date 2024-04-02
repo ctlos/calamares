@@ -42,7 +42,7 @@ prepare() {
 }
 
 build() {
-    cmake -B build -S "${srcdir}/calamares" \
+    cmake -B build -S "${srcdir}/calamares-${_pkgver}" \
     -DWITH_QT6=ON \
     -DCMAKE_BUILD_TYPE=Debug \
     -DCMAKE_INSTALL_LIBDIR=/usr/lib \
