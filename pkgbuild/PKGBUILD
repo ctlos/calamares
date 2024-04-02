@@ -1,8 +1,8 @@
 # Ctlos Calamares
-pkgname=calamares
-pkgver=3.3.6
-_pkgver=3.3.6
-pkgrel=02
+pkgname=calamares-dev
+pkgver=3.3.5
+_pkgver=3.3.5
+pkgrel=1
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 url="https://github.com/ctlos/calamares"
@@ -20,7 +20,7 @@ backup=('usr/share/calamares/modules/bootloader.conf'
         'usr/share/calamares/modules/initcpio.conf'
         'usr/share/calamares/modules/unpackfs.conf')
 
-source+=("https://github.com/erikdubois/calamares/archive/refs/tags/$pkgver-$pkgrel.tar.gz"
+source+=("calamares::https://github.com/calamares/calamares/releases/download/v${_pkgver}/calamares-${_pkgver}.tar.gz"
         git+https://github.com/ctlos/calamares#branch=dev)
 
 sha256sums=('SKIP'
@@ -32,11 +32,11 @@ prepare() {
     cp -r ${srcdir}/calamares/src/modules/packages/packages-offline.conf ${srcdir}/calamares-${_pkgver}/src/modules/packages/packages.conf
     cp -r ${srcdir}/calamares/src/modules/welcome/welcome-offline.conf ${srcdir}/calamares-${_pkgver}/src/modules/welcome/welcome.conf
 
-    # rm -rf ${srcdir}/calamares
+    rm -rf ${srcdir}/calamares
     cd ${srcdir}/calamares-${_pkgver}
     sed -i -e 's/"Install configuration files" OFF/"Install configuration files" ON/' CMakeLists.txt
 
-    sed -i -e "s/desired_size = 512 \* 1024 \* 1024  \# 512MiB/desired_size = 512 \* 1024 \* 1024 \* 4  \# 2048MiB/" src/modules/fstab/main.py
+    sed -i -e "s/desired_size = 512 \* 1024 \* 1024  \# 512MiB/desired_size = 512 \* 1024 \* 1024 \* 4  \# 2048MiB/" "src/modules/fstab/main.py"
 
     # change branding
     sed -i -e "s/default/ctlos/g" src/branding/CMakeLists.txt
@@ -46,28 +46,32 @@ prepare() {
 build() {
     cd ${srcdir}/calamares-${_pkgver}
 
-    mkdir -p build
-    cd build
-        cmake .. \
-              -DCMAKE_BUILD_TYPE=Debug \
-              -DCMAKE_INSTALL_PREFIX=/usr \
-              -DCMAKE_INSTALL_LIBDIR=lib \
-              -DWITH_QT6=ON \
-              -DWITH_KF5DBus=OFF \
-              -DINSTALL_CONFIG=OFF \
-              -DBoost_NO_BOOST_CMAKE=ON \
-              -DSKIP_MODULES="interactiveterminal initramfs \
-                    initramfscfg dracut dracutlukscfg \
-                    dummycpp dummyprocess dummypython dummypythonqt \
-                    finishedq initcpio keyboardq license localeq notesqml oemid \
-                    openrcdmcryptcfg plymouthcfg plasmalnf services-openrc \
-                    summaryq tracking usersq webview welcomeq"
-        make
+    export CXXFLAGS+=" -fPIC"
+
+    cmake -S . -Bbuild \
+        -GNinja \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DWITH_APPSTREAM=OFF \
+        -DWITH_PYBIND11=OFF \
+        -DWITH_QT6=ON \
+        -DSKIP_MODULES="dracut dracutlukscfg \
+        dummycpp dummyprocess dummypython dummypythonqt \
+        finishedq keyboardq license localeq notesqml oemid \
+        openrcdmcryptcfg packagechooserq fsresizer \
+        rawfs mkinitfs contextualprocess interactiveterminal \
+        plasmalnf services-openrc \
+        summaryq tracking usersq webview welcomeq"
+
+    cmake --build build --parallel 18
 }
 
 package() {
     cd ${srcdir}/calamares-${_pkgver}/build
-    make DESTDIR="$pkgdir" install
+
+    DESTDIR="${pkgdir}" cmake --build . --target install
+
     install -Dm644 "../data/calamares.desktop" "$pkgdir/usr/share/applications/calamares.desktop"
     install -Dm755 "../data/calamares_polkit" "$pkgdir/usr/bin/calamares_polkit"
     install -Dm644 "../data/49-nopasswd-calamares.rules" "$pkgdir/etc/polkit-1/rules.d/49-nopasswd-calamares.rules"
