@@ -1,7 +1,7 @@
 # Ctlos Calamares
 pkgname=calamares-dev
-pkgver=3.3.3
-_pkgver=3.3.3
+pkgver=3.3.5
+_pkgver=3.3.5
 pkgrel=1
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
@@ -54,7 +54,8 @@ build() {
               -DWITH_KF5DBus=OFF \
               -DINSTALL_CONFIG=OFF \
               -DBoost_NO_BOOST_CMAKE=ON \
-              -DSKIP_MODULES="dracut \
+              -DSKIP_MODULES="interactiveterminal initramfs \
+                    initramfscfg dracut dracutlukscfg \
                     dummycpp dummyprocess dummypython dummypythonqt \
                     finishedq initcpio keyboardq license localeq notesqml oemid \
                     openrcdmcryptcfg plymouthcfg plasmalnf services-openrc \
