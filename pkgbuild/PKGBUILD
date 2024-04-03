@@ -2,7 +2,7 @@
 pkgname=calamares-dev
 pkgver=3.3.5
 _pkgver=3.3.5
-pkgrel=4
+pkgrel=5
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 url="https://github.com/ctlos/calamares"
@@ -41,8 +41,6 @@ prepare() {
     # fix sddm autologin in 3.3.5
     sed -i -e 's|configuration_file = .*|configuration_file = "/etc/sddm.conf"|g' "src/modules/displaymanager/main.py"
     sed -i -e "s|self.configuration_file|self.configuration_file.lstrip('/')|g"   "src/modules/displaymanager/main.py"
-    # fix plasma 6 sddm xsession
-    sed -i -e "/startplasma-x11/s/\'plasma\'/\'plasmax11\'/" "src/modules/displaymanager/main.py"
 
     # change branding
     sed -i -e "s/default/ctlos/g" src/branding/CMakeLists.txt
