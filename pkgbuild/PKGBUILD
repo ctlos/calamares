@@ -2,7 +2,7 @@
 pkgname=calamares-dev
 pkgver=3.3.5
 _pkgver=3.3.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 url="https://github.com/ctlos/calamares"
@@ -34,9 +34,13 @@ prepare() {
 
     rm -rf ${srcdir}/calamares
     cd ${srcdir}/calamares-${_pkgver}
-    sed -i -e 's/"Install configuration files" OFF/"Install configuration files" ON/' CMakeLists.txt
 
+    sed -i -e 's/"Install configuration files" OFF/"Install configuration files" ON/' CMakeLists.txt
     sed -i -e "s/desired_size = 512 \* 1024 \* 1024  \# 512MiB/desired_size = 512 \* 1024 \* 1024 \* 4  \# 2048MiB/" "src/modules/fstab/main.py"
+
+    # fix sddm autologin in 3.3.5
+    sed -i -e 's|configuration_file = .*|configuration_file = "/etc/sddm.conf"|g' "src/modules/displaymanager/main.py"
+    sed -i -e "s|self.configuration_file|self.configuration_file.lstrip('/')|g"   "src/modules/displaymanager/main.py"
 
     # change branding
     sed -i -e "s/default/ctlos/g" src/branding/CMakeLists.txt
