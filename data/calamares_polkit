@@ -15,9 +15,9 @@ sudo cp -praf /usr/share/calamares/modules/welcome-offline.conf /usr/share/calam
 run_calamares() {
   if [[ $(command -v pkexec) ]]; then
     # pkexec --disable-internal-agent "/usr/bin/calamares" "$@"
-    bash -c "sudo -E /usr/bin/calamares -d"
+    bash -c "sudo -E /usr/bin/calamares -d -style kvantum"
   else
-    sudo -E /usr/bin/calamares -d
+    sudo -E /usr/bin/calamares -d -style kvantum
   fi
 }
 
