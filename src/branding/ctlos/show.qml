@@ -23,7 +23,7 @@ Presentation {
     id: presentation
 
     function nextSlide() {
-        console.log("QML Component (default slideshow) Next slide")
+        // console.log("QML Component (default slideshow) Next slide")
         presentation.goToNextSlide()
     }
 
@@ -174,7 +174,7 @@ Presentation {
                     id: slide3Text1
                     width: parent.width / 2
                     color: "#4A65BD"
-                    text: qsTr("Forum Ctlos")
+                    text: qsTr("Discuss Ctlos")
                     anchors.horizontalCenter: parent.horizontalCenter
                     font.pointSize: 20
                     wrapMode: Text.WordWrap
@@ -194,7 +194,7 @@ Presentation {
                 Text {
                     id: slide3Text2
                     color: "#161720"
-                    text: "forum.ctlos.ru"
+                    text: "github.com/discussions"
                     style: Text.Raised
                     font.underline: true
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -210,7 +210,7 @@ Presentation {
                         cursorShape: Qt.PointingHandCursor
 
                         onClicked: {
-                            Qt.openUrlExternally("https://forum.ctlos.ru")
+                            Qt.openUrlExternally("https://github.com/orgs/ctlos/discussions")
                         }
                     }
                 }
@@ -464,11 +464,11 @@ Presentation {
         }
     }
     function onActivate() {
-        console.log("QML Component (default slideshow) activated")
+        // console.log("QML Component (default slideshow) activated")
         presentation.currentSlide = 0
     }
 
     function onLeave() {
-        console.log("QML Component (default slideshow) deactivated")
+        // console.log("QML Component (default slideshow) deactivated")
     }
 }

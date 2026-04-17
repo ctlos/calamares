@@ -14,10 +14,16 @@ sudo cp -praf /usr/share/calamares/modules/welcome-offline.conf /usr/share/calam
 
 run_calamares() {
   if [[ $(command -v pkexec) ]]; then
-    # pkexec --disable-internal-agent "/usr/bin/calamares" "$@"
-    bash -c "sudo -E /usr/bin/calamares -d -style kvantum"
+    #####! /root/.config/Kvantum
+    # exec pkexec env DISPLAY="$DISPLAY" XAUTHORITY="$XAUTHORITY" \
+    #   XDG_CURRENT_DESKTOP="$XDG_CURRENT_DESKTOP" \
+    #   XDG_SESSION_TYPE="$XDG_SESSION_TYPE" \
+    #   dbus-launch /usr/bin/calamares -style kvantum "$@"
+
+    bash -c "sudo -E /usr/bin/calamares -style kvantum -D4"
+    # bash -c "sudo -E /usr/bin/calamares -style kvantum -d"
   else
-    sudo -E /usr/bin/calamares -d -style kvantum
+    sudo -E /usr/bin/calamares -style kvantum -d
   fi
 }
 
